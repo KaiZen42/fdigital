@@ -521,7 +521,7 @@ h4{
 
 @keyframes sali {
   from {bottom: 0vw;}
-  to {bottom: 16vw;}
+  to {bottom: 19.5vw;}
 }
 @keyframes puff {
   from {  visibility: visible;
@@ -584,6 +584,6 @@ h4{
   }
   @keyframes sali {
     from {bottom: 0vw;}
-    to {bottom: 8.5vw;}
+    to {bottom: 12.5vw;}
   }
 }

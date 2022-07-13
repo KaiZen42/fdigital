@@ -17,24 +17,24 @@ const VideoScales = (props) => {
 
 	function findColor(){
 		if(iter == 0 && first)
-			return "media/Scales/IntroSfondo.mp4";
+			return introScales;
 		if(iter == 0 && !first)
-			return "media/Scales/IntroSfondo.mp4"
+			return "media/ScalesColor/IntroSfondo.mp4"
 		let divid = result / iter;
 		if(divid < 2)
-			return "media/Scales/1.mp4"
+			return "media/ScalesColor/1.mp4"
 		else if(divid < 3)
-			return "media/Scales/2.mp4"
+			return "media/ScalesColor/2.mp4"
 		else if(divid < 4)
-			return "media/Scales/3.mp4"
+			return "media/ScalesColor/3.mp4"
 		else if(divid < 5)
-			return "media/Scales/4.mp4"
+			return "media/ScalesColor/4.mp4"
 		else if(divid < 6)
-			return "media/Scales/5.mp4"
+			return "media/ScalesColor/5.mp4"
 		else if(divid < 7)
-			return "media/Scales/6.mp4"
+			return "media/ScalesColor/6.mp4"
 		else if(divid < 8)
-			return "media/Scales/7.mp4"
+			return "media/ScalesColor/7.mp4"
 	}
 
 	let videoPath = findColor();

@@ -1,5 +1,6 @@
 numOfWeek = 3;
 
+videoBoss = "media/Weeks/Week3/Boss/boss.mp4"
 function InitialState(props){
     if(props.notify != "rubrica")
     {

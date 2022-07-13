@@ -1,8 +1,8 @@
 const videoIntro = {
     "id": 0,
     "description":"",
-    "path": "media/Presentazione.mp4",
-    "waitGif": "media/GifAttesaDomanda.mp4",
+    "path": "media/Weeks/Week2/Company/Intro.mp4",
+    "waitGif": "media/Weeks/Week2/Company/Loop.mp4",
     "choice": {
         1: 1,
         2: 2,
@@ -10,7 +10,7 @@ const videoIntro = {
     }
 }
 
-const videoOutro =  "media/Company/saluto finale/salutofinale.mp4";
+const videoOutro =  "media/Weeks/Week2/Company/saluto finale/salutofinale.mp4";
 
 const videoQ = 
 [
@@ -19,20 +19,20 @@ const videoQ =
                     {
                         "id": 1,
                         "description":"Why do you think one should invest in a sustainable brand?",
-                        "path": "media/GifAttesaDomanda.mp4",
-                        "waitGif": "media/GifAttesaDomanda.mp4"
+                        "path": "media/Weeks/Week2/Company/Terne/Terna 1/Terna 1 - 1.mp4",
+                        "waitGif": "media/Weeks/Week2/Company/Loop.mp4"
                     },
                     {
                         "id": 2,
                         "description":"What does it mean to invest in the greater good?",
-                        "path": "media/GifAttesaDomanda.mp4",
-                        "waitGif": "media/GifAttesaDomanda.mp4"
+                        "path": "media/Weeks/Week2/Company/Terne/Terna 1/Terna 1 - 2.mp4",
+                        "waitGif": "media/Weeks/Week2/Company/Loop.mp4"
                     },
                     {
                         "id": 3,
                         "description":"Is sustainability widely accepted in business future?",
-                        "path": "media/GifAttesaDomanda.mp4",
-                        "waitGif": "media/GifAttesaDomanda.mp4"
+                        "path": "media/Weeks/Week2/Company/Terne/Terna 1/Terna 1 - 3.mp4",
+                        "waitGif": "media/Weeks/Week2/Company/Loop.mp4"
                     }]
     },
     { 
@@ -40,188 +40,188 @@ const videoQ =
                     {
                         "id": 4,
                         "description":"Which is the connection between slow fashion and sustainability?",
-                        "path": "media/L'MANE primotaglio.mp4",
-                        "waitGif": "media/Terne/Loop - L'Mane.mp4"
+                        "path": "media/Weeks/Week2/Company/Terne/Terna 2/Terna 2 - 1.mp4",
+                        "waitGif": "media/Weeks/Week2/Company/Loop.mp4"
                     },
                     {
                         "id": 5,
                         "description":"Is contemporary society aware of the sustainability concepts?",
-                        "path": "media/L'MANE primotaglio.mp4",
-                        "waitGif": "media/Terne/Loop - L'Mane.mp4"
+                        "path": "media/Weeks/Week2/Company/Terne/Terna 2/Terna 2 - 2.mp4",
+                        "waitGif": "media/Weeks/Week2/Company/Loop.mp4"
                     },
                     {
                         "id": 6,
                         "description":"Isn’t slow fashion a concept only for the “rich” who can afford it?",
-                        "path": "media/L'MANE primotaglio.mp4",
-                        "waitGif": "media/Terne/Loop - L'Mane.mp4"
+                        "path": "media/Weeks/Week2/Company/Terne/Terna 2/Terna 2 - 3.mp4",
+                        "waitGif": "media/Weeks/Week2/Company/Loop.mp4"
+                    }]
+    },
+    { 
+        "terzina":[
+                    {
+                        "id": 7,
+                        "description":"Some research indicates over 50% of consumers are still looking for low prize rather than a sustainable product?",
+                        "path": "media/Weeks/Week2/Company/Terne/Terna 3/Terna 3 - 1.mp4",
+                        "waitGif": "media/Weeks/Week2/Company/Loop.mp4"
+                    },
+                    {
+                        "id": 8,
+                        "description":"You think you have a large enough market to be profitable?",
+                        "path": "media/Weeks/Week2/Company/Terne/Terna 3/Terna 3 - 2.mp4",
+                        "waitGif": "media/Weeks/Week2/Company/Loop.mp4"
+                    },
+                    {
+                        "id": 9,
+                        "description":"Oxford Press says 55% of people care for price more than sustainability",
+                        "path": "media/Weeks/Week2/Company/Terne/Terna 3/Terna 3 - 3.mp4",
+                        "waitGif": "media/Weeks/Week2/Company/Loop.mp4"
+                    }]
+    },
+    { 
+        "terzina":[
+                    {
+                        "id": 10,
+                        "description":"Do you think your brand is mostly local or suitable for international market?",
+                        "path": "media/Weeks/Week2/Company/Terne/Terna 4/Terna 4 - 1.mp4",
+                        "waitGif": "media/Weeks/Week2/Company/Loop.mp4"
+                    },
+                    {
+                        "id": 11,
+                        "description":"What are your methods of researching the market demand?",
+                        "path": "media/Weeks/Week2/Company/Terne/Terna 4/Terna 4 - 2.mp4",
+                        "waitGif": "media/Weeks/Week2/Company/Loop.mp4"
+                    },
+                    {
+                        "id": 12,
+                        "description":"Who is your target market age wise?",
+                        "path": "media/Weeks/Week2/Company/Terne/Terna 4/Terna 4 - 3.mp4",
+                        "waitGif": "media/Weeks/Week2/Company/Loop.mp4"
                     }]
     },
     // { 
     //     "terzina":[
     //                 {
-    //                     "id": 7,
-    //                     "description":"domanda7",
-    //                     "path": "media/L'MANE primotaglio.mp4",
-    //                     "waitGif": "media/Terne/Loop - L'Mane.mp4"
-    //                 },
-    //                 {
-    //                     "id": 8,
-    //                     "description":"domanda8",
-    //                     "path": "media/L'MANE primotaglio.mp4",
-    //                     "waitGif": "media/Terne/Loop - L'Mane.mp4"
-    //                 },
-    //                 {
-    //                     "id": 9,
-    //                     "description":"domanda9",
-    //                     "path": "media/L'MANE primotaglio.mp4",
-    //                     "waitGif": "media/Terne/Loop - L'Mane.mp4"
-    //                 }]
-    // },
-    // { 
-    //     "terzina":[
-    //                 {
-    //                     "id": 10,
-    //                     "description":"domanda10",
-    //                     "path": "media/Terne/Terna 4/Terna 4 - 1.mp4",
-    //                     "waitGif": "media/Terne/Loop - L'Mane.mp4"
-    //                 },
-    //                 {
-    //                     "id": 11,
-    //                     "description":"domanda11",
-    //                     "path": "media/Terne/Terna 4/Terna 4 - 2.mp4",
-    //                     "waitGif": "media/Terne/Loop - L'Mane.mp4"
-    //                 },
-    //                 {
-    //                     "id": 12,
-    //                     "description":"domanda12",
-    //                     "path": "media/Terne/Terna 4/Terna 4 - 3.mp4",
-    //                     "waitGif": "media/Terne/Loop - L'Mane.mp4"
-    //                 }]
-    // },
-    // { 
-    //     "terzina":[
-    //                 {
-    //                     "id": 10,
-    //                     "description":"domanda13",
-    //                     "path": "media/Terne/Terna 5/Terna 5 - 1.mp4",
-    //                     "waitGif": "media/Terne/Loop - L'Mane.mp4"
-    //                 },
-    //                 {
-    //                     "id": 11,
-    //                     "description":"domanda14",
-    //                     "path": "media/Terne/Terna 5/Terna 5 - 2.mp4",
-    //                     "waitGif": "media/Terne/Loop - L'Mane.mp4"
-    //                 },
-    //                 {
-    //                     "id": 12,
-    //                     "description":"domanda15",
-    //                     "path": "media/Terne/Terna 5/Terna 5 - 3.mp4",
-    //                     "waitGif": "media/Terne/Loop - L'Mane.mp4"
-    //                 }]
-    // },
-    // { 
-    //     "terzina":[
-    //                 {
     //                     "id": 13,
-    //                     "description":"domanda16",
-    //                     "path": "media/Terne/Terna 6/Terna 6 - 1.mp4",
-    //                     "waitGif": "media/Terne/Loop - L'Mane.mp4"
+    //                     "description":"Are you willing to produce in any location if it proves cost effective?",
+    //                     "path": "media/Weeks/Week2/Company/Terne/Terna 5/Terna 5 - 1.mp4",
+    //                     "waitGif": "media/Weeks/Week2/Company/Loop.mp4"
     //                 },
     //                 {
     //                     "id": 14,
-    //                     "description":"domanda17",
-    //                     "path": "media/Terne/Terna 6/Terna 6 - 2.mp4",
-    //                     "waitGif": "media/Terne/Loop - L'Mane.mp4"
+    //                     "description":"Are you producing only in Dubai?",
+    //                     "path": "media/Weeks/Week2/Company/Terne/Terna 5/Terna 5 - 2.mp4",
+    //                     "waitGif": "media/Weeks/Week2/Company/Loop.mp4"
     //                 },
     //                 {
     //                     "id": 15,
-    //                     "description":"domanda18",
-    //                     "path": "media/Terne/Terna 6/Terna 6 - 3.mp4",
-    //                     "waitGif": "media/Terne/Loop - L'Mane.mp4"
+    //                     "description":"Isn’t expensive to produce only in Dubai?",
+    //                     "path": "media/Weeks/Week2/Company/Terne/Terna 5/Terna 5 - 3.mp4",
+    //                     "waitGif": "media/Weeks/Week2/Company/Loop.mp4"
     //                 }]
     // },
     // { 
     //     "terzina":[
     //                 {
     //                     "id": 16,
-    //                     "description":"domanda19",
-    //                     "path": "media/Terne/Terna 7/Terna 7 - 1.mp4",
-    //                     "waitGif": "media/Terne/Loop - L'Mane.mp4"
+    //                     "description":"how do you manage your waste from a collection?",
+    //                     "path": "media/Weeks/Week2/Company/Terne/Terna 6/Terna 6 - 1.mp4",
+    //                     "waitGif": "media/Weeks/Week2/Company/Loop.mp4"
     //                 },
     //                 {
     //                     "id": 17,
-    //                     "description":"domanda20",
-    //                     "path": "media/Terne/Terna 7/Terna 7 - 2.mp4",
-    //                     "waitGif": "media/Terne/Loop - L'Mane.mp4"
+    //                     "description":"what is your strategy for unsold items",
+    //                     "path": "media/Weeks/Week2/Company/Terne/Terna 6/Terna 6 - 2.mp4",
+    //                     "waitGif": "media/Weeks/Week2/Company/Loop.mp4"
     //                 },
     //                 {
     //                     "id": 18,
-    //                     "description":"domanda21",
-    //                     "path": "media/Terne/Terna 7/Terna 7 - 3.mp4",
-    //                     "waitGif": "media/Terne/Loop - L'Mane.mp4"
+    //                     "description":"how much does it cost you to maintain rented items (wash/ sanitize/ alter)",
+    //                     "path": "media/Weeks/Week2/Company/Terne/Terna 6/Terna 6 - 3.mp4",
+    //                     "waitGif": "media/Weeks/Week2/Company/Loop.mp4"
     //                 }]
     // },
     // { 
     //     "terzina":[
     //                 {
     //                     "id": 19,
-    //                     "description":"domanda22",
-    //                     "path": "media/Terne/Terna 8/Terna 8 - 1.mp4",
-    //                     "waitGif": "media/Terne/Loop - L'Mane.mp4"
+    //                     "description":"Aren’t there some disadvantages in using recycled products?",
+    //                     "path": "media/Weeks/Week2/Company/Terne/Terna 7/Terna 7 - 1.mp4",
+    //                     "waitGif": "media/Weeks/Week2/Company/Loop.mp4"
     //                 },
     //                 {
     //                     "id": 20,
-    //                     "description":"domanda23",
-    //                     "path": "media/Terne/Terna 8/Terna 8 - 2.mp4",
-    //                     "waitGif": "media/Terne/Loop - L'Mane.mp4"
+    //                     "description":"Isn’t renting complicated to manage?",
+    //                     "path": "media/Weeks/Week2/Company/Terne/Terna 7/Terna 7 - 2.mp4",
+    //                     "waitGif": "media/Weeks/Week2/Company/Loop.mp4"
     //                 },
     //                 {
     //                     "id": 21,
-    //                     "description":"domanda24",
-    //                     "path": "media/Terne/Terna 8/Terna 8 - 3.mp4",
-    //                     "waitGif": "media/Terne/Loop - L'Mane.mp4"
+    //                     "description":"What is the additional cost of using very durable materials?",
+    //                     "path": "media/Weeks/Week2/Company/Terne/Terna 7/Terna 7 - 3.mp4",
+    //                     "waitGif": "media/Weeks/Week2/Company/Loop.mp4"
     //                 }]
     // },
     // { 
     //     "terzina":[
     //                 {
     //                     "id": 22,
-    //                     "description":"domanda25",
-    //                     "path": "media/Terne/Terna 9/Terna 9 - 1.mp4",
-    //                     "waitGif": "media/Terne/Loop - L'Mane.mp4"
+    //                     "description":"Are you collaborating with influencers and celebrities and how?",
+    //                     "path": "media/Weeks/Week2/Company/Terne/Terna 8/Terna 8 - 1.mp4",
+    //                     "waitGif": "media/Weeks/Week2/Company/Loop.mp4"
     //                 },
     //                 {
     //                     "id": 23,
-    //                     "description":"domanda26",
-    //                     "path": "media/Terne/Terna 9/Terna 9 - 2.mp4",
-    //                     "waitGif": "media/Terne/Loop - L'Mane.mp4"
+    //                     "description":"Is collaborating across verticals possible?",
+    //                     "path": "media/Weeks/Week2/Company/Terne/Terna 8/Terna 8 - 2.mp4",
+    //                     "waitGif": "media/Weeks/Week2/Company/Loop.mp4"
     //                 },
     //                 {
     //                     "id": 24,
-    //                     "description":"domanda27",
-    //                     "path": "media/Terne/Terna 9/Terna 9 - 3.mp4",
-    //                     "waitGif": "media/Terne/Loop - L'Mane.mp4"
+    //                     "description":"Is collaboration possible in an industry known for its competitiveness?",
+    //                     "path": "media/Weeks/Week2/Company/Terne/Terna 8/Terna 8 - 3.mp4",
+    //                     "waitGif": "media/Weeks/Week2/Company/Loop.mp4"
     //                 }]
     // },
     // { 
     //     "terzina":[
     //                 {
     //                     "id": 25,
-    //                     "description":"domanda28",
-    //                     "path": "media/Terne/Terna 10/Terna 10 - 1.mp4",
-    //                     "waitGif": "media/Terne/Loop - L'Mane.mp4"
+    //                     "description":"Are you slower than competitors in delivery time?",
+    //                     "path": "media/Weeks/Week2/Company/Terne/Terna 9/Terna 9 - 1.mp4",
+    //                     "waitGif": "media/Weeks/Week2/Company/Loop.mp4"
     //                 },
     //                 {
     //                     "id": 26,
-    //                     "description":"domanda29",
-    //                     "path": "media/Terne/Terna 10/Terna 10 - 2.mp4",
-    //                     "waitGif": "media/Terne/Loop - L'Mane.mp4"
+    //                     "description":"Are you really making money?",
+    //                     "path": "media/Weeks/Week2/Company/Terne/Terna 9/Terna 9 - 2.mp4",
+    //                     "waitGif": "media/Weeks/Week2/Company/Loop.mp4"
     //                 },
     //                 {
     //                     "id": 27,
-    //                     "description":"domanda30",
-    //                     "path": "media/Terne/Terna 10/Terna 10 - 3.mp4",
-    //                     "waitGif": "media/Terne/Loop - L'Mane.mp4"
+    //                     "description":"Are you really capable of delivering worldwide?",
+    //                     "path": "media/Weeks/Week2/Company/Terne/Terna 9/Terna 9 - 3.mp4",
+    //                     "waitGif": "media/Weeks/Week2/Company/Loop.mp4"
+    //                 }]
+    // },
+    // { 
+    //     "terzina":[
+    //                 {
+    //                     "id": 28,
+    //                     "description":"This market approach is financially sustainable long term?",
+    //                     "path": "media/Weeks/Week2/Company/Terne/Terna 10/Terna 10 - 1.mp4",
+    //                     "waitGif": "media/Weeks/Week2/Company/Loop.mp4"
+    //                 },
+    //                 {
+    //                     "id": 29,
+    //                     "description":"How much more does your product cost when compared to competitors?",
+    //                     "path": "media/Weeks/Week2/Company/Terne/Terna 10/Terna 10 - 2.mp4",
+    //                     "waitGif": "media/Weeks/Week2/Company/Loop.mp4"
+    //                 },
+    //                 {
+    //                     "id": 30,
+    //                     "description":"Are your margins lower than competitors?",
+    //                     "path": "media/Weeks/Week2/Company/Terne/Terna 10/Terna 10 - 3.mp4",
+    //                     "waitGif": "media/Weeks/Week2/Company/Loop.mp4"
     //                 }]
     // },
     

@@ -16,7 +16,7 @@ const FakeCall = (props) => {
 		  <video id="fake" className="video-responsive" onEnded={handleEnd} autoPlay>
 			<source src={`${loc}media/SfondoChiamata.mp4`} type="video/mp4"></source>
 		  </video>
-		<Grid container sx={{width: '100%', zIndex: 100, textAlign: 'center'}} justifyContent="center">
+		<Grid container sx={{width: '100%', zIndex: 100, textAlign: 'center', height: '36vw'}} justifyContent="center">
 			<Grid container sx={{zIndex: 100, textAlign: 'center'}} justifyContent="center">
 				{end ? <h6>This contact is not available</h6> : <h6>{phoneBook.at(who).nome}</h6>}
 			</Grid>

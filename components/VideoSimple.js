@@ -24,7 +24,7 @@ const VideoSimple = (props) => {
 		<Grid container direction="row" justifyContent="center" alignItems="flex-end">
 		{!end && 
 			<video className="video-responsive" onEnded={handleEnd} autoPlay >
-				<source src={`${loc}media/Presentazione.mp4`} type="video/mp4"></source>
+				<source src={videoBoss} type="video/mp4"></source>
 			</video>
 		}{end &&
 			<>

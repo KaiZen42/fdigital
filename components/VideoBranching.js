@@ -3,23 +3,23 @@ function findWhoTalk(it, i)
   if(it == 1 || it == 5 || it == 8)
   {
     if(i == 1)
-      return "media/Company/Amna.png"
+      return "media/Weeks/Week3/Company/Amna.png"
     if(i == 2)
-      return "media/Company/Sara.png"
+      return "media/Weeks/Week3/Company/Sara.png"
   }
   else if(it == 2 || it == 6 || it == 7)
   {
     if(i == 1)
-      return "media/Company/Lina.png"
+      return "media/Weeks/Week3/Company/Lina.png"
     if(i == 2)
-      return "media/Company/Sara.png"
+      return "media/Weeks/Week3/Company/Sara.png"
   }
   else if(it == 3 || it == 4 || it == 9)
   {
     if(i == 1)
-      return "media/Company/Amna.png"
+      return "media/Weeks/Week3/Company/Amna.png"
     if(i == 2)
-      return "media/Company/Lina.png"
+      return "media/Weeks/Week3/Company/Lina.png"
   }
 }
 

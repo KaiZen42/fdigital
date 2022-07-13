@@ -1,4 +1,4 @@
-const introScales="media/Scales/VideoIntro.mp4"
+const introScales="media/Weeks/Week3/Scales/VideoIntro.mp4"
 const videoScale=[
     {
         description:"I borrow or rent products to try them out before deciding if I want to buy them"

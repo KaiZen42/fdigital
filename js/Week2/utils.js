@@ -22,7 +22,7 @@ function emailLen(){
 
 function closeToggle(){
 	const main = document.getElementById('main');
-	main.style.height = "41vw";
+	main.style.height = "50vw";
 	const side = document.getElementById('sidebar');
 	if(side.getAttribute("class") != "active" && window.screen.width.valueOf() > 390)
 	  side.setAttribute("class", "active")
