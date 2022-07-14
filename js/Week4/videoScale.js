@@ -1,15 +1,15 @@
-const introScales="media/Weeks/Week3/Scales/VideoIntro.mp4"
+const introScales="media/Weeks/Week4/Scales/VideoIntro.mp4"
 const videoScale=[
     {
-        description:"I borrow or rent products to try them out before deciding if I want to buy them"
+        description:"I manage my budget so that I can spend some money on experiences that give me a lot of pleasure and joy"
     },
     {
-        description:"Before I buy something that I might not use very often, I try to rent it or borrow it from someone instead"
+        description:"I prioritize spending some money on unique experiences that help me develop my full potential"
     },
     {
-        description:"My purchases include used products or clothing even though I could just purchase new things if I wanted to"
+        description:"I manage my budget so that I can spend some money on experiences that help me learn new things"
     },
     {
-        description:"I like to share, swap, or trade for things with my friends and neighbours"
+        description:"I prioritize spending money on products and experiences that help me build and strengthen relationships with others"
     },
 ]

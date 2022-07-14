@@ -9,7 +9,7 @@ const steps = [
 	},
 	{
 		label: 'Step 3',
-		description: 'Please now go to the Library and watch the video. After having seen the video, go to the Contacts section and L\'Mane owners.'
+		description: 'Please now go to the Library and watch the video. After having seen the video, go to the Contacts section and Gamindo owner.'
 	},
 	{
 		label: 'Step 4',

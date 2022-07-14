@@ -10,7 +10,7 @@ const videoIntro = {
     }
 }
 
-const videoOutro =  "media/Weeks/Week2/Company/saluto finale/salutofinale.mp4";
+const videoOutro =  "media/Weeks/Week4/Company/Outro.mp4";
 
 const videoQ = 
 [

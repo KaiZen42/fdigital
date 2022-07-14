@@ -1,8 +1,8 @@
 const libreria=
     {
         type: "youtube",
-        path: "https://www.youtube.com/embed/c7ciG2gH_u0",
-        linkTo: "https://www.youtube.com/watch?v=c7ciG2gH_u0&feature=youtu.be",
-        videoDownload: "https://www.dropbox.com/s/s4umzqoxjxsqam1/Week%201-2%20-%20Video%20Library%20EDIT01.mp4?dl=1",
+        path: "https://luiss.instructuremedia.com/embed/9881ea2c-87d8-43c5-b58a-4e1155cdfa36",
+        linkTo: "https://luiss.instructuremedia.com/embed/9881ea2c-87d8-43c5-b58a-4e1155cdfa36",
+        videoDownload: "https://eu.nv.instructuremedia.com/fetch/QkFoYkIxc0hhUU1jUytscEEwOXpobXdyQjdGZDBXST0tLWFiY2NlM2U5YTE0OGI1ZGNhZWZmM2E4NTI3Y2NiYjM1MjYwMzhjNTI.mp4?disposition=download&filename=Prof.ssa%20Romani%20-%20video%20Library%20Week%204%20EDIT01",
         description: ""
     }
