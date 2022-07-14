@@ -81,148 +81,148 @@ const videoQ =
         "terzina":[
                     {
                         "id": 10,
-                        "description":"Does Shampora personalize the treatment plan of each consumer as well as it does for the product it provides?",
+                        "description":"Personalized haircare considers your specific hair type to achieve your personal hair goals. How does Shampora operate?",
                         "path": "media/Weeks/Week10/Company/Terne/Terna 4/Terna 4 - 1.mp4",
                         "waitGif": "media/Weeks/Week10/Company/Loop.mp4"
                     },
                     {
                         "id": 11,
-                        "description":"Is there a way to receive feedback from your customers and build on that to improve and update the products’ formula in line with her needs and try to retain that customer after the first order?",
+                        "description":"Personalization is shaking up the beauty industry and driving innovations in beauty tech. Consumers want products that are completely personalized to them since the product development phase. Could you explain Shampora’s approach to personalization?",
                         "path": "media/Weeks/Week10/Company/Terne/Terna 4/Terna 4 - 2.mp4",
                         "waitGif": "media/Weeks/Week10/Company/Loop.mp4"
                     },
                     {
-                        "id": 12,
-                        "description":"Measurement is a critical aspect of personalization. Do you have metrics to quantify the progress on hair’ quality?",
+                        "id": 12,  
+                        "description":"What does it take to formulate a product assortment that accommodates each customer’s specific needs?",
                         "path": "media/Weeks/Week10/Company/Terne/Terna 4/Terna 4 - 3.mp4",
                         "waitGif": "media/Weeks/Week10/Company/Loop.mp4"
                     }]
     },
-    // { 
-    //     "terzina":[
-    //                 {
-    //                     "id": 13,
-    //                     "description":"Personalized haircare considers your specific hair type to achieve your personal hair goals. How does Shampora operate?",
-    //                     "path": "media/Weeks/Week10/Company/Terne/Terna 5/Terna 5 - 1.mp4",
-    //                     "waitGif": "media/Weeks/Week10/Company/Loop.mp4"
-    //                 },
-    //                 {
-    //                     "id": 14,
-    //                     "description":"Personalization is shaking up the beauty industry and driving innovations in beauty tech. Consumers want products that are completely personalized to them since the product development phase. Could you explain Shampora’s approach to personalization?",
-    //                     "path": "media/Weeks/Week10/Company/Terne/Terna 5/Terna 5 - 2.mp4",
-    //                     "waitGif": "media/Weeks/Week10/Company/Loop.mp4"
-    //                 },
-    //                 {
-    //                     "id": 15,
-    //                     "description":"What does it take to formulate a product assortment that accommodates each customer’s specific needs?",
-    //                     "path": "media/Weeks/Week10/Company/Terne/Terna 5/Terna 5 - 3.mp4",
-    //                     "waitGif": "media/Weeks/Week10/Company/Loop.mp4"
-    //                 }]
-    // },
-    // { 
-    //     "terzina":[
-    //                 {
-    //                     "id": 16,
-    //                     "description":"Can shampora products help consumers realize their ethical values?",
-    //                     "path": "media/Weeks/Week10/Company/Terne/Terna 6/Terna 6 - 1.mp4",
-    //                     "waitGif": "media/Weeks/Week10/Company/Loop.mp4"
-    //                 },
-    //                 {
-    //                     "id": 17,
-    //                     "description":"Can Shampora products favor sustainable consumption?",
-    //                     "path": "media/Weeks/Week10/Company/Terne/Terna 6/Terna 6 - 2.mp4",
-    //                     "waitGif": "media/Weeks/Week10/Company/Loop.mp4"
-    //                 },
-    //                 {
-    //                     "id": 18,
-    //                     "description":"What is sustainability for Shampora?",
-    //                     "path": "media/Weeks/Week10/Company/Terne/Terna 6/Terna 6 - 3.mp4",
-    //                     "waitGif": "media/Weeks/Week10/Company/Loop.mp4"
-    //                 }]
-    // },
-    // { 
-    //     "terzina":[
-    //                 {
-    //                     "id": 19,
-    //                     "description":"How do you enhance your customer experience throughout the entire journey?",
-    //                     "path": "media/Weeks/Week10/Company/Terne/Terna 7/Terna 7 - 1.mp4",
-    //                     "waitGif": "media/Weeks/Week10/Company/Loop.mp4"
-    //                 },
-    //                 {
-    //                     "id": 20,
-    //                     "description":"How do you manage the customer desire for immediate gratification?",
-    //                     "path": "media/Weeks/Week10/Company/Terne/Terna 7/Terna 7 - 2.mp4",
-    //                     "waitGif": "media/Weeks/Week10/Company/Loop.mp4"
-    //                 },
-    //                 {
-    //                     "id": 21,
-    //                     "description":"Do you see applications for Shampora in the metaverse?",
-    //                     "path": "media/Weeks/Week10/Company/Terne/Terna 7/Terna 7 - 3.mp4",
-    //                     "waitGif": "media/Weeks/Week10/Company/Loop.mp4"
-    //                 }]
-    // },
-    // { 
-    //     "terzina":[
-    //                 {
-    //                     "id": 22,
-    //                     "description":"While digital experiences are empowering consumers like never before, there is a risk that digital first solutions become cold and impersonal, even when offering customized products. What do you think about it?",
-    //                     "path": "media/Weeks/Week10/Company/Terne/Terna 8/Terna 8 - 1.mp4",
-    //                     "waitGif": "media/Weeks/Week10/Company/Loop.mp4"
-    //                 },
-    //                 {
-    //                     "id": 23,
-    //                     "description":"Onmichannel seems to be the future for personalized haircare. What is Shampora doing in this regard?",
-    //                     "path": "media/Weeks/Week10/Company/Terne/Terna 8/Terna 8 - 2.mp4",
-    //                     "waitGif": "media/Weeks/Week10/Company/Loop.mp4"
-    //                 },
-    //                 {
-    //                     "id": 24,
-    //                     "description":"How do you think to approach the era of social entertaining in order to improve customer experience?",
-    //                     "path": "media/Weeks/Week10/Company/Terne/Terna 8/Terna 8 - 3.mp4",
-    //                     "waitGif": "media/Weeks/Week10/Company/Loop.mp4"
-    //                 }]
-    // },
-    // { 
-    //     "terzina":[
-    //                 {
-    //                     "id": 25,
-    //                     "description":"In-store sales continue also to be important for personalized beauty products. How do you plan to accommodate this trend with Shampora products?",
-    //                     "path": "media/Weeks/Week10/Company/Terne/Terna 9/Terna 9 - 1.mp4",
-    //                     "waitGif": "media/Weeks/Week10/Company/Loop.mp4"
-    //                 },
-    //                 {
-    //                     "id": 26,
-    //                     "description":"Are you considering tweaking your offerings to better suit physical retail?",
-    //                     "path": "media/Weeks/Week10/Company/Terne/Terna 9/Terna 9 - 2.mp4",
-    //                     "waitGif": "media/Weeks/Week10/Company/Loop.mp4"
-    //                 },
-    //                 {
-    //                     "id": 27,
-    //                     "description":"Are you really capable of delivering worldwide?",
-    //                     "path": "media/Weeks/Week10/Company/Terne/Terna 9/Terna 9 - 3.mp4",
-    //                     "waitGif": "media/Weeks/Week10/Company/Loop.mp4"
-    //                 }]
-    // },
-    // { 
-    //     "terzina":[
-    //                 {
-    //                     "id": 28,
-    //                     "description":"How much of your sales is driven by the subscription model and how do you think this model could be affected by a possible opening to salons?",
-    //                     "path": "media/Weeks/Week10/Company/Terne/Terna 10/Terna 10 - 1.mp4",
-    //                     "waitGif": "media/Weeks/Week10/Company/Loop.mp4"
-    //                 },
-    //                 {
-    //                     "id": 29,
-    //                     "description":"Do you think that the possibility of receiving a monthly box of personalized hair care products is one of the most important drivers of consumers’ decision to buy shampora? How do you think that opening to salon could affect this strength?",
-    //                     "path": "media/Weeks/Week10/Company/Terne/Terna 10/Terna 10 - 2.mp4",
-    //                     "waitGif": "media/Weeks/Week10/Company/Loop.mp4"
-    //                 },
-    //                 {
-    //                     "id": 30,
-    //                     "description":"Do you believe that the subscription model will be in conflict with the opening to salons",
-    //                     "path": "media/Weeks/Week10/Company/Terne/Terna 10/Terna 10 - 3.mp4",
-    //                     "waitGif": "media/Weeks/Week10/Company/Loop.mp4"
-    //                 }]
-    // },
+    { 
+        "terzina":[
+                    {
+                        "id": 13,
+                        "description":"Does Shampora personalize the treatment plan of each consumer as well as it does for the product it provides?",
+                        "path": "media/Weeks/Week10/Company/Terne/Terna 5/Terna 5 - 1.mp4",
+                        "waitGif": "media/Weeks/Week10/Company/Loop.mp4"
+                    },
+                    {
+                        "id": 14,
+                        "description":"Is there a way to receive feedback from your customers and build on that to improve and update the products’ formula in line with her needs and try to retain that customer after the first order?",
+                        "path": "media/Weeks/Week10/Company/Terne/Terna 5/Terna 5 - 2.mp4",
+                        "waitGif": "media/Weeks/Week10/Company/Loop.mp4"
+                    },
+                    {
+                        "id": 15,
+                        "description":"Measurement is a critical aspect of personalization. Do you have metrics to quantify the progress on hair’ quality?",
+                        "path": "media/Weeks/Week10/Company/Terne/Terna 5/Terna 5 - 3.mp4",
+                        "waitGif": "media/Weeks/Week10/Company/Loop.mp4"
+                    }]
+    },
+    { 
+        "terzina":[
+                    {
+                        "id": 16,
+                        "description":"Can shampora products help consumers realize their ethical values?",
+                        "path": "media/Weeks/Week10/Company/Terne/Terna 6/Terna 6 - 1.mp4",
+                        "waitGif": "media/Weeks/Week10/Company/Loop.mp4"
+                    },
+                    {
+                        "id": 17,
+                        "description":"Can Shampora products favor sustainable consumption?",
+                        "path": "media/Weeks/Week10/Company/Terne/Terna 6/Terna 6 - 2.mp4",
+                        "waitGif": "media/Weeks/Week10/Company/Loop.mp4"
+                    },
+                    {
+                        "id": 18,
+                        "description":"What is sustainability for Shampora?",
+                        "path": "media/Weeks/Week10/Company/Terne/Terna 6/Terna 6 - 3.mp4",
+                        "waitGif": "media/Weeks/Week10/Company/Loop.mp4"
+                    }]
+    },
+    { 
+        "terzina":[
+                    {
+                        "id": 19,
+                        "description":"How do you enhance your customer experience throughout the entire journey?",
+                        "path": "media/Weeks/Week10/Company/Terne/Terna 7/Terna 7 - 1.mp4",
+                        "waitGif": "media/Weeks/Week10/Company/Loop.mp4"
+                    },
+                    {
+                        "id": 20,
+                        "description":"How do you manage the customer desire for immediate gratification?",
+                        "path": "media/Weeks/Week10/Company/Terne/Terna 7/Terna 7 - 2.mp4",
+                        "waitGif": "media/Weeks/Week10/Company/Loop.mp4"
+                    },
+                    {
+                        "id": 21,
+                        "description":"Do you see applications for Shampora in the metaverse?",
+                        "path": "media/Weeks/Week10/Company/Terne/Terna 7/Terna 7 - 3.mp4",
+                        "waitGif": "media/Weeks/Week10/Company/Loop.mp4"
+                    }]
+    },
+    { 
+        "terzina":[
+                    {
+                        "id": 22,
+                        "description":"While digital experiences are empowering consumers like never before, there is a risk that digital first solutions become cold and impersonal, even when offering customized products. What do you think about it?",
+                        "path": "media/Weeks/Week10/Company/Terne/Terna 8/Terna 8 - 1.mp4",
+                        "waitGif": "media/Weeks/Week10/Company/Loop.mp4"
+                    },
+                    {
+                        "id": 23,
+                        "description":"Onmichannel seems to be the future for personalized haircare. What is Shampora doing in this regard?",
+                        "path": "media/Weeks/Week10/Company/Terne/Terna 8/Terna 8 - 2.mp4",
+                        "waitGif": "media/Weeks/Week10/Company/Loop.mp4"
+                    },
+                    {
+                        "id": 24,
+                        "description":"How do you think to approach the era of social entertaining in order to improve customer experience?",
+                        "path": "media/Weeks/Week10/Company/Terne/Terna 8/Terna 8 - 3.mp4",
+                        "waitGif": "media/Weeks/Week10/Company/Loop.mp4"
+                    }]
+    },
+    { 
+        "terzina":[
+                    {
+                        "id": 25,
+                        "description":"In-store sales continue also to be important for personalized beauty products. How do you plan to accommodate this trend with Shampora products?",
+                        "path": "media/Weeks/Week10/Company/Terne/Terna 9/Terna 9 - 1.mp4",
+                        "waitGif": "media/Weeks/Week10/Company/Loop.mp4"
+                    },
+                    {
+                        "id": 26,
+                        "description":"Are you considering tweaking your offerings to better suit physical retail?",
+                        "path": "media/Weeks/Week10/Company/Terne/Terna 9/Terna 9 - 2.mp4",
+                        "waitGif": "media/Weeks/Week10/Company/Loop.mp4"
+                    },
+                    {
+                        "id": 27,
+                        "description":"Are you really capable of delivering worldwide?",
+                        "path": "media/Weeks/Week10/Company/Terne/Terna 9/Terna 9 - 3.mp4",
+                        "waitGif": "media/Weeks/Week10/Company/Loop.mp4"
+                    }]
+    },
+    { 
+        "terzina":[
+                    {
+                        "id": 28,
+                        "description":"How much of your sales is driven by the subscription model and how do you think this model could be affected by a possible opening to salons?",
+                        "path": "media/Weeks/Week10/Company/Terne/Terna 10/Terna 10 - 1.mp4",
+                        "waitGif": "media/Weeks/Week10/Company/Loop.mp4"
+                    },
+                    {
+                        "id": 29,
+                        "description":"Do you think that the possibility of receiving a monthly box of personalized hair care products is one of the most important drivers of consumers’ decision to buy shampora? How do you think that opening to salon could affect this strength?",
+                        "path": "media/Weeks/Week10/Company/Terne/Terna 10/Terna 10 - 2.mp4",
+                        "waitGif": "media/Weeks/Week10/Company/Loop.mp4"
+                    },
+                    {
+                        "id": 30,
+                        "description":"Do you believe that the subscription model will be in conflict with the opening to salons",
+                        "path": "media/Weeks/Week10/Company/Terne/Terna 10/Terna 10 - 3.mp4",
+                        "waitGif": "media/Weeks/Week10/Company/Loop.mp4"
+                    }]
+    },
     
 ];
