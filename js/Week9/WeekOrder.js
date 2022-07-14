@@ -1,6 +1,6 @@
-let numOfWeek = 4;
-let company = "Gamindo"
-let videoBoss = "media/Weeks/Week4/Boss/boss.mp4"
+let numOfWeek = 9;
+let company = "Mirta"
+let videoBoss = "media/Weeks/Week9/Boss/boss.mp4"
 
 function InitialState(props){
     if(props.notify != "rubrica")
@@ -24,7 +24,7 @@ function SecondStep(props){
     if(props.notify != "library")
     {
         props.setNotify("library")
-        phoneBook.at(4).real = true;
+        phoneBook.at(6).real = true;
         phoneBook.at(1).real = false;
     }
 }
@@ -34,7 +34,7 @@ function ThirdStep(props){
     {
         props.setTestSection("true");
         props.setNotify("test")
-        phoneBook.at(4).real = false;
+        phoneBook.at(6).real = false;
     }
 }
 
@@ -70,7 +70,7 @@ function FinalBranchingVideo(props){
     if (isLocalSession) lacalCompletionStatus = "completed";
     else ScormProcessSetValue("cmi.completion_status", "completed");
     EmailText.at(0).display = true;
-    phoneBook.at(4).real = false;
+    phoneBook.at(6).real = false;
     ScormProcessSetValue("cmi.suspend_data", 0);
 }
 
