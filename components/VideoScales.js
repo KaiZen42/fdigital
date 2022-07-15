@@ -143,8 +143,6 @@ const VideoScales = (props) => {
 					<h4 className="adaptToPhone">{videoScale.at(iter).description}</h4>
 				</Grid>
 				<Grid container direction="column" justifyContent="flex-end" flexWrap="nowrap" alignItems="center" sx={{color: 'white', '@media (min-width: 415px)': {height: '50%'}}}>
-				<ThemeProvider theme={theme}>
-				</ThemeProvider>
 				<Slider
 					defaultValue={4}
 					onChange={handleChange}
