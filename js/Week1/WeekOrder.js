@@ -1,6 +1,8 @@
 let numOfWeek = 1;
 let company = "L'Mane"
 let videoBoss = "media/Weeks/Week2/Boss/boss.mp4"
+let type = 0;
+let whichVideo;
 
 function InitialState(props){
     if(props.notify != "rubrica")
@@ -8,6 +10,7 @@ function InitialState(props){
         EmailText.at(0).display = false;
         phoneBook.at(1).real = true;
         props.setNotify("rubrica");
+        type = 0;
     }
 }
 
@@ -15,26 +18,25 @@ function FirstStep(props){
     if(props.notify != "rubrica" && props.notify != "inbox")
     {
         props.setNotify("rubrica")
-        phoneBook.at(0).real = true
-        phoneBook.at(1).real = false;
+        phoneBook.at(1).real = true;
+        type = 1;
     }
 }
 
 function SecondStep(props){
-    if(props.notify != "library")
+    if(props.notify != "rubrica")
     {
-        props.setNotify("library")
-        phoneBook.at(2).real = true;
-        phoneBook.at(1).real = false;
+        props.setNotify("rubrica")
+        phoneBook.at(1).real = true;
+        type = 2;
     }
 }
 
 function ThirdStep(props){
-    if(props.notify != "test")
+    if(props.notify != "email")
     {
         props.setTestSection("true");
-        props.setNotify("test")
-        phoneBook.at(2).real = false;
+        props.setNotify("email")
     }
 }
 
@@ -56,8 +58,8 @@ function FinalScalesVideo1(props){
     props.setX("rubric");
     props.setNotify("home");
     phoneBook.at(1).real = false
-    if (isLocalSession) lacalCompletionStatus = "not attempted";
-    else ScormProcessSetValue("cmi.completion_status", "not attempted");
+    if (isLocalSession) lacalCompletionStatus = "incomplete";
+    else ScormProcessSetValue("cmi.completion_status", "incomplete");
     // indice = 1;
     main.style.boxShadow = "";
     main.style.transition = ""
@@ -70,8 +72,8 @@ function FinalScalesVideo2(props){
     props.setX("rubric");
     props.setNotify("home");
     phoneBook.at(1).real = false
-    if (isLocalSession) lacalCompletionStatus = "not attempted";
-    else ScormProcessSetValue("cmi.completion_status", "not attempted");
+    if (isLocalSession) lacalCompletionStatus = "complete";
+    else ScormProcessSetValue("cmi.completion_status", "complete");
     // indice = 1;
     main.style.boxShadow = "";
     main.style.transition = ""
@@ -79,6 +81,8 @@ function FinalScalesVideo2(props){
     props.deactivate.current.style.pointerEvents = '';
     props.deactivate.current.style.color = '';
     ScormProcessSetValue("cmi.suspend_data", 0);
+    EmailText.at(whichVideo).display = true;
+    props.setEmailCount(emailLen());
 }
 function FinalSimpleVideo(props){
     console.log("ciao")

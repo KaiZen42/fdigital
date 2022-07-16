@@ -16,12 +16,20 @@ const Email = () => {
 		  </div>
 
 
-		  <div className="modal-body">
-			<h5>{inbox.emailHead}</h5>
-			<br/>
-			{inbox.email}
-			<br/>
-			<br/>
+		  <div className="modal-body" style={{padding: inbox.videoPath ? '10rem' : '1rem'}}>
+			  <h5>{inbox.emailHead}</h5>
+			{inbox.videoPath ? 
+				<video id="video" className="video-responsive" controls muted={""}>
+					<source src={inbox.videoPath} type="video/mp4"></source>
+				</video>
+			:
+			<>
+				<br/>
+				{inbox.email}
+				<br/>
+				<br/>
+			</>
+			}
 			<h6>{inbox.emailFooter}</h6>
 		  </div>
 		  <div className="modal-footer">

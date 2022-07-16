@@ -14,7 +14,7 @@ const VideoScales = (props) => {
 	const [result, setResult] = React.useState(ScormProcessGetValue("cmi.progress_measure") ? ScormProcessGetValue("cmi.progress_measure") * 10 * iter : 0);
 	const [first, setFirst] = React.useState(true);
 	let endCall = false;
-	let type = 2;
+
 
 	function findColor(){
 		if(iter == 0 && first && type == 0)
@@ -145,7 +145,10 @@ const VideoScales = (props) => {
 		if(type == 1)
 			FinalScalesVideo1(props);
 		if(type == 2)
+		{
+			whichVideo = 2;
 			FinalScalesVideo2(props);
+		}
 	}
 
     return(
