@@ -22,7 +22,8 @@ const Inbox = (props) => {
 		  }
 	  }
    
-    Event1(props, i);
+    if(numOfWeek != 1)
+      Event1(props, i);
                 //   if(i == 0)
                 //   {
                 //      props.setNotify("home");

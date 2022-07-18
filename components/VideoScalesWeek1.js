@@ -156,19 +156,6 @@ const VideoScales = (props) => {
 		}
 	}
 
-	function fineVideo(){
-		if(type == 0)
-			FinalScalesVideo(props);
-		if(type == 1)
-			FinalScalesVideo1(props);
-		if(type == 2)
-		{
-			console.log(email);
-			whichVideo = email;
-			FinalScalesVideo2(props);
-		}
-	}
-
     return(
 		<>
 		{/* PERSONAL SCALES */}
@@ -229,11 +216,11 @@ const VideoScales = (props) => {
 					<video id="video" className="video-responsive" autoPlay>
 						<source src={videoPath} type="video/mp4"></source>
 					</video>
-					<Grid container direction="column" justifyContent="center" alignItems="flex-end" sx={{ justifyContent: 'space-between', alignItems: 'center', height: '33vh'}}>
+					<Grid container direction="column" justifyContent="center" alignItems="flex-end" sx={{ justifyContent: 'space-between', alignItems: 'center', height: '46vh'}}>
 					<ThemeProvider theme={theme}>
 						<div></div>
 						<h4 style={{position: 'relative'}} className="scritta2">Thanks! Bye</h4>
-						<IconButton sx={{border: 3}} size="large" type="button" variant="outlined" color="error" onClick={() => fineVideo()}><i className="bi bi-telephone-fill"></i></IconButton>
+						<IconButton sx={{border: 3}} size="large" type="button" variant="outlined" color="error" onClick={() => FinalScalesVideo(props)}><i className="bi bi-telephone-fill"></i></IconButton>
 					</ThemeProvider>
 					</Grid>
 					</>
@@ -298,11 +285,11 @@ const VideoScales = (props) => {
 					<video id="video" className="video-responsive" autoPlay>
 						<source src={videoPath} type="video/mp4"></source>
 					</video>
-					<Grid container direction="column" justifyContent="center" alignItems="flex-end" sx={{ justifyContent: 'space-between', alignItems: 'center', height: '33vh'}}>
+					<Grid container direction="column" justifyContent="center" alignItems="flex-end" sx={{ justifyContent: 'space-between', alignItems: 'center', height: '46vh'}}>
 					<ThemeProvider theme={theme}>
 						<div></div>
 						<h4 style={{position: 'relative'}} className="scritta2">Thanks! Bye</h4>
-						<IconButton sx={{border: 3}} size="large" type="button" variant="outlined" color="error" onClick={() => fineVideo()}><i className="bi bi-telephone-fill"></i></IconButton>
+						<IconButton sx={{border: 3}} size="large" type="button" variant="outlined" color="error" onClick={() => FinalScalesVideo1(props)}><i className="bi bi-telephone-fill"></i></IconButton>
 					</ThemeProvider>
 					</Grid>
 					</>
@@ -370,11 +357,11 @@ const VideoScales = (props) => {
 					<video id="video" className="video-responsive" autoPlay muted>
 						<source src={videoPath} type="video/mp4"></source>
 					</video>
-					<Grid container direction="column" justifyContent="center" alignItems="flex-end" sx={{ justifyContent: 'space-between', alignItems: 'center', height: '33vh'}}>
+					<Grid container direction="column" justifyContent="center" alignItems="flex-end" sx={{ justifyContent: 'space-between', alignItems: 'center', height: '46vh'}}>
 					<ThemeProvider theme={theme}>
 						<div></div>
 						<h4 style={{position: 'relative'}} className="scritta2">Thanks! Bye</h4>
-						<IconButton sx={{border: 3}} size="large" type="button" variant="outlined" color="error" onClick={() => fineVideo()}><i className="bi bi-telephone-fill"></i></IconButton>
+						<IconButton sx={{border: 3}} size="large" type="button" variant="outlined" color="error" onClick={() => FinalScalesVideo2(props)}><i className="bi bi-telephone-fill"></i></IconButton>
 					</ThemeProvider>
 					</Grid>
 					</>

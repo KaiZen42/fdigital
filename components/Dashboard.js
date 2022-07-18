@@ -19,7 +19,7 @@ const Dashboard = (props) => {
 		: completionStatus == "completed" && successStatus == "unknown" ? 3 
 		: completionStatus == "completed" && successStatus == "passed" ? 4 
 		: 42;
-	actualStatus = 3
+
 	if(document.getElementById('main'))
 	{
 		const main = document.getElementById('main');
@@ -29,6 +29,7 @@ const Dashboard = (props) => {
 	for(let k = 0; k < numOfWeek; k++)
 		weeks.at(k).display = true;
 
+	console.log("stato",actualStatus, "successo", successStatus)
 	function changeState(){
 		if(actualStatus == 0)
 		{

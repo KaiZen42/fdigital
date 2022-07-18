@@ -7,9 +7,9 @@ let whichVideo;
 function InitialState(props){
     if(props.notify != "rubrica")
     {
+        props.setNotify("rubrica");
         EmailText.at(0).display = false;
         phoneBook.at(1).real = true;
-        props.setNotify("rubrica");
         type = 0;
     }
 }
@@ -33,12 +33,12 @@ function SecondStep(props){
 }
 
 function ThirdStep(props){
-    if(props.notify != "email")
+
+    if(props.notify != "test")
     {
         EmailText.at(whichVideo).display = true;
-        console.log("email", emailLen())
-        props.setEmailCount(emailLen());
         props.setNotify("email")
+        props.setEmailCount(emailLen());
     }
 }
 
@@ -85,41 +85,9 @@ function FinalScalesVideo2(props){
     props.setNotify("home");
 
 }
-function FinalSimpleVideo(props){
-    console.log("ciao")
-    props.setX("rubric");
-    props.setNotify("inbox");
-    EmailText.at(0).display = true;
-    phoneBook.at(0).real = false;
-    props.setEmailCount(emailLen()); 
-    props.deactivate.current.style.pointerEvents = '';
-    props.deactivate.current.style.color = '';
-}
-function FinalBranchingVideo(props){
-    props.deactivate.current.style.pointerEvents = "";
-    props.deactivate.current.style.color = "";
-    props.setX("rubric");
-    props.setNotify("home");
-    if (isLocalSession) lacalCompletionStatus = "completed";
-    else ScormProcessSetValue("cmi.completion_status", "completed");
-    EmailText.at(0).display = true;
-    phoneBook.at(2).real = false;
-    ScormProcessSetValue("cmi.suspend_data", 0);
-}
 
-function AfterTest(props){
-    if(isLocalSession){
-        lacalCompletionStatus = "completed";
-        localSuccessStatus = "passed";
-      }
-      else{
-        ScormProcessSetValue("cmi.completion_status", "completed");
-        ScormProcessSetValue("cmi.success_status", "passed");
-      }
-      props.setTestSection(false);
-      props.setNotify("");
-}
-function AfterVideoFinal(){
+
+function AfterVideoFinal(e){
     if(isLocalSession){
         lacalCompletionStatus = "completed";
         localSuccessStatus = "passed";
