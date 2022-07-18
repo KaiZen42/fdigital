@@ -16,10 +16,10 @@ const Email = () => {
 		  </div>
 
 
-		  <div className="modal-body" style={{padding: inbox.videoPath ? '10rem' : '1rem'}}>
+		  <div className="modal-body" style={{padding: inbox.videoPath ? '16vw' : '1rem'}}>
 			  <h5>{inbox.emailHead}</h5>
 			{inbox.videoPath ? 
-				<video id="video" className="video-responsive" controls muted={""}>
+				<video id="video" className="video-responsive" onEnded={()=> AfterVideoFinal()} controls muted={""}>
 					<source src={inbox.videoPath} type="video/mp4"></source>
 				</video>
 			:

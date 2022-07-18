@@ -24,7 +24,7 @@ const Begin = (props) => {
 		  realVideo: <RealCall who={who} x={x} setX={setX} deactivate={props.deactivate}/>,
 		  realScales: <RealCall who={who} x={x} setX={setX} deactivate={props.deactivate}/>,
 		  branching: <Branching x={x} setX={setX} setNotify={props.setNotify} setEmailCount={props.setEmailCount} setTestSection={props.setTestSection} deactivate={props.deactivate}/>,
-		  scales: <VideoScales x={x} setX={setX} setNotify={props.setNotify} setDeactivate={props.setDeactivate} deactivate={props.deactivate}/>,
+		  scales: <VideoScales x={x} setX={setX} setNotify={props.setNotify} setDeactivate={props.setDeactivate} deactivate={props.deactivate} setEmailCount={props.setEmailCount}/>,
 		  video: <VideoSimple x={x} setX={setX} setNotify={props.setNotify} setEmailCount={props.setEmailCount} deactivate={props.deactivate}/>
 		};
 		

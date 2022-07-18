@@ -35,7 +35,9 @@ function SecondStep(props){
 function ThirdStep(props){
     if(props.notify != "email")
     {
-        props.setTestSection("true");
+        EmailText.at(whichVideo).display = true;
+        console.log("email", emailLen())
+        props.setEmailCount(emailLen());
         props.setNotify("email")
     }
 }
@@ -69,11 +71,8 @@ function FinalScalesVideo1(props){
     ScormProcessSetValue("cmi.suspend_data", 0);
 }
 function FinalScalesVideo2(props){
-    props.setX("rubric");
-    props.setNotify("home");
-    phoneBook.at(1).real = false
-    if (isLocalSession) lacalCompletionStatus = "complete";
-    else ScormProcessSetValue("cmi.completion_status", "complete");
+    if (isLocalSession) lacalCompletionStatus = "completed";
+    else ScormProcessSetValue("cmi.completion_status", "completed");
     // indice = 1;
     main.style.boxShadow = "";
     main.style.transition = ""
@@ -81,8 +80,10 @@ function FinalScalesVideo2(props){
     props.deactivate.current.style.pointerEvents = '';
     props.deactivate.current.style.color = '';
     ScormProcessSetValue("cmi.suspend_data", 0);
-    EmailText.at(whichVideo).display = true;
-    props.setEmailCount(emailLen());
+    phoneBook.at(1).real = false
+    props.setX("rubric");
+    props.setNotify("home");
+
 }
 function FinalSimpleVideo(props){
     console.log("ciao")
@@ -117,6 +118,16 @@ function AfterTest(props){
       }
       props.setTestSection(false);
       props.setNotify("");
+}
+function AfterVideoFinal(){
+    if(isLocalSession){
+        lacalCompletionStatus = "completed";
+        localSuccessStatus = "passed";
+      }
+      else{
+        ScormProcessSetValue("cmi.completion_status", "completed");
+        ScormProcessSetValue("cmi.success_status", "passed");
+      }
 }
 
 function Event1(props, i){

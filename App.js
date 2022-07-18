@@ -246,7 +246,7 @@ const Home = () => {
 				<Clock/>
 			</Grid>
 			<main id="main" className="main container col-md-9 ml-sm-auto col-lg-10 px-4 d-flex justify-content-between flex-wrap flex-nowrap align-items-center pt-3 pb-2 mb-3">
-				<Route path={`${locPath}`} exact component={() => <Dashboard setNotify={setNotify} notify={notify} setTestSection={setTestSection}/>}/>
+				<Route path={`${locPath}`} exact component={() => <Dashboard setNotify={setNotify} notify={notify} setTestSection={setTestSection} setEmailCount={setEmailCount}/>}/>
 				<Route path={`${loc}profile`} component={Profile} />
 				<Route path={`${loc}inbox`} component={() => <Inbox setEmailCount={setEmailCount} setTestSection={setTestSection} setNotify={setNotify}/>} />
 				<Route path={`${loc}contacts`} component={() => <Begin setNotify={setNotify} setTestSection={setTestSection} setEmailCount={setEmailCount} deactivate={deactivate}/>} />

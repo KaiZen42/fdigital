@@ -13,7 +13,10 @@ const VideoScales = (props) => {
 	const [iterQuestion, setIterQuestion] = React.useState(0);
 	const [result, setResult] = React.useState(ScormProcessGetValue("cmi.progress_measure") ? ScormProcessGetValue("cmi.progress_measure") * 10 * iter : 0);
 	const [first, setFirst] = React.useState(true);
+	const [email, setEmail] = React.useState(0);
+	const [resultLow, setResultLow] = React.useState(7);
 	let endCall = false;
+
 
 
 	function findColor(){
@@ -26,6 +29,8 @@ const VideoScales = (props) => {
 		if((iter == 0 && !first) || type == 0)
 			return "media/ScalesColor/IntroSfondo.mp4"
 		let divid = result / iter;
+		if(type == 2)
+			divid = result;
 		if(divid < 2)
 			return "media/ScalesColor/1.mp4"
 		else if(divid < 3)
@@ -51,23 +56,50 @@ const VideoScales = (props) => {
 			setFirst(false);
 	}
 
-	function newQuest(){
-		if (arguments.length == 1){
-			if(iterQuestion < videoScale1.at(iter).numQuestion)
-				setIterQuestion(iterQuestion + 1);
-			else if(iter < videoScale1.length)
-			{
-				setIter(iter + 1)
-				setIterQuestion(0)
-			}
-			else
-				endCall = true;
-		}
-		else{
-			(iter < arguments[1].length) ? setIter(iter + 1) : endCall = true;
-			(type != 2) ? setResult(value + result) : setResult(value);
-		}
+	function newQuest(e, videoScale){
+		if(iter < videoScale.length)
+			setIter(iter + 1);
+		else
+			endCall = true;
 		setEnd(false);
+		if(type != 2)
+			setResult(value + result);
+		else
+			setResult(value);
+		setValue(4);
+	}
+
+	function newQuest1(e){
+		if(iterQuestion < videoScale1.at(iter).numQuestion)
+			setIterQuestion(iterQuestion + 1);
+		else if(iter < videoScale1.length)
+		{
+			setIter(iter + 1)
+			setIterQuestion(0)
+		}
+		else
+			endCall = true;
+		setEnd(false);
+		setValue(4);
+	}
+
+	function newQuest2(e, videoScale, int){
+		let valore = value;
+		if(int == 1)
+			valore = 4;
+		if(iter < videoScale.length)
+			setIter(iter + 1);
+		else
+			endCall = true;
+		setEnd(false);
+		console.log("result", result, "value", value, "iter", iter);
+		if(resultLow > valore)
+		{
+			console.log("result", resultLow)
+			setResultLow(valore);
+			setEmail(iter);
+		}
+		setResult(valore);
 		setValue(4);
 	}
 	
@@ -131,27 +163,11 @@ const VideoScales = (props) => {
 			FinalScalesVideo1(props);
 		if(type == 2)
 		{
-			whichVideo = 2;
+			console.log(email);
+			whichVideo = email;
 			FinalScalesVideo2(props);
 		}
 	}
-
-	const FinalVideo = () => {
-		return (
-			<>
-			<video id="video" className="video-responsive" autoPlay>
-				<source src={videoPath} type="video/mp4"></source>
-			</video>
-			<Grid container direction="column" justifyContent="center" alignItems="flex-end" sx={{ justifyContent: 'space-between', alignItems: 'center', height: '33vh'}}>
-			<ThemeProvider theme={theme}>
-				<div></div>
-				<h4 style={{position: 'relative'}} className="scritta2">Thanks! Bye</h4>
-				<IconButton sx={{border: 3}} size="large" type="button" variant="outlined" color="error" onClick={() => fineVideo()}><i className="bi bi-telephone-fill"></i></IconButton>
-			</ThemeProvider>
-			</Grid>
-			</>
-		)
-	} 
 
     return(
 		<>
@@ -202,13 +218,26 @@ const VideoScales = (props) => {
 					aria-labelledby=""
 					valueLabelDisplay="auto"
 					sx={{width: "40%", minWidth: "30vh", height: "7px"}}/>}
-					<Button type="button" variant="outlined" sx={{margin: 1}} onClick={(e) => newQuest(e)}>NEXT</Button>
+					<Button type="button" variant="outlined" sx={{margin: 1}} onClick={(e) => newQuest1(e)}>NEXT</Button>
 				</Grid>
 				</Grid>
 				</ThemeProvider>
 				</>
 				)}
-				{iter == videoScale1.length && (<FinalVideo/>)}
+				{iter == videoScale1.length && (
+					<>
+					<video id="video" className="video-responsive" autoPlay>
+						<source src={videoPath} type="video/mp4"></source>
+					</video>
+					<Grid container direction="column" justifyContent="center" alignItems="flex-end" sx={{ justifyContent: 'space-between', alignItems: 'center', height: '33vh'}}>
+					<ThemeProvider theme={theme}>
+						<div></div>
+						<h4 style={{position: 'relative'}} className="scritta2">Thanks! Bye</h4>
+						<IconButton sx={{border: 3}} size="large" type="button" variant="outlined" color="error" onClick={() => fineVideo()}><i className="bi bi-telephone-fill"></i></IconButton>
+					</ThemeProvider>
+					</Grid>
+					</>
+				)}
 				<Webcam className="webcam" id="webcam" muted/>
 		</Box>}
 		{/* GENERAL BEHAVIOUR */}
@@ -264,7 +293,20 @@ const VideoScales = (props) => {
 				</ThemeProvider>
 				</>
 				)}
-				{iter == videoScale2.length && (<FinalVideo/>)}
+				{iter == videoScale2.length && (
+					<>
+					<video id="video" className="video-responsive" autoPlay>
+						<source src={videoPath} type="video/mp4"></source>
+					</video>
+					<Grid container direction="column" justifyContent="center" alignItems="flex-end" sx={{ justifyContent: 'space-between', alignItems: 'center', height: '33vh'}}>
+					<ThemeProvider theme={theme}>
+						<div></div>
+						<h4 style={{position: 'relative'}} className="scritta2">Thanks! Bye</h4>
+						<IconButton sx={{border: 3}} size="large" type="button" variant="outlined" color="error" onClick={() => fineVideo()}><i className="bi bi-telephone-fill"></i></IconButton>
+					</ThemeProvider>
+					</Grid>
+					</>
+				)}
 				<Webcam className="webcam" id="webcam" muted/>
 		</Box>}
 		{/* SPECIFIC BEHAVIOUR */}
@@ -314,14 +356,29 @@ const VideoScales = (props) => {
 					aria-labelledby=""
 					valueLabelDisplay="auto"
 					sx={{width: "40%", minWidth: "30vh", height: "7px"}}/>
-					<Button type="button" variant="outlined" sx={{margin: 1}} onClick={(e) => newQuest(e, videoScale3)}>NEXT</Button>
-					{/* <Button type="button" variant="outlined" sx={{margin: 1}} onClick={(e) => newQuest(e, videoScale3)}>SKIP</Button> */}
+					<Grid container direction="row" justifyContent="center" textAlign="center">
+						<Button type="button" variant="outlined" sx={{margin: 1}} onClick={(e) => newQuest2(e, videoScale3, 0)}>NEXT</Button>
+						<Button type="button" variant="outlined" sx={{margin: 1}} onClick={(e) => newQuest2(e, videoScale3, 1)}>SKIP</Button>
+					</Grid>
 				</Grid>
 				</Grid>
 				</ThemeProvider>
 				</>
 				)}
-				{iter == videoScale3.length && (<FinalVideo/>)}
+				{iter == videoScale3.length && (
+					<>
+					<video id="video" className="video-responsive" autoPlay muted>
+						<source src={videoPath} type="video/mp4"></source>
+					</video>
+					<Grid container direction="column" justifyContent="center" alignItems="flex-end" sx={{ justifyContent: 'space-between', alignItems: 'center', height: '33vh'}}>
+					<ThemeProvider theme={theme}>
+						<div></div>
+						<h4 style={{position: 'relative'}} className="scritta2">Thanks! Bye</h4>
+						<IconButton sx={{border: 3}} size="large" type="button" variant="outlined" color="error" onClick={() => fineVideo()}><i className="bi bi-telephone-fill"></i></IconButton>
+					</ThemeProvider>
+					</Grid>
+					</>
+				)}
 				<Webcam className="webcam" id="webcam" muted/>
 		</Box>}
 		</>

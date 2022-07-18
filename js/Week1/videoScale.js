@@ -4,13 +4,13 @@ const videoScale1=[
         "id-q": "1",
         "title": "Critical thinking1",
         "description": "Critical thinking refers to the degree to which students report applying previous knowledge to new situations in order to solve problems, reach decisions, or make critical evaluations with respect to standards of excellence. It is measured by the scale of Pintrich et al., 1991, extracted from the Motivated Strategies for Learning Questionnaire (MSLQ) Please answer on a scale from 1(totally disagree) to 7 (totally agree) how much do you agree with the following statements: ",
-        "numQuestion": 5,
+        "numQuestion": 1,
         "questions": {
             "1": "1 I often find myself questioning things I hear or read in courses to decide if I find them convincing",
             "2": "2 When a theory, interpretation, or conclusion is presented in class or in readings, I try to decide if there is good supporting evidence",
-            // "3": "3 I treat the courses’ material as a starting point to develop my own ideas about a topic/issue",
-            // "4": "4 I try to play around with ideas of my own related to what I learn in courses",
-            // "5": "5 Whenever I read or hear an assertion or conclusion in courses, I think about possible alternatives"
+            "3": "3 I treat the courses’ material as a starting point to develop my own ideas about a topic/issue",
+            "4": "4 I try to play around with ideas of my own related to what I learn in courses",
+            "5": "5 Whenever I read or hear an assertion or conclusion in courses, I think about possible alternatives"
         }
     },
     // {
