@@ -4,7 +4,7 @@ const videoScale1=[
         "id-q": "1",
         "title": "Critical thinking1",
         "description": "Critical thinking refers to the degree to which students report applying previous knowledge to new situations in order to solve problems, reach decisions, or make critical evaluations with respect to standards of excellence. It is measured by the scale of Pintrich et al., 1991, extracted from the Motivated Strategies for Learning Questionnaire (MSLQ) Please answer on a scale from 1(totally disagree) to 7 (totally agree) how much do you agree with the following statements: ",
-        "numQuestion": 1,
+        "numQuestion": 5,
         "questions": {
             "1": "1 I often find myself questioning things I hear or read in courses to decide if I find them convincing",
             "2": "2 When a theory, interpretation, or conclusion is presented in class or in readings, I try to decide if there is good supporting evidence",
@@ -53,18 +53,18 @@ const videoScale2=[
     {
         description:"I live sustainably as much as possible "
     },
-    // {
-    //     description:"I read a lot about sustainability"
-    // },
-    // {
-    //     description:"I live sustainably because many people around me do so as well"
-    // },
-    // {
-    //     description:"I encourage those around me to live sustainably"
-    // },
-    // {
-    //     description:"I go to meetings about sustainability"
-    // },
+    {
+        description:"I read a lot about sustainability"
+    },
+    {
+        description:"I live sustainably because many people around me do so as well"
+    },
+    {
+        description:"I encourage those around me to live sustainably"
+    },
+    {
+        description:"I go to meetings about sustainability"
+    },
 ]	
 const introScales3="media/Weeks/Week1/Scales/SpecificBehaviours.mp4"
 const videoScale3=[

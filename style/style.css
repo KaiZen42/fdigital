@@ -77,8 +77,8 @@ body {
   background-color: #15345242;
   z-index: 2000;
   border-radius: 6%;
-  width: 12vw;
-  height: 5vw;
+  width: 10vh;
+  height: 4vh;
   position: absolute;
   pointer-events: none;
   top: 1;

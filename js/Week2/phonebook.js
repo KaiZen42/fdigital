@@ -15,7 +15,7 @@ const phoneBook = [
     },
     {
         nome: "L'Mane",
-        img: "media/L'MANE.png",
+        img: "media/L'Mane.png",
         text: "The contemporary luxury brand reinventing modern elegance.",
         type: "interview",
         real: false
@@ -36,7 +36,7 @@ const phoneBook = [
     },
     {
         nome: "GreenPea",
-        img: "media/GreenPea.png",
+        img: "media/Greenpea.png",
         text: "The first Green Retail Park in the world dedicated to the theme of Respect. 15,000 m2 over 5 floors where products, created in harmony with Earth, Air, Water and People, are not a duty but become a pleasure.",
         type: "fake",
         real: false
