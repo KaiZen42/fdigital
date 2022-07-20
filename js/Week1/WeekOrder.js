@@ -49,9 +49,6 @@ function FinalScalesVideo(props){
     if (isLocalSession) lacalCompletionStatus = "not attempted";
     else ScormProcessSetValue("cmi.completion_status", "not attempted");
     // indice = 1;
-    main.style.boxShadow = "";
-    main.style.transition = ""
-    main.style.borderRadius = "";
     props.deactivate.current.style.pointerEvents = '';
     props.deactivate.current.style.color = '';
     ScormProcessSetValue("cmi.suspend_data", 0);
@@ -88,6 +85,7 @@ function FinalScalesVideo2(props){
 
 
 function AfterVideoFinal(e){
+    console.log("AfterVideoFinal");
     if(isLocalSession){
         lacalCompletionStatus = "completed";
         localSuccessStatus = "passed";
@@ -96,6 +94,23 @@ function AfterVideoFinal(e){
         ScormProcessSetValue("cmi.completion_status", "completed");
         ScormProcessSetValue("cmi.success_status", "passed");
       }
+}
+
+function Finish(props){
+    console.log("Finish");
+    if(isLocalSession){
+        lacalCompletionStatus = "completed";
+        localSuccessStatus = "passed";
+      }
+      else{
+        ScormProcessSetValue("cmi.completion_status", "completed");
+        ScormProcessSetValue("cmi.success_status", "passed");
+      }
+      props.setTestSection(false);
+      props.setNotify("");
+    }
+function AfterTest(props){
+    FinalScalesVideo(props);
 }
 
 function Event1(props, i){

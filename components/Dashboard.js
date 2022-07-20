@@ -48,7 +48,12 @@ const Dashboard = (props) => {
 			ThirdStep(props);
 		}
 		else if (actualStatus == 4)
+		{
 			weeks.at(numOfWeek).display = true;
+			if(numOfWeek == 1)
+				Finish(props);
+				
+		}
 	}
 
   return (

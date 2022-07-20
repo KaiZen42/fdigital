@@ -5,11 +5,11 @@ const steps = [
 	},
 	{
 		label: 'Step 2',
-		description: 'Now Simona will ask you questions about general behavior. There will be an indicator which will take an average of responses. The answer will be ethically correct when the indicator turns green, in the opposite case, the indicator turns red. Call her in the contact section and answer the questions she will ask you.'
+		description: 'Now Simona will ask you questions about general behavior. There will be an indicator which will take an average of responses. On the basis of your answers, the screen will take a different color. It will turn green if you score above the average of the scale; yellow if you provide the average of the scale as an answer; red if you score below the average of the scale. Call her in the contact section and answer the questions she will ask you.'
 	},
 	{
 		label: 'Step 3',
-		description: 'Simona has yet to ask you other questions, this time the questions will be on their own and you will receive feedback depending on the answers. You can skip if you don\'t want to answer, but at least one question will have to be answered. Go to the contact section and call Simona!'
+		description: 'Your interview with Simona is not finished yet. She has other questions for you; this time on specific behaviours you perform. On the basis of your answers, you will receive a feedback and instructions for the next activity you have to complete. Go to the contact section and call Simona!'
 	},
 	{
 		label: 'Step 4',

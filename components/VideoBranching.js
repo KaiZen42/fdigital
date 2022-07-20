@@ -126,7 +126,7 @@ const Branching = (props) => {
       <>
         <div className="sfondo" id="sfondo">
           <div className="fullScreen">
-            <Button onClick={handleFullScreenEvent} sx={{ color: "#003a70"}}>
+            <Button onClick={handleFullScreenEvent} sx={{ color: "white"}}>
               <i className="bi bi-arrows-fullscreen"></i>
             </Button>
           </div>
@@ -212,7 +212,7 @@ const Branching = (props) => {
               <div className="repeat">
                 <Button
                   className="buttonRepeat"
-                  sx={{color: "#003a70"}}
+                  sx={{color: "white"}}
                   onClick={() => {
                     setEnd(false);
                   }}
@@ -224,6 +224,7 @@ const Branching = (props) => {
           )}
         </div>
         <Webcam className="webcam" id="webcam" muted />
+        <div className="bloccoGrigio"/>
         {numOfWeek == 3 && it <= videoQ.length &&
           <>
           <img className="similWebcam" id="similWebcam" src={findWhoTalk(it, 1)} />
@@ -253,6 +254,7 @@ const Branching = (props) => {
           ><source src={videoOutro}></source>
           </video>
           <Webcam className="webcam" id="webcam" muted />
+          <div className="bloccoGrigio"/>
           {numOfWeek == 3 && it <= videoQ.length &&
           <>
           <img className="similWebcam" id="similWebcam" src={findWhoTalk(it, 1)} />

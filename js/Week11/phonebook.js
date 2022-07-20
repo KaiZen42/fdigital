@@ -36,7 +36,7 @@ const phoneBook = [
     },
     {
         nome: "GreenPea",
-        img: "media/GreenPea.jpg",
+        img: "media/GreenPea.png",
         text: "The first Green Retail Park in the world dedicated to the theme of Respect. 15,000 m2 over 5 floors where products, created in harmony with Earth, Air, Water and People, are not a duty but become a pleasure.",
         type: "fake",
         real: false

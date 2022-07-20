@@ -18,10 +18,13 @@ const Email = () => {
 
 		  <div className="modal-body" style={{padding: inbox.videoPath ? '16vw' : '1rem'}}>
 			  <h5>{inbox.emailHead}</h5>
-			{inbox.videoPath ? 
+			{inbox.videoPath ?
+				<>
+				<h6>After watching the video go back to the home</h6>
 				<video id="video" className="video-responsive" onEnded={(e)=> AfterVideoFinal(e)} controls muted={""}>
 					<source src={inbox.videoPath} type="video/mp4"></source>
 				</video>
+				</>
 			:
 			<>
 				<br/>

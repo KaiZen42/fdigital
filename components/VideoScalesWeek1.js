@@ -13,8 +13,8 @@ const VideoScales = (props) => {
 	const [iterQuestion, setIterQuestion] = React.useState(0);
 	const [result, setResult] = React.useState(ScormProcessGetValue("cmi.progress_measure") ? ScormProcessGetValue("cmi.progress_measure") * 10 * iter : 0);
 	const [first, setFirst] = React.useState(true);
-	const [email, setEmail] = React.useState(0);
 	const [resultLow, setResultLow] = React.useState(7);
+	const [testFinish, setTestFinish] = React.useState(null);
 	let endCall = false;
 
 
@@ -97,7 +97,7 @@ const VideoScales = (props) => {
 		{
 			console.log("result", resultLow)
 			setResultLow(valore);
-			setEmail(iter);
+			whichVideo = iter;
 		}
 		setResult(valore);
 		setValue(4);
@@ -156,6 +156,15 @@ const VideoScales = (props) => {
 		}
 	}
 
+	let name = "vala";
+	let link = users.find(data => data["Last Name"] === name);
+
+	window.addEventListener("message", function (e) {
+		//   if (e.origin !== "http://localhost:8080") return;
+		if (e.data !== "qualtrix_survey") return;
+		setTestFinish(testFinish || testFinish == null ? false : true);
+	}, false);
+
     return(
 		<>
 		{/* PERSONAL SCALES */}
@@ -166,57 +175,22 @@ const VideoScales = (props) => {
 					<source src={videoPath} type="video/mp4"></source>
 				</video>
 			)}
-			{!first && !end && iter < videoScale1.length &&
-				(
-				<>
-					<video id="video" className="video-responsive" onEnded={first ? handleEndFirst : handleEnd} muted={first ? "" : "muted"} autoPlay >
-						<source src={videoPath} type="video/mp4"></source>
-					</video>
-					<ThemeProvider theme={theme}>
-					<Box className={iterQuestion == 0 ? "puff" : "scritta puff"} sx={{flexGrow: 1, position: 'relative'}}>
-						<Grid height="80%" container direction="row" justifyContent="center" textAlign="center" alignItems="flex-end" sx={{color: 'white'}}>
-							<h4 className="adaptToPhone">{iterQuestion == 0 ? videoScale1.at(iter).description : videoScale1.at(iter).questions[iterQuestion]}</h4>
-						</Grid>
-					</Box>
-					</ThemeProvider>
-				</>
-				)}
-				{end && iter < videoScale1.length && (
-				<>
-				<video id="video" className="video-responsive overlay" autoPlay muted loop>
-					<source src={videoPath} type="video/mp4"></source>
-				</video>
-				<ThemeProvider theme={theme}>
-				<Grid container direction="column" justifyContent="space-between" sx={{flexGrow: 1, '@media (max-width: 415px)': {paddingTop: "15vh"}, '@media (min-width: 415px)': {height: '100%'}}}>
-				<Grid className="scritta2" container direction="row" justifyContent="center" textAlign="center" alignItems="flex-end" sx={{color: 'white', position: 'relative', '@media (min-width: 415px)': {height: '50%'}}}>
-					<h4 className="adaptToPhone">{iterQuestion == 0 ? videoScale1.at(iter).description : videoScale1.at(iter).questions[iterQuestion]}</h4>
-				</Grid>
-				<Grid container direction="column" justifyContent="flex-end" flexWrap="nowrap" alignItems="center" sx={{color: 'white', '@media (min-width: 415px)': {height: '50%'}}}>
-				{iterQuestion != 0 &&
-				<Slider
-					defaultValue={4}
-					onChange={handleChange}
-					min={1}
-					step={1}
-					max={7}
-					marks={marks}
-					color="primary"
-					getAriaValueText={valuetext}
-					aria-labelledby=""
-					valueLabelDisplay="auto"
-					sx={{width: "40%", minWidth: "30vh", height: "7px"}}/>}
-					<Button type="button" variant="outlined" sx={{margin: 1}} onClick={(e) => newQuest1(e)}>NEXT</Button>
-				</Grid>
-				</Grid>
-				</ThemeProvider>
-				</>
-				)}
-				{iter == videoScale1.length && (
+			{!first && !end &&
+			<ThemeProvider theme={theme}>
+				<Box id="box" sx={{ flexGrow: 1, color: 'white', width: 'auto' }}>
+					{
+					<iframe style={{ height: "66vh", width: "100%", backgroundColor: "#003a7000" }} frameBorder="0" src={link.Link}></iframe>
+					}
+					<EndTest setTestSection={props.setTestSection} setEmailCount={props.setEmailCount} setNotify={props.setNotify} isEndButton={testFinish} setX={props.setX} deactivate={props.deactivate} />
+				</Box>
+			</ThemeProvider>
+			}
+				{/* {testFinish && (
 					<>
 					<video id="video" className="video-responsive" autoPlay>
 						<source src={videoPath} type="video/mp4"></source>
 					</video>
-					<Grid container direction="column" justifyContent="center" alignItems="flex-end" sx={{ justifyContent: 'space-between', alignItems: 'center', height: '46vh'}}>
+					<Grid container direction="column" justifyContent="center" alignItems="flex-end" sx={{ justifyContent: 'space-between', alignItems: 'center', height: '46vw'}}>
 					<ThemeProvider theme={theme}>
 						<div></div>
 						<h4 style={{position: 'relative'}} className="scritta2">Thanks! Bye</h4>
@@ -224,7 +198,7 @@ const VideoScales = (props) => {
 					</ThemeProvider>
 					</Grid>
 					</>
-				)}
+				)} */}
 				<Webcam className="webcam" id="webcam" muted/>
 		</Box>}
 		{/* GENERAL BEHAVIOUR */}
@@ -285,7 +259,7 @@ const VideoScales = (props) => {
 					<video id="video" className="video-responsive" autoPlay>
 						<source src={videoPath} type="video/mp4"></source>
 					</video>
-					<Grid container direction="column" justifyContent="center" alignItems="flex-end" sx={{ justifyContent: 'space-between', alignItems: 'center', height: '46vh'}}>
+					<Grid container direction="column" justifyContent="center" alignItems="flex-end" sx={{ justifyContent: 'space-between', alignItems: 'center', height: '46vw'}}>
 					<ThemeProvider theme={theme}>
 						<div></div>
 						<h4 style={{position: 'relative'}} className="scritta2">Thanks! Bye</h4>
@@ -357,7 +331,7 @@ const VideoScales = (props) => {
 					<video id="video" className="video-responsive" autoPlay muted>
 						<source src={videoPath} type="video/mp4"></source>
 					</video>
-					<Grid container direction="column" justifyContent="center" alignItems="flex-end" sx={{ justifyContent: 'space-between', alignItems: 'center', height: '46vh'}}>
+					<Grid container direction="column" justifyContent="center" alignItems="flex-end" sx={{ justifyContent: 'space-between', alignItems: 'center', height: '46vw'}}>
 					<ThemeProvider theme={theme}>
 						<div></div>
 						<h4 style={{position: 'relative'}} className="scritta2">Thanks! Bye</h4>

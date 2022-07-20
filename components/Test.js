@@ -71,10 +71,16 @@ function EndTest(props) {
 
 	return (
 		<>
-			{props.isEndButton &&
+			{numOfWeek != 1 && props.isEndButton &&
 				<Divider>
 					<Link exact onClick={handleEnd} to={`${locPath}`} className="nav-link"><i className="bi bi-house-fill"></i>Torna alla Home</Link>
 				</Divider>}
+			{numOfWeek == 1 && props.isEndButton &&
+				<ThemeProvider theme={theme}>
+					<Grid container direction="row" justifyContent="center" textAlign="center" alignItems="flex-end">
+					<IconButton sx={{border: 3}} size="large" type="button" variant="outlined" color="error" onClick={() => handleEnd(props)}><i className="bi bi-telephone-fill"></i></IconButton>
+					</Grid>
+				</ThemeProvider>}
 		</>
 	)
 }

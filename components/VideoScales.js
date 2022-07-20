@@ -177,7 +177,7 @@ const VideoScales = (props) => {
 					<video id="video" className="video-responsive" autoPlay>
 						<source src={videoPath} type="video/mp4"></source>
 					</video>
-					<Grid container direction="column" justifyContent="center" alignItems="flex-end" sx={{ justifyContent: 'space-between', alignItems: 'center', height: '46vh'}}>
+					<Grid container direction="column" justifyContent="center" alignItems="flex-end" sx={{ justifyContent: 'space-between', alignItems: 'center', height: '46vw'}}>
 					<ThemeProvider theme={theme}>
 						<div></div>
 						<h4 style={{position: 'relative'}} className="scritta2">Thanks! Bye</h4>

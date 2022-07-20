@@ -49,7 +49,6 @@ const Chart = () => {
 	'width': '100%',
 	'height':'auto',
 	legend: 'none',
-	is3D: true,
 	backgroundColor: 'transparent',
 	slices: {
 		0: {color: weeks.at(0).display ? weeks.at(0).color : weeks.at(0).grey, offset: numOfWeek == 1 ? 0.3 : 0.0},
