@@ -19,7 +19,7 @@ const Dashboard = (props) => {
 		: completionStatus == "completed" && successStatus == "unknown" ? 3 
 		: completionStatus == "completed" && successStatus == "passed" ? 4 
 		: 42;
-
+	actualStatus=2;
 	if(document.getElementById('main'))
 	{
 		const main = document.getElementById('main');

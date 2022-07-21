@@ -48,7 +48,7 @@ function TabPanel(props) {
           variant="scrollable"
           value={value}
           onChange={handleChange}
-          sx={{ borderRight: 1, borderColor: 'white', height: 'auto', minWidth: '10.5vh'}}
+          sx={{ borderRight: 1, borderColor: 'white', height: 'auto', width: '10.5vh', minWidth: 'max-content'}}
         >
           {phoneBook.map((contact, i) => (
           <Tab className={phoneBook.at(i).real == true ? "notify contactList" : "contactList"} key={i} sx={{color: 'white', alignItems: 'flex-end', textAlign:'end', padding: '7px 7px', border: 0.5, borderColor: 'black'}} label={contact.nome} {...a11yProps(i)} />
