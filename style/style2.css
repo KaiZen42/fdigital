@@ -6,7 +6,7 @@
 
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 body {
-    background-image: url("/media/sfondo.png");
+    background-image: url("../media/sfondo.png");
     background-color: #001e3a;
     font-family: 'Poppins', sans-serif;
     border-top: solid 3px linear-gradient(90deg, rgba(28,185,119,1) 0%, rgba(34,209,164,1) 51%, rgba(39,232,210,1) 100%);

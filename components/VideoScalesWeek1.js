@@ -52,7 +52,8 @@ const VideoScales = (props) => {
 			setEnd(true);	
 	}
 	const handleEndFirst = (e) => {
-		console.log("AOOOOO", end)
+		main.style.backgroundColor = "";
+		main.style.borderRadius = "";
 			setFirst(false);
 	}
 
@@ -171,10 +172,13 @@ const VideoScales = (props) => {
 		{type == 0 && 
 		<Box className="container" sx={{color: 'white'}}>
 			{first && !end &&
+			<>
 				(<video id="video" className="video-responsive" onEnded={handleEndFirst} muted={""} autoPlay >
 					<source src={videoPath} type="video/mp4"></source>
 				</video>
-			)}
+				<Webcam className="webcam" id="webcam" muted/>
+			)</>
+			}
 			{!first && !end &&
 			<ThemeProvider theme={theme}>
 				<Box id="box" sx={{ flexGrow: 1, color: 'white', width: 'auto' }}>
@@ -199,7 +203,7 @@ const VideoScales = (props) => {
 					</Grid>
 					</>
 				)} */}
-				<Webcam className="webcam" id="webcam" muted/>
+				
 		</Box>}
 		{/* GENERAL BEHAVIOUR */}
 		{type == 1 && 

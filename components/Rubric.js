@@ -42,13 +42,13 @@ function TabPanel(props) {
 	const main = document.getElementById('main');
 	main.style.height = "auto";
     return (
-      <Box sx={{ flexGrow: 1, display: 'flex', bgcolor: '#003a7091', display: 'flex', height: 'auto', maxWidth: '80vh', minHeight: '55vh', boxShadow: '0 0 4px 4px rgba(255, 255, 255, 0.518)' }}>
+      <Box sx={{display: 'flex', bgcolor: '#003a7091', display: 'flex', height: 'auto', maxWidth: '80vh', minHeight: '55vh', boxShadow: '0 0 4px 4px rgba(255, 255, 255, 0.518)' }}>
         <Tabs
           orientation="vertical"
           variant="scrollable"
           value={value}
           onChange={handleChange}
-          sx={{ borderRight: 1, borderColor: 'white', height: 'auto', minWidth: '13vh'}}
+          sx={{ borderRight: 1, borderColor: 'white', height: 'auto', minWidth: '10.5vh'}}
         >
           {phoneBook.map((contact, i) => (
           <Tab className={phoneBook.at(i).real == true ? "notify contactList" : "contactList"} key={i} sx={{color: 'white', alignItems: 'flex-end', textAlign:'end', padding: '7px 7px', border: 0.5, borderColor: 'black'}} label={contact.nome} {...a11yProps(i)} />

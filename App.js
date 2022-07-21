@@ -1,15 +1,15 @@
 
-let numQuestion = 0; // question number
-let scoretotal = 0;  //The total score the user earns with correct answers.  
-let attempts = 0; //Number of attempts taken per quiz item. 
-let callSucceededData; //SCORM call back variable for data that has been submitted to the LMS.
-let callSucceededSave;  //SCORM call back for if it saved properly. 
-let callSucceededQuit; //SCORM call back for quitting the application.
-let n = 0;
-let f = 0;
+// let numQuestion = 0; // question number
+// let scoretotal = 0;  //The total score the user earns with correct answers.  
+// let attempts = 0; //Number of attempts taken per quiz item. 
+// let callSucceededData; //SCORM call back variable for data that has been submitted to the LMS.
+// let callSucceededSave;  //SCORM call back for if it saved properly. 
+// let callSucceededQuit; //SCORM call back for quitting the application.
+// let n = 0;
+// let f = 0;
 // let callSucceededCheck = false; //SCORM call back for initial access
 let startTimeStamp = null;
-let bol = false;
+// let bol = false;
 // let isEnd;
 // let nidx;
 
