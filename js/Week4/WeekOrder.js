@@ -23,6 +23,7 @@ function FirstStep(props){
 function SecondStep(props){
     if(props.notify != "library")
     {
+        props.setOpenLibrary(true);
         props.setNotify("library")
         phoneBook.at(4).real = true;
         phoneBook.at(1).real = false;
@@ -32,6 +33,7 @@ function SecondStep(props){
 function ThirdStep(props){
     if(props.notify != "test")
     {
+        props.setOpenLibrary(false);
         props.setTestSection("true");
         props.setNotify("test")
         phoneBook.at(4).real = false;

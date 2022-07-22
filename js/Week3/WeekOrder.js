@@ -23,6 +23,7 @@ function FirstStep(props){
 function SecondStep(props){
     if(props.notify != "library")
     {
+        props.setOpenLibrary(true);
         props.setNotify("library")
         phoneBook.at(2).real = true;
         phoneBook.at(1).real = false;
@@ -32,6 +33,7 @@ function SecondStep(props){
 function ThirdStep(props){
     if(props.notify != "test")
     {
+        props.setOpenLibrary(false);
         props.setTestSection("true");
         props.setNotify("test")
         phoneBook.at(2).real = false;
@@ -63,6 +65,7 @@ function FinalSimpleVideo(props){
     props.deactivate.current.style.color = '';
 }
 function FinalBranchingVideo(props){
+    // props.setOpenLibrary(false);
     props.deactivate.current.style.pointerEvents = "";
     props.deactivate.current.style.color = "";
     props.setX("rubric");

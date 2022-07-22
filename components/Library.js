@@ -2,7 +2,8 @@ const Library = (props) => {
     const main = document.getElementById('main');
 	main.style.height = "auto";
     
-    if(ScormProcessGetValue("cmi.completion_status") == "incomplete" || lacalCompletionStatus == "incomplete")
+    // if(ScormProcessGetValue("cmi.completion_status") == "incomplete" || lacalCompletionStatus == "incomplete")
+    if(props.openLibrary)
     {
         if(libreria.type == "youtube")
         {

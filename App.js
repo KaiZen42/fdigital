@@ -220,7 +220,8 @@ const Home = () => {
 	const [testSection, setTestSection] = React.useState(
 		ScormProcessGetValue("cmi.completion_status") == "completed" 
 			&& ScormProcessGetValue("cmi.success_status") == "passed" ? true : false);
-	const [notify, setNotify] = React.useState("");	
+	const [notify, setNotify] = React.useState("");
+	const [openLibrary, setOpenLibrary] = React.useState(false);
 
 	const handleClick = () => {
 	  const side = document.getElementById('sidebar');
@@ -246,11 +247,11 @@ const Home = () => {
 				<Clock/>
 			</Grid>
 			<main id="main" className="main container col-md-9 ml-sm-auto col-lg-10 px-4 d-flex justify-content-between flex-wrap flex-nowrap align-items-center pt-3 pb-2 mb-3">
-				<Route path={`${locPath}`} exact component={() => <Dashboard setNotify={setNotify} notify={notify} setTestSection={setTestSection} setEmailCount={setEmailCount}/>}/>
+				<Route path={`${locPath}`} exact component={() => <Dashboard setNotify={setNotify} notify={notify} setTestSection={setTestSection} setEmailCount={setEmailCount} openLibrary={openLibrary} setOpenLibrary={setOpenLibrary}/>}/>
 				<Route path={`${loc}profile`} component={Profile} />
 				<Route path={`${loc}inbox`} component={() => <Inbox setEmailCount={setEmailCount} setTestSection={setTestSection} setNotify={setNotify}/>} />
-				<Route path={`${loc}contacts`} component={() => <Begin setNotify={setNotify} setTestSection={setTestSection} setEmailCount={setEmailCount} deactivate={deactivate}/>} />
-				<Route path={`${loc}library`} component={() => <Library setNotify={setNotify}/>} />
+				<Route path={`${loc}contacts`} component={() => <Begin setNotify={setNotify} setTestSection={setTestSection} setEmailCount={setEmailCount} deactivate={deactivate} openLibrary={openLibrary} setOpenLibrary={setOpenLibrary}/>} />
+				<Route path={`${loc}library`} component={() => <Library setNotify={setNotify} openLibrary={openLibrary} setOpenLibrary={setOpenLibrary}/>} />
 				<Route path={`${loc}test`} component={() => <Test setEmailCount={setEmailCount} setTestSection={setTestSection} setNotify={setNotify}/>} />
 			</main>
 			</div>

@@ -23,9 +23,9 @@ const Begin = (props) => {
 		  realInterview: <RealCall who={who} x={x} setX={setX} deactivate={props.deactivate}/>,
 		  realVideo: <RealCall who={who} x={x} setX={setX} deactivate={props.deactivate}/>,
 		  realScales: <RealCall who={who} x={x} setX={setX} deactivate={props.deactivate}/>,
-		  branching: <Branching x={x} setX={setX} setNotify={props.setNotify} setEmailCount={props.setEmailCount} setTestSection={props.setTestSection} deactivate={props.deactivate}/>,
+		  branching: <Branching x={x} setX={setX} setNotify={props.setNotify} setEmailCount={props.setEmailCount} setTestSection={props.setTestSection} deactivate={props.deactivate} openLibrary={props.openLibrary} setOpenLibrary={props.setOpenLibrary}/>,
 		  scales: <VideoScales x={x} setX={setX} setNotify={props.setNotify} setDeactivate={props.setDeactivate} deactivate={props.deactivate} setEmailCount={props.setEmailCount}/>,
-		  video: <VideoSimple x={x} setX={setX} setNotify={props.setNotify} setEmailCount={props.setEmailCount} deactivate={props.deactivate}/>
+		  video: <VideoSimple x={x} setX={setX} setNotify={props.setNotify} setEmailCount={props.setEmailCount} deactivate={props.deactivate}  openLibrary={props.openLibrary} setOpenLibrary={props.setOpenLibrary}/>
 		};
 		
 	function ActiveState({ state }) {
