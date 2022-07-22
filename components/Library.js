@@ -12,9 +12,9 @@ const Library = (props) => {
 
         return(
             <>
-            <Box sx={{widht: '100%', textAlign: 'center'}}>
+            <Box sx={{width: '100%', textAlign: 'center'}}>
                 <h6 className="whiteText">Watch the entire video of the library first and then go to the contact section to call {company}</h6>
-                <iframe ref={iframe} onLoad={console.table(iframe)} className="youtubeEmb" src={libreria.path} title="YouTube video player" frameBorder="0" allowFullScreen/>
+                <iframe ref={iframe} onLoad={console.table(iframe)} className="youtubeEmb" src={libreria.path} title="YouTube video player" frameBorder="0" controls="1" allowFullScreen allow="autoplay"/>
                 <Grid container height="7vh" direction="row" justifyContent="center" alignItems="flex-end">
                     <ThemeProvider theme={theme}>
                         <Button sx={{border: 3, margin: 3, '&:hover': { backgroundColor: '#ffffffa5', border: 3, borderColor: '#CC0000', color: '#CC0000'}}} size="small" type="button" variant="outlined" target="_blank" href={libreria.linkTo}>Move To Canvas Studio</Button>
@@ -30,11 +30,11 @@ const Library = (props) => {
     {
         return(
             <>
-            <div className="text">
-                <div id="intro" className="title-container">
+            <Box sx={{width: '100%', textAlign: 'center'}}>
+                <Grid container sx={{color: 'white'}} direction="row" justifyContent="center" alignItems="flex-end">
                 <h2>Library Empty</h2>
-                </div>
-            </div>
+                </Grid>
+            </Box>
             </>
         )
     }

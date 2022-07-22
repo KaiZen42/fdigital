@@ -1,17 +1,8 @@
 const Test = (props) => {
-
-	// const scormState = ScormProcessGetValue("cmi.completion_status");
-
-	// if(scormState == 3)
-	return <Test1 setTestSection={props.setTestSection} setEmailCount={props.setEmailCount} setNotify={props.setNotify} />
-	// if(indice == 6)
-	//   return <Test2 setTestSection={props.setTestSection} setEmailCount={props.setEmailCount} setNotify={props.setNotify}/>
-	// else
-	// {
-	//   props.setTestSection(false)
-	//   return <p>Sezione non accessibile</p>
-	// }
-
+	if(1)
+		return <Test1 setTestSection={props.setTestSection} setEmailCount={props.setEmailCount} setNotify={props.setNotify} />
+	else
+		return <Test2 setTestSection={props.setTestSection} setEmailCount={props.setEmailCount} setNotify={props.setNotify} />
 }
 
 
@@ -31,21 +22,12 @@ function Test1(props) {
 		<>
 			<ThemeProvider theme={theme}>
 				<Box id="box" sx={{ flexGrow: 1, color: 'white', width: 'auto' }}>
-					<Divider>
-					</Divider>
-					{
-						<iframe style={{ height: "66vh", width: "100%", backgroundColor: "#003a7000" }} frameBorder="0" src={link.Link}></iframe>
-					}
-					{/* <Divider> */}
-						<EndTest setTestSection={props.setTestSection} setEmailCount={props.setEmailCount} setNotify={props.setNotify} isEndButton={isEndButton} />
-					{/* </Divider> */}
+					{<iframe style={{ height: "66vh", width: "100%", backgroundColor: "#003a7000" }} frameBorder="0" src={link.Link}></iframe>}
+					<EndTest setTestSection={props.setTestSection} setEmailCount={props.setEmailCount} setNotify={props.setNotify} isEndButton={isEndButton} />
 				</Box>
 			</ThemeProvider>
 		</>
 	)
-
-
-
 }
 
 function EndTest(props) {
@@ -73,7 +55,7 @@ function EndTest(props) {
 		<>
 			{numOfWeek != 1 && props.isEndButton &&
 				<Divider>
-					<Link exact onClick={handleEnd} to={`${locPath}`} className="nav-link"><i className="bi bi-house-fill"></i>Torna alla Home</Link>
+					<Link exact onClick={handleEnd} to={`${locPath}`} className="nav-link"><i className="bi bi-house-fill"></i>Back to Home</Link>
 				</Divider>}
 			{numOfWeek == 1 && props.isEndButton &&
 				<ThemeProvider theme={theme}>
@@ -86,7 +68,30 @@ function EndTest(props) {
 }
 
 function Test2(props) {
+	let name = "vala";
+	let link = users.find(data => data["Last Name"] === name);
+	const [isEndButton, setIsEndButton] = React.useState(null);
+
+	window.addEventListener("message", function (e) {
+		//   if (e.origin !== "http://localhost:8080") return;
+		if (e.data !== "qualtrix_survey") return;
+		setIsEndButton(isEndButton || isEndButton == null ? false : true);
+	}, false);
+
 	return (
-		<p>test2</p>
+		<>
+			<ThemeProvider theme={theme}>
+				<Box id="box" sx={{ flexGrow: 1, color: 'white', width: 'auto' }}>
+					<Divider>
+					</Divider>
+					{
+						<iframe style={{ height: "66vh", width: "100%", backgroundColor: "#003a7000" }} frameBorder="0" src={link.Link}></iframe>
+					}
+					{/* <Divider> */}
+						<EndTest setTestSection={props.setTestSection} setEmailCount={props.setEmailCount} setNotify={props.setNotify} isEndButton={isEndButton} />
+					{/* </Divider> */}
+				</Box>
+			</ThemeProvider>
+		</>
 	)
 }

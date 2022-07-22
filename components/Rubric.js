@@ -82,7 +82,7 @@ function TabPanel(props) {
             </Typography>
           </CardContent>
         <CardActions sx={{justifyContent: 'space-around'}}>
-			    <Button sx={{color: '#7dcf03', borderColor: '#99ff00'}} variant="outlined" color="success" onClick={() => {props.props.props.setWho(props.index),phoneBook.at(props.index).real == false ? props.props.props.setX("fake") : phoneBook.at(props.index).type == "video" ? props.props.props.setX("realVideo") : phoneBook.at(props.index).type == "scales" ? props.props.props.setX("realScales") : props.props.props.setX("realInterview")}}>Chiama</Button>
+			    <Button sx={{color: '#7dcf03', borderColor: '#99ff00'}} variant="outlined" color="success" onClick={() => {props.props.props.setWho(props.index),phoneBook.at(props.index).real == false ? props.props.props.setX("fake") : phoneBook.at(props.index).type == "video" ? props.props.props.setX("realVideo") : phoneBook.at(props.index).type == "scales" ? props.props.props.setX("realScales") : props.props.props.setX("realInterview")}}>Call</Button>
         </CardActions>
       </Card>
     );

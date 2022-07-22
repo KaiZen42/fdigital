@@ -222,6 +222,7 @@ const Home = () => {
 			&& ScormProcessGetValue("cmi.success_status") == "passed" ? true : false);
 	const [notify, setNotify] = React.useState("");
 	const [openLibrary, setOpenLibrary] = React.useState(false);
+	const [serie, setSerie] = React.useState(false);
 
 	const handleClick = () => {
 	  const side = document.getElementById('sidebar');
@@ -238,7 +239,7 @@ const Home = () => {
 		<>
 	  <Router>
 		<div className="wrapper">
-		<Nav emailCount={emailCount} testSection={testSection} notify={notify} setNotify={setNotify} deactivate={deactivate}/>
+		<Nav emailCount={emailCount} testSection={testSection} notify={notify} setNotify={setNotify} deactivate={deactivate} setSerie={setSerie} serie={serie}/>
 		<div id="content">
 			<Grid className="container-fluid" container sx={{width: '100%', zIndex: 100, textAlign: 'center', color: 'white'}} justifyContent="space-between">
 				<button onClick={handleClick} type="button" id="sidebarCollapse" className="btn btn-info">
@@ -247,12 +248,13 @@ const Home = () => {
 				<Clock/>
 			</Grid>
 			<main id="main" className="main container col-md-9 ml-sm-auto col-lg-10 px-4 d-flex justify-content-between flex-wrap flex-nowrap align-items-center pt-3 pb-2 mb-3">
-				<Route path={`${locPath}`} exact component={() => <Dashboard setNotify={setNotify} notify={notify} setTestSection={setTestSection} setEmailCount={setEmailCount} openLibrary={openLibrary} setOpenLibrary={setOpenLibrary}/>}/>
+				<Route path={`${locPath}`} exact component={() => <Dashboard setNotify={setNotify} notify={notify} setTestSection={setTestSection} setEmailCount={setEmailCount} openLibrary={openLibrary} setOpenLibrary={setOpenLibrary} setSerie={setSerie} serie={serie}/>}/>
 				<Route path={`${loc}profile`} component={Profile} />
-				<Route path={`${loc}inbox`} component={() => <Inbox setEmailCount={setEmailCount} setTestSection={setTestSection} setNotify={setNotify}/>} />
-				<Route path={`${loc}contacts`} component={() => <Begin setNotify={setNotify} setTestSection={setTestSection} setEmailCount={setEmailCount} deactivate={deactivate} openLibrary={openLibrary} setOpenLibrary={setOpenLibrary}/>} />
-				<Route path={`${loc}library`} component={() => <Library setNotify={setNotify} openLibrary={openLibrary} setOpenLibrary={setOpenLibrary}/>} />
-				<Route path={`${loc}test`} component={() => <Test setEmailCount={setEmailCount} setTestSection={setTestSection} setNotify={setNotify}/>} />
+				<Route path={`${loc}inbox`} component={() => <Inbox setEmailCount={setEmailCount} setTestSection={setTestSection} setNotify={setNotify}/>} setSerie={setSerie} serie={serie}/>
+				<Route path={`${loc}contacts`} component={() => <Begin setNotify={setNotify} setTestSection={setTestSection} setEmailCount={setEmailCount} deactivate={deactivate} openLibrary={openLibrary} setOpenLibrary={setOpenLibrary}/>} setSerie={setSerie} serie={serie}/>
+				<Route path={`${loc}library`} component={() => <Library setNotify={setNotify} openLibrary={openLibrary} setOpenLibrary={setOpenLibrary}/>} setSerie={setSerie} serie={serie}/>
+				<Route path={`${loc}series`} component={() => <Series setNotify={setNotify} setTestSection={setTestSection} setEmailCount={setEmailCount} deactivate={deactivate} openLibrary={openLibrary} setOpenLibrary={setOpenLibrary}/>} />
+				<Route path={`${loc}test`} component={() => <Test setEmailCount={setEmailCount} setTestSection={setTestSection} setNotify={setNotify}/>} setSerie={setSerie} serie={serie}/>
 			</main>
 			</div>
 		</div>
