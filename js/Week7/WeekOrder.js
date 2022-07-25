@@ -74,7 +74,7 @@ function afterLibrary(props){
     else ScormProcessSetValue("cmi.completion_status", "completed");
 }
 function AfterTest(props){
-
+    
     if (isLocalSession) lacalCompletionStatus = "incomplete";
     else ScormProcessSetValue("cmi.completion_status", "incomplete");
       props.setTestSection(false);

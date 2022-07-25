@@ -20,6 +20,8 @@ const Dashboard = (props) => {
 		: completionStatus == "completed" && successStatus == "passed" ? 4 
 		: 42;
 
+
+
 	if(document.getElementById('main'))
 	{
 		const main = document.getElementById('main');
@@ -37,18 +39,27 @@ const Dashboard = (props) => {
 		}
 		else if(actualStatus == 1)
 		{
+			if(globale.search("step1") != -1)
+				globale = setScoLocation(globale, "step1");
 			FirstStep(props);
 		}
 		else if(actualStatus == 2)
 		{
+			if(globale.search("step2") != -1){
+				globale = setScoLocation(globale, "step2");
+				console.log("aoooooo")}
 			SecondStep(props);
 		}
 		else if(actualStatus == 3)
 		{
+			if(globale.search("step3") != -1)
+				globale = setScoLocation(globale, "step3");
 			ThirdStep(props);
 		}
 		else if (actualStatus == 4)
 		{
+			if(globale.search("step4") != -1)
+				globale = setScoLocation(globale, "step4");
 			weeks.at(numOfWeek).display = true;
 			if(numOfWeek == 1)
 				Finish(props);

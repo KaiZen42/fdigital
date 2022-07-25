@@ -17,6 +17,8 @@ let startTimeStamp = null;
 let isLocalSession = false;
 let lacalCompletionStatus = null;
 let localSuccessStatus = null;
+let localTestType = null;
+let globale = stateDefault;
 // DEVELOP ONLY
 
 
@@ -178,11 +180,14 @@ const App = () =>
 	const isLocalhost = location.hostname == "127.0.0.1" || location.hostname == "localhost" ? true : false;
 	if (!callSucceeded)
 	{
+
 	// CreateIncludeWeek(2);
 		if(!isLocalhost)
 		ScormProcessInitialize(); //initializes the scorm.
 	isLocalSession = ScormProcessGetValue("cmi.launch_data");
 	isLocalSession = isLocalSession == undefined ? true : false; // dev_mode
+	if(ScormProcessGetValue("cmi.location") == "")
+		ScormProcessSetValue("cmi.location", stateDefault);
 	setCallSucceeded(true);
 	if(isLocalSession){
 		lacalCompletionStatus = "unknown"

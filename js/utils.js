@@ -1,3 +1,31 @@
+
+
+function getScoLocation(location, str){
+  let value = location.substr(location.search(str), str.length)
+  console.log("value",value)
+  return value;
+}
+
+function setScoLocation(location, str) //step
+{
+  let index;
+  console.log("AAAAAAAAA")
+  let stato = str.search("step") != -1 ? stateStep : stateTest ;
+  // if(str.search("step") != -1)
+  // {
+  //   index = stateStep.findIndex((str) => {return str})
+  //   location = location.replace(location.substr(location.search(str), location.search(str) + (str.length -1)), stateStep.at(index + 1));
+  // }
+  // else{
+  //   index = stateTest.findIndex((str) => {return str})
+  //   location = location.replace(location.substr(location.search(str), location.search(str) + (str.length)), stateTest.at(index + 1));
+  // }
+  index = stato.indexOf(str);
+  console.log("subst", location.substr(location.search(str), str.length), "part", location.search(str),"arrivo", location.search(str) + (str.length), "index", index)
+  location = location.replace(location.substr(location.search(str), location.search(str) + (str.length)), stato.at(index + 1));
+  return location;
+}
+
 function emailLen(){
   let k = 0;
   let count = 0;

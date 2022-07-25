@@ -1,9 +1,11 @@
 const Test = (props) => {
-	if(1)
-		return <Test1 setTestSection={props.setTestSection} setEmailCount={props.setEmailCount} setNotify={props.setNotify} />
+	const [testType, setTestType] = React.useState(isLocalSession ? 
+		localTestType : getScoLocation(ScormProcessGetValue("cmi.location"), 1));
+	if(!testType)
+		return <Test1 setTestSection={props.setTestSection} setEmailCount={props.setEmailCount} setNotify={props.setNotify}/>
 	else
-		return <Test2 setTestSection={props.setTestSection} setEmailCount={props.setEmailCount} setNotify={props.setNotify} />
-}
+		return <Test2 setTestSection={props.setTestSection} setEmailCount={props.setEmailCount} setNotify={props.setNotify}/>
+
 
 
 function Test1(props) {
@@ -23,7 +25,7 @@ function Test1(props) {
 			<ThemeProvider theme={theme}>
 				<Box id="box" sx={{ flexGrow: 1, color: 'white', width: 'auto' }}>
 					{<iframe style={{ height: "66vh", width: "100%", backgroundColor: "#003a7000" }} frameBorder="0" src={link.Link}></iframe>}
-					<EndTest setTestSection={props.setTestSection} setEmailCount={props.setEmailCount} setNotify={props.setNotify} isEndButton={isEndButton} />
+					<EndTest setTestSection={props.setTestSection} setEmailCount={props.setEmailCount} setNotify={props.setNotify} isEndButton={isEndButton}/>
 				</Box>
 			</ThemeProvider>
 		</>
@@ -33,7 +35,21 @@ function Test1(props) {
 function EndTest(props) {
 	const Link = ReactRouterDOM.NavLink;
 	const handleEnd = () => {
-		AfterTest(props);
+		console.log("TESTTIP", testType)
+		if(getScoLocation(globale, "test1"))
+		{
+			console.log("sono entratoooooo");
+			if(isLocalSession)
+			{
+				globale = setScoLocation(globale, "test1");
+				// localTestType = 1;
+			}
+			else
+				ScormProcessSetValue("cmi.location", setScoLocation(ScormProcessGetValue("cmi.location"), "test1"));
+			AfterTest(props);
+		}
+		else
+			AfterSecondTest(props);
 	}
 	//   if(isLocalSession){
 	//     lacalCompletionStatus = "completed";
@@ -88,10 +104,11 @@ function Test2(props) {
 						<iframe style={{ height: "66vh", width: "100%", backgroundColor: "#003a7000" }} frameBorder="0" src={link.Link}></iframe>
 					}
 					{/* <Divider> */}
-						<EndTest setTestSection={props.setTestSection} setEmailCount={props.setEmailCount} setNotify={props.setNotify} isEndButton={isEndButton} />
+						<EndTest setTestSection={props.setTestSection} setEmailCount={props.setEmailCount} setNotify={props.setNotify} isEndButton={isEndButton} testType={props.testType}/>
 					{/* </Divider> */}
 				</Box>
 			</ThemeProvider>
 		</>
 	)
+}
 }
