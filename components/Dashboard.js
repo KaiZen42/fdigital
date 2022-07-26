@@ -6,18 +6,26 @@ const Dashboard = (props) => {
 	// ================================================================= 
 	
 	const [summary, setSummary] = React.useState(false);
-	const completionStatus = isLocalSession ? 
-		lacalCompletionStatus : ScormProcessGetValue("cmi.completion_status");
-	const successStatus = isLocalSession ? 
-		localSuccessStatus : ScormProcessGetValue("cmi.success_status");
-	console.log(completionStatus, lacalCompletionStatus, isLocalSession)
+	const locationStatus = isLocalSession ? 
+		lacalCompletionStatus : ScormProcessGetValue("cmi.location");
+	// const completionStatus = isLocalSession ? 
+	// 	lacalCompletionStatus : ScormProcessGetValue("cmi.completion_status");
+	// const successStatus = isLocalSession ? 
+	// 	localSuccessStatus : ScormProcessGetValue("cmi.success_status");
+	// console.log(completionStatus, lacalCompletionStatus, isLocalSession)
 	
 	
-		let actualStatus = completionStatus == "unknown" ? 0 
-		: completionStatus == "not attempted" ? 1
-		: completionStatus == "incomplete" ? 2 
-		: completionStatus == "completed" && successStatus == "unknown" ? 3 
-		: completionStatus == "completed" && successStatus == "passed" ? 4 
+		// let actualStatus = completionStatus == "unknown" ? 0 
+		// : completionStatus == "not attempted" ? 1
+		// : completionStatus == "incomplete" ? 2 
+		// : completionStatus == "completed" && successStatus == "unknown" ? 3 
+		// : completionStatus == "completed" && successStatus == "passed" ? 4 
+		// : 42;
+		let actualStatus = locationStatus == "" ? 0 
+		: locationStatus.search("step1") != -1 ? 1
+		: locationStatus.search("step2") != -1 ? 2 
+		: locationStatus.search("step3") != -1? 3 
+		: locationStatus.search("step4") != -1? 4 
 		: 42;
 
 
@@ -31,7 +39,7 @@ const Dashboard = (props) => {
 	for(let k = 0; k < numOfWeek; k++)
 		weeks.at(k).display = true;
 
-	console.log("stato",actualStatus, "successo", successStatus)
+	
 	function changeState(){
 		if(actualStatus == 0)
 		{
@@ -39,27 +47,27 @@ const Dashboard = (props) => {
 		}
 		else if(actualStatus == 1)
 		{
-			if(globale.search("step1") != -1)
-				globale = setScoLocation(globale, "step1");
+			if(locationStatus.search("step1") != -1)
+				locationStatus = setScoLocation(locationStatus, "step1");
 			FirstStep(props);
 		}
 		else if(actualStatus == 2)
 		{
-			if(globale.search("step2") != -1){
-				globale = setScoLocation(globale, "step2");
+			if(locationStatus.search("step2") != -1){
+				locationStatus = setScoLocation(locationStatus, "step2");
 				console.log("aoooooo")}
 			SecondStep(props);
 		}
 		else if(actualStatus == 3)
 		{
-			if(globale.search("step3") != -1)
-				globale = setScoLocation(globale, "step3");
+			if(locationStatus.search("step3") != -1)
+				locationStatus = setScoLocation(locationStatus, "step3");
 			ThirdStep(props);
 		}
 		else if (actualStatus == 4)
 		{
-			if(globale.search("step4") != -1)
-				globale = setScoLocation(globale, "step4");
+			if(locationStatus.search("step4") != -1)
+				locationStatus = setScoLocation(locationStatus, "step4");
 			weeks.at(numOfWeek).display = true;
 			if(numOfWeek == 1)
 				Finish(props);

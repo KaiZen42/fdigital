@@ -2,14 +2,12 @@
 
 function getScoLocation(location, str){
   let value = location.substr(location.search(str), str.length)
-  console.log("value",value)
   return value;
 }
 
 function setScoLocation(location, str) //step
 {
   let index;
-  console.log("AAAAAAAAA")
   let stato = str.search("step") != -1 ? stateStep : stateTest ;
   // if(str.search("step") != -1)
   // {
