@@ -82,7 +82,19 @@ function Test2(props) {
 	window.addEventListener("message", function (e) {
 		//   if (e.origin !== "http://localhost:8080") return;
 		if (e.data !== "qualtrix_survey") return;
-		setIsEndButton(isEndButton || isEndButton == null ? false : true);
+
+		if (localSuccessStatus == "not attempted")
+			localSuccessStatus = "incomplete"
+		else if (localSuccessStatus == "incomplete")
+			localSuccessStatus = "complete"
+
+		if (ScormProcessGetValue("cmi.completion_status") == "not attempted")
+			ScormProcessSetValue("cmi.completion_status", "incomplete")
+		else if (ScormProcessGetValue("cmi.completion_status") == "incomplete")
+			ScormProcessSetValue("cmi.completion_status", "complete")
+		
+		if (localSuccessStatus == "complete" || ScormProcessSetValue("cmi.completion_status", "complete"))
+			setIsEndButton(true);
 	}, false);
 
 	return (

@@ -16,7 +16,7 @@ let startTimeStamp = null;
 // DEVELOP ONLY
 let isLocalSession = false;
 let lacalCompletionStatus = "";
-// let localSuccessStatus = null;
+let localSuccessStatus = null;
 let localTestType = null;
 let locationStatus = "";
 // DEVELOP ONLY
@@ -193,10 +193,10 @@ const App = () =>
 	setCallSucceeded(true);
 	if(isLocalSession){
 		lacalCompletionStatus = ""
-		// localSuccessStatus = "unknown";
+		localSuccessStatus = "not attempted";
 	}
 	else if(ScormProcessGetValue("success_status") != "passed"){
-		ScormProcessSetValue("cmi.success_status", "unknown")
+		ScormProcessSetValue("cmi.success_status", "not attempted")
 	}
 		
 	}
