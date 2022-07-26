@@ -18,7 +18,7 @@ let isLocalSession = false;
 let lacalCompletionStatus = "";
 // let localSuccessStatus = null;
 let localTestType = null;
-let globale = stateDefault;
+let locationStatus = "";
 // DEVELOP ONLY
 
 
@@ -186,8 +186,10 @@ const App = () =>
 		ScormProcessInitialize(); //initializes the scorm.
 	isLocalSession = ScormProcessGetValue("cmi.launch_data");
 	isLocalSession = isLocalSession == undefined ? true : false; // dev_mode
-	if(ScormProcessGetValue("cmi.location") == "")
+	if(ScormProcessGetValue("cmi.location") == ""){
 		ScormProcessSetValue("cmi.location", stateDefault);
+		locationStatus = stateDefault;
+	}
 	setCallSucceeded(true);
 	if(isLocalSession){
 		lacalCompletionStatus = ""
@@ -223,8 +225,8 @@ const Home = () => {
 
 	const [emailCount, setEmailCount] = React.useState(emailLen());
 	const [testSection, setTestSection] = React.useState(
-		ScormProcessGetValue("cmi.completion_status") == "completed" 
-			&& ScormProcessGetValue("cmi.success_status") == "passed" ? true : false);
+		locationStatus.search("step4") != -1
+			 ? true : false);
 	const [notify, setNotify] = React.useState("");
 	const [openLibrary, setOpenLibrary] = React.useState(false);
 	const [serie, setSerie] = React.useState(false);

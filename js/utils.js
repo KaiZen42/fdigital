@@ -19,7 +19,7 @@ function setScoLocation(location, str) //step
   //   location = location.replace(location.substr(location.search(str), location.search(str) + (str.length)), stateTest.at(index + 1));
   // }
   index = stato.indexOf(str);
-  console.log("subst", location.substr(location.search(str), str.length), "part", location.search(str),"arrivo", location.search(str) + (str.length), "index", index)
+  // console.log("subst", location.substr(location.search(str), str.length), "part", location.search(str),"arrivo", location.search(str) + (str.length), "index", index)
   location = location.replace(location.substr(location.search(str), location.search(str) + (str.length)), stato.at(index + 1));
   return location;
 }

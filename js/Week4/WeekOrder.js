@@ -44,8 +44,8 @@ function FinalScalesVideo(props){
     props.setX("rubric");
     props.setNotify("home");
     phoneBook.at(1).real = false
-    if (isLocalSession) lacalCompletionStatus = "not attempted";
-    else ScormProcessSetValue("cmi.completion_status", "not attempted");
+    if (isLocalSession) lacalCompletionStatus = "step1";
+    else ScormProcessSetValue("cmi.location", setScoLocation(getScoLocation(ScormProcessGetValue("cmi.location")), "step1"));
     // indice = 1;
     main.style.boxShadow = "";
     main.style.transition = ""
@@ -69,19 +69,17 @@ function FinalBranchingVideo(props){
     props.deactivate.current.style.color = "";
     props.setX("rubric");
     props.setNotify("home");
-    if (isLocalSession) lacalCompletionStatus = "completed";
-    else ScormProcessSetValue("cmi.completion_status", "completed");
+    if (isLocalSession) lacalCompletionStatus = "step3";
+    else ScormProcessSetValue("cmi.location", setScoLocation(getScoLocation(ScormProcessGetValue("cmi.location")), "step3"));
     EmailText.at(0).display = true;
     phoneBook.at(4).real = false;
     ScormProcessSetValue("cmi.suspend_data", 0);
 }
 
 function AfterTest(props){
-    if(isLocalSession){
-        lacalCompletionStatus = "completed";
-        localSuccessStatus = "passed";
-      }
-      else{
+    if (isLocalSession) lacalCompletionStatus = "step4";
+    else{
+        ScormProcessSetValue("cmi.location", setScoLocation(getScoLocation(ScormProcessGetValue("cmi.location")), "step4"));
         ScormProcessSetValue("cmi.completion_status", "completed");
         ScormProcessSetValue("cmi.success_status", "passed");
       }
@@ -93,11 +91,8 @@ function Event1(props, i){
     if(i == 0)
     {
        props.setNotify("home");
-	   if(isLocalSession){
-		   lacalCompletionStatus = "incomplete";
-	   }
-	   else{
-		   ScormProcessSetValue("cmi.completion_status", "incomplete")};
+    if (isLocalSession) lacalCompletionStatus = "step2";
+    else ScormProcessSetValue("cmi.location", setScoLocation(getScoLocation(ScormProcessGetValue("cmi.location")), "step2"));
       //  indice = 2;
     }
 }

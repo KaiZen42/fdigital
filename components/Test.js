@@ -35,17 +35,8 @@ function Test1(props) {
 function EndTest(props) {
 	const Link = ReactRouterDOM.NavLink;
 	const handleEnd = () => {
-		console.log("TESTTIP", testType)
-		if(getScoLocation(globale, "test1"))
+		if(getScoLocation(locationStatus, "test1"))
 		{
-			console.log("sono entratoooooo");
-			if(isLocalSession)
-			{
-				globale = setScoLocation(globale, "test1");
-				// localTestType = 1;
-			}
-			else
-				ScormProcessSetValue("cmi.location", setScoLocation(ScormProcessGetValue("cmi.location"), "test1"));
 			AfterTest(props);
 		}
 		else

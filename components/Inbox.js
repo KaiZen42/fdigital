@@ -22,7 +22,7 @@ const Inbox = (props) => {
 		  }
 	  }
    
-    if(numOfWeek != 1)
+    if(numOfWeek != 1 && numOfWeek != 5 && numOfWeek != 6 && numOfWeek != 7 && numOfWeek != 8)
       Event1(props, i);
                 //   if(i == 0)
                 //   {

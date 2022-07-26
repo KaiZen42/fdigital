@@ -20,14 +20,14 @@ const EmailText = [
     "order": 1
 },
 {
-	"mittente": "NetFlox",
+	"mittente": "Netflix",
     "titolo": "Abbiamo appena aggiunto un film che ti potrebbe piacere",
 	"email": "Pimpi, piccolo grande eroe (Piglet's Big Movie) è un film del 2003 diretto da Francis Glebas. Terzo lungometraggio cinematografico d'animazione basato sui libri di Winnie the Pooh di A. A. Milne, il film ha come protagonista il personaggio di Pimpi che, vergognandosi di essere piccolo e goffo, si allontana nel Bosco dei Cento Acri, spingendo tutti i suoi amici a formare una squadra di ricerca per trovarlo. Pimpi, piccolo grande eroe fu prodotto dalla DisneyToon Studios e l'animazione fu realizzata principalmente dalla Walt Disney Animation Japan. Uscito negli Stati Uniti il 21 marzo 2003, il film fu recensito positivamente da buona parte della critica ma non fu un successo finanziario.",
     "open" : true,
     "display": true,
 },
 {
-    "mittente": "JustHit",
+    "mittente": "JustDrink",
     "titolo": "Il tuo pranzo con 3€ di sconto? Ci pensiamo noi 🤑",
     "email": "Siamo quasi a metà giornata, ti meriti qualcosa di delizioso. Ordina un piatto fresco e appetitoso per la tua pausa pranzo da Poke House, McDonald's o prova tanti altri ristoranti. Usa il codice sconto di 3€* valido solo per pranzo che trovi qui sotto. Ordina il tuo pranzo con 3€ di sconto",
     "open" : true,
@@ -41,7 +41,7 @@ const EmailText = [
     "display": true,
 },
 {
-    "mittente": "LinkeDon",
+    "mittente": "Indeeed",
     "titolo": "Segui Gli aggiornamenti dei tuoi contatti",
     "email": "Contenuti in evidenza nella tua rete\nMaticpind S.p.A.	Maticpind S.p.A.\n10.773 follower\nMaticpind è stata premiata all’Ascop Partners Day 2022, tenutosi il 25 maggio presso il Museo Nazionale... visualizza altro\n",
     "open" : true,
@@ -55,7 +55,7 @@ const EmailText = [
     "display": true,
 },
 {
-    "mittente": "LinkeDon",
+    "mittente": "Indeeed",
     "titolo": "Segui Gli aggiornamenti dei tuoi contatti",
     "email": "Contenuti in evidenza nella tua rete\nMaticpind S.p.A.	Maticpind S.p.A.\n10.773 follower\nMaticpind è stata premiata all’Ascop Partners Day 2022, tenutosi il 25 maggio presso il Museo Nazionale... visualizza altro\n",
     "open" : true,

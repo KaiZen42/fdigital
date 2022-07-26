@@ -19,6 +19,23 @@ const VideoScales = (props) => {
 
 
 
+	function EndTest(props) {
+		const Link = ReactRouterDOM.NavLink;
+		const handleEnd = () => {
+				AfterTest(props);
+		}
+	
+		return (
+			<>
+				{numOfWeek == 1 && props.isEndButton &&
+					<ThemeProvider theme={theme}>
+						<Grid container direction="row" justifyContent="center" textAlign="center" alignItems="flex-end">
+							<Link exact onClick={handleEnd} to={`${locPath}`} className="nav-link"><i className="bi bi-house-fill"></i>Back to Home</Link>
+						</Grid>
+					</ThemeProvider>}
+			</>
+		)
+	}
 	function findColor(){
 		if(iter == 0 && first && type == 0)
 			return introScales1;
@@ -173,18 +190,16 @@ const VideoScales = (props) => {
 		<Box className="container" sx={{color: 'white'}}>
 			{first && !end &&
 			<>
-				(<video id="video" className="video-responsive" onEnded={handleEndFirst} muted={""} autoPlay >
+				<video id="video" className="video-responsive" onEnded={handleEndFirst} muted={""} autoPlay >
 					<source src={videoPath} type="video/mp4"></source>
 				</video>
 				<Webcam className="webcam" id="webcam" muted/>
-			)</>
+			</>
 			}
 			{!first && !end &&
 			<ThemeProvider theme={theme}>
 				<Box id="box" sx={{ flexGrow: 1, color: 'white', width: 'auto' }}>
-					{
-					<iframe style={{ height: "66vh", width: "100%", backgroundColor: "#003a7000" }} frameBorder="0" src={link.Link}></iframe>
-					}
+					{<iframe style={{ height: "66vh", width: "100%", backgroundColor: "#003a7000" }} frameBorder="0" src={link.Link}></iframe>}
 					<EndTest setTestSection={props.setTestSection} setEmailCount={props.setEmailCount} setNotify={props.setNotify} isEndButton={testFinish} setX={props.setX} deactivate={props.deactivate} />
 				</Box>
 			</ThemeProvider>

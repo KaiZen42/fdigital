@@ -6,7 +6,7 @@ const Dashboard = (props) => {
 	// ================================================================= 
 	
 	const [summary, setSummary] = React.useState(false);
-	const locationStatus = isLocalSession ? 
+	locationStatus = isLocalSession ? 
 		lacalCompletionStatus : ScormProcessGetValue("cmi.location");
 	// const completionStatus = isLocalSession ? 
 	// 	lacalCompletionStatus : ScormProcessGetValue("cmi.completion_status");
@@ -24,12 +24,12 @@ const Dashboard = (props) => {
 		let actualStatus = locationStatus == "" ? 0 
 		: locationStatus.search("step1") != -1 ? 1
 		: locationStatus.search("step2") != -1 ? 2 
-		: locationStatus.search("step3") != -1? 3 
-		: locationStatus.search("step4") != -1? 4 
+		: locationStatus.search("step3") != -1 ? 3 
+		: locationStatus.search("step4") != -1 ? 4 
 		: 42;
 
 
-
+	console.log(locationStatus);
 	if(document.getElementById('main'))
 	{
 		const main = document.getElementById('main');

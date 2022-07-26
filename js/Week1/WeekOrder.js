@@ -46,8 +46,8 @@ function FinalScalesVideo(props){
     props.setX("rubric");
     props.setNotify("home");
     phoneBook.at(1).real = false
-    if (isLocalSession) lacalCompletionStatus = "not attempted";
-    else ScormProcessSetValue("cmi.completion_status", "not attempted");
+    if (isLocalSession) lacalCompletionStatus = "step1";
+    else ScormProcessSetValue("cmi.location", setScoLocation(getScoLocation(ScormProcessGetValue("cmi.location")), "step1"));
     // indice = 1;
     props.deactivate.current.style.pointerEvents = '';
     props.deactivate.current.style.color = '';
@@ -57,8 +57,8 @@ function FinalScalesVideo1(props){
     props.setX("rubric");
     props.setNotify("home");
     phoneBook.at(1).real = false
-    if (isLocalSession) lacalCompletionStatus = "incomplete";
-    else ScormProcessSetValue("cmi.completion_status", "incomplete");
+    if (isLocalSession) lacalCompletionStatus = "step2";
+    else ScormProcessSetValue("cmi.location", setScoLocation(getScoLocation(ScormProcessGetValue("cmi.location")), "step2"));
     // indice = 1;
     main.style.boxShadow = "";
     main.style.transition = ""
@@ -68,8 +68,8 @@ function FinalScalesVideo1(props){
     ScormProcessSetValue("cmi.suspend_data", 0);
 }
 function FinalScalesVideo2(props){
-    if (isLocalSession) lacalCompletionStatus = "completed";
-    else ScormProcessSetValue("cmi.completion_status", "completed");
+    if (isLocalSession) lacalCompletionStatus = "step3";
+    else ScormProcessSetValue("cmi.location", setScoLocation(getScoLocation(ScormProcessGetValue("cmi.location")), "step3"));
     // indice = 1;
     main.style.boxShadow = "";
     main.style.transition = ""
@@ -85,24 +85,18 @@ function FinalScalesVideo2(props){
 
 
 function AfterVideoFinal(e){
-    console.log("AfterVideoFinal");
-    if(isLocalSession){
-        lacalCompletionStatus = "completed";
-        localSuccessStatus = "passed";
-      }
-      else{
+    if (isLocalSession) lacalCompletionStatus = "step4";
+    else{
+        ScormProcessSetValue("cmi.location", setScoLocation(getScoLocation(ScormProcessGetValue("cmi.location")), "step4"));
         ScormProcessSetValue("cmi.completion_status", "completed");
         ScormProcessSetValue("cmi.success_status", "passed");
       }
 }
 
 function Finish(props){
-    console.log("Finish");
-    if(isLocalSession){
-        lacalCompletionStatus = "completed";
-        localSuccessStatus = "passed";
-      }
-      else{
+    if (isLocalSession) lacalCompletionStatus = "step4";
+    else{
+        ScormProcessSetValue("cmi.location", setScoLocation(getScoLocation(ScormProcessGetValue("cmi.location")), "step4"));
         ScormProcessSetValue("cmi.completion_status", "completed");
         ScormProcessSetValue("cmi.success_status", "passed");
       }
@@ -111,22 +105,6 @@ function Finish(props){
     }
 function AfterTest(props){
     FinalScalesVideo(props);
-}
-
-function Event1(props, i){
-    if(i == 0)
-    {
-       props.setNotify("home");
-	   if(isLocalSession){
-		   lacalCompletionStatus = "incomplete";
-	   }
-	   else{
-		   ScormProcessSetValue("cmi.completion_status", "incomplete")};
-      //  indice = 2;
-    }
-}
-function Event2(props){
-
 }
 
 function FinalChange(props){

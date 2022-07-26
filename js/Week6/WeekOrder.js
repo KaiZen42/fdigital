@@ -37,8 +37,8 @@ function ThirdStep(props){
 
 function FinalEpisode(props){
     props.setNotify("home");
-    if (isLocalSession) lacalCompletionStatus = "not attempted";
-    else ScormProcessSetValue("cmi.completion_status", "not attempted");
+    if (isLocalSession) lacalCompletionStatus = "step1";
+    else ScormProcessSetValue("cmi.location", setScoLocation(getScoLocation(ScormProcessGetValue("cmi.location")), "step1"));
     // indice = 1;
     main.style.boxShadow = "";
     main.style.transition = ""
@@ -70,8 +70,8 @@ function FinalEpisode(props){
 
 function afterLibrary(props){
     props.setNotify("home");
-    if (isLocalSession) lacalCompletionStatus = "completed";
-    else ScormProcessSetValue("cmi.completion_status", "completed");
+    if (isLocalSession) lacalCompletionStatus = "step3";
+    else ScormProcessSetValue("cmi.location", setScoLocation(getScoLocation(ScormProcessGetValue("cmi.location")), "step3"));
 }
 function AfterTest(props){
     
@@ -82,11 +82,9 @@ function AfterTest(props){
 }
 
 function AfterSecondTest(props){
-    if(isLocalSession){
-        lacalCompletionStatus = "completed";
-        localSuccessStatus = "passed";
-      }
-      else{
+    if (isLocalSession) lacalCompletionStatus = "step4";
+    else{
+        ScormProcessSetValue("cmi.location", setScoLocation(getScoLocation(ScormProcessGetValue("cmi.location")), "step4"));
         ScormProcessSetValue("cmi.completion_status", "completed");
         ScormProcessSetValue("cmi.success_status", "passed");
       }
@@ -98,11 +96,8 @@ function Event1(props, i){
     if(i == 0)
     {
        props.setNotify("home");
-	   if(isLocalSession){
-		   lacalCompletionStatus = "incomplete";
-	   }
-	   else{
-		   ScormProcessSetValue("cmi.completion_status", "incomplete")};
+    if (isLocalSession) lacalCompletionStatus = "step2";
+    else ScormProcessSetValue("cmi.location", setScoLocation(getScoLocation(ScormProcessGetValue("cmi.location")), "step2"));
       //  indice = 2;
     }
 }
