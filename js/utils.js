@@ -1,26 +1,33 @@
 
 
 function getScoLocation(location, str){
-  let value = location.substr(location.search(str), str.length)
+
+  let value = location.slice(location.search(str), location.search(str) + str.length)
+
+  if(value == "" || location.search(str) == -1)
+    return -1;
   return value;
 }
 
 function setScoLocation(location, str) //step
-{
+{  
+  console.log("LOCATION INIZIALE", location, "E STR", str)
   let index;
+  let tmp;
   let stato = str.search("step") != -1 ? stateStep : stateTest ;
-  // if(str.search("step") != -1)
-  // {
-  //   index = stateStep.findIndex((str) => {return str})
-  //   location = location.replace(location.substr(location.search(str), location.search(str) + (str.length -1)), stateStep.at(index + 1));
-  // }
-  // else{
-  //   index = stateTest.findIndex((str) => {return str})
-  //   location = location.replace(location.substr(location.search(str), location.search(str) + (str.length)), stateTest.at(index + 1));
-  // }
-  index = stato.indexOf(str);
-  // console.log("subst", location.substr(location.search(str), str.length), "part", location.search(str),"arrivo", location.search(str) + (str.length), "index", index)
-  location = location.replace(location.substr(location.search(str), location.search(str) + (str.length)), stato.at(index + 1));
+
+  if(stato == stateStep)
+    tmp = location.slice(5, 10);
+  else
+    tmp = location.slice(0, 5);
+  console.log("VALORE INIZIALE",tmp, "compare", tmp.localeCompare(str))
+  if(tmp.localeCompare(str) == 0)
+  {
+    index = stato.indexOf(str);
+    location = location.replace(str, stato.at(index + 1));
+  }
+
+  console.log("LOCATION FINALE", location)
   return location;
 }
 

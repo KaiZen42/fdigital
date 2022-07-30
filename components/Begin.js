@@ -1,4 +1,4 @@
-const Begin = (props) => {
+const Begin = React.memo((props) => {
 
 	  const [x, setX] = React.useState("rubric");
 	  const [who, setWho] = React.useState(0);
@@ -38,5 +38,5 @@ const Begin = (props) => {
 		  <ActiveState state ={x}/> 
 		  </>
 	  )
-	}
+	})
 	

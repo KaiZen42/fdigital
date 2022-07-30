@@ -99,7 +99,8 @@ const {
   TextareaAutosize,
   StaticTimePicker,
   LocalizationProvider,
-  AdapterDateFns
+  AdapterDateFns,
+  Skeleton
 } = MaterialUI;
 
 
@@ -240,6 +241,8 @@ const Home = () => {
 	  else
       	side.setAttribute("class", " ");
 	};
+
+
 
 	const deactivate = React.useRef();
 	return(

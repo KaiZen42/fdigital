@@ -64,20 +64,20 @@ function TabPanel(props) {
   }
 
   function MultiActionAreaCard(props) {
-    console.log(props.index)
+    
     return (
-      <Card sx={{ width: 'auto', bgcolor: 'transparent', textAlign: 'center', minHeight: '50vh'}}>
+      <Card sx={{bgcolor: 'transparent', textAlign: 'center', minHeight: '50vh'}}>
           <CardMedia
             component="img"
-			      sx={{maxWidth:'60vh', height: 'auto'}}
+			      sx={{ height: 'auto'}}
             image={phoneBook.at(props.index).img}
             alt={phoneBook.at(props.index).nome}
-          />
+            />          
           <CardContent sx={{color: 'white', minHeight: '10vh'}}>
             <Typography gutterBottom variant="h5" component="div">
 			          {phoneBook.at(props.index).nome}
             </Typography>
-            <Typography variant="body2" color="white">
+            <Typography variant="body2" color="white" sx={{textAlign: 'center'}}>
 			          {phoneBook.at(props.index).text}
             </Typography>
           </CardContent>
@@ -88,8 +88,8 @@ function TabPanel(props) {
     );
   }
 
-const Rubric = (props) => {
+const Rubric = React.memo((props) => {
 	return(
 		<VerticalTabs props={props}/>
 		)
-  }
+  })

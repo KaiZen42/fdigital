@@ -1,7 +1,8 @@
-const Library = (props) => {
+const Library = React.memo((props) => {
     const main = document.getElementById('main');
 	main.style.height = "auto";
     
+    console.log("LIBRA", props)
     // if(ScormProcessGetValue("cmi.completion_status") == "incomplete" || lacalCompletionStatus == "incomplete")
     if(props.openLibrary)
     {
@@ -38,4 +39,4 @@ const Library = (props) => {
             </>
         )
     }
-}
+})

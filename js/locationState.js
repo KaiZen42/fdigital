@@ -1,6 +1,7 @@
-const stateDefault="test1step1";
+const stateDefault="test1step0";
 const stateStep=
 [
+"step0",
 "step1", 
 "step2", 
 "step3", 

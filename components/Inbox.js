@@ -1,4 +1,4 @@
-const Inbox = (props) => {
+const Inbox = React.memo((props) => {
   const [state, setState] = React.useState(false);
 	// if (ScormProcessGetValue("cmi.completion_status") == "unknown")
 	// 	ScormProcessSetValue("cmi.completion_status", "not attempted");
@@ -21,8 +21,9 @@ const Inbox = (props) => {
 			  }
 		  }
 	  }
+    console.log("INBOX", props)
    
-    if(numOfWeek != 1 && numOfWeek != 5 && numOfWeek != 6 && numOfWeek != 7 && numOfWeek != 8)
+    if(numOfWeek != 1 && numOfWeek != 5 && numOfWeek != 6 && numOfWeek != 7 && numOfWeek != 8 && EmailText.at(i).open == false)
       Event1(props, i);
                 //   if(i == 0)
                 //   {
@@ -71,4 +72,4 @@ const Inbox = (props) => {
           </Box>
         </>
       )
-    }
+    })

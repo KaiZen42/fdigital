@@ -1,4 +1,4 @@
-const Nav = (props) => {
+const Nav = React.memo((props) => {
 	const Link = ReactRouterDOM.NavLink;
 
 	const handleNotify = (e, str) => {
@@ -45,6 +45,6 @@ const Nav = (props) => {
 					<Link style={{pointerEvents: props.testSection ? '' : 'none', color: props.testSection ? '' : 'darkGrey'}} to={`${loc}test`} className="nav-link"><i className="bi bi-card-checklist"></i>Test</Link>
 				</li>
 			</ul>
-			<Button className="notify" style={{display: (locationStatus.search("step5") != -1) ? "" : "none"}} sx={{color: 'white'}} onClick={() => doExit()}><a className="nav-link"><i className="bi bi-box-arrow-left"></i>Exit</a></Button>
+			<Button className={props.notify == "exit" ? "notify" : ""} style={{display: props.notify == "exit" ? "" : "none"}} sx={{color: 'white'}} onClick={() => doExit()}><a className="nav-link"><i className="bi bi-box-arrow-left"></i>Exit</a></Button>
 		</nav>
-</>)}
+</>)})

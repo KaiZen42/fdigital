@@ -1,10 +1,10 @@
-const Dashboard = (props) => {
+const Dashboard = React.memo((props) => {
 
 	// ============> Preventing browser's "back" action. <==============
 	history.pushState(null, null, location.href);
   	window.onpopstate = () => {history.go(1);};
 	// ================================================================= 
-	
+	console.log("DASHB", props);
 	const [summary, setSummary] = React.useState(false);
 	locationStatus = isLocalSession ? 
 		lacalCompletionStatus : ScormProcessGetValue("cmi.location");
@@ -21,15 +21,19 @@ const Dashboard = (props) => {
 		// : completionStatus == "completed" && successStatus == "unknown" ? 3 
 		// : completionStatus == "completed" && successStatus == "passed" ? 4 
 		// : 42;
-		let actualStatus = locationStatus == "" ? 0 
+		
+		if(locationStatus == "")
+			locationStatus = stateDefault;
+		console.log("Benji", locationStatus);
+		
+		let actualStatus = locationStatus.search("step0") != -1 ? 0 
 		: locationStatus.search("step1") != -1 ? 1
 		: locationStatus.search("step2") != -1 ? 2 
 		: locationStatus.search("step3") != -1 ? 3 
 		: locationStatus.search("step4") != -1 ? 4 
 		: 42;
-
-
-	console.log(locationStatus);
+		
+		console.log("status", actualStatus);
 	if(document.getElementById('main'))
 	{
 		const main = document.getElementById('main');
@@ -39,10 +43,12 @@ const Dashboard = (props) => {
 	for(let k = 0; k < numOfWeek; k++)
 		weeks.at(k).display = true;
 
-	
 	function changeState(){
 		if(actualStatus == 0)
 		{
+			console.log("INITIAL STATE")
+			if(locationStatus.search("step0") != -1)
+				locationStatus = setScoLocation(locationStatus, "step0");
 			InitialState(props);
 		}
 		else if(actualStatus == 1)
@@ -53,9 +59,8 @@ const Dashboard = (props) => {
 		}
 		else if(actualStatus == 2)
 		{
-			if(locationStatus.search("step2") != -1){
+			if(locationStatus.search("step2") != -1)
 				locationStatus = setScoLocation(locationStatus, "step2");
-				console.log("aoooooo")}
 			SecondStep(props);
 		}
 		else if(actualStatus == 3)
@@ -71,6 +76,7 @@ const Dashboard = (props) => {
 			weeks.at(numOfWeek).display = true;
 			if(numOfWeek == 1)
 				Finish(props);
+			props.setNotify("exit")
 				
 		}
 	}
@@ -111,4 +117,4 @@ const Dashboard = (props) => {
 	 }
   </>
   )
-}
+})

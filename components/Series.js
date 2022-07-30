@@ -1,4 +1,4 @@
-const Series = (props) => {
+const Series = React.memo((props) => {
 	// ============> Preventing browser's "back" action. <==============
 	history.pushState(null, null, location.href);
 	window.onpopstate = () => {history.go(1);};
@@ -40,4 +40,4 @@ const Series = (props) => {
 		}</Box>
 		</>
     )
-}
+})
