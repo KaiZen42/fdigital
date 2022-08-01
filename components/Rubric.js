@@ -64,13 +64,22 @@ function TabPanel(props) {
   }
 
   function MultiActionAreaCard(props) {
-    
+    const [imgPath, setImgPath] = React.useState("")
+  
+    if(imgPath == "")
+    {checkIfImageExists(phoneBook.at(props.index).img, (exists) => {
+    if (exists) {
+      setImgPath(phoneBook.at(props.index).img)
+    } else {
+      setImgPath("media/avatar.png")
+    }
+    });}
     return (
       <Card sx={{bgcolor: 'transparent', textAlign: 'center', minHeight: '50vh'}}>
           <CardMedia
             component="img"
 			      sx={{ height: 'auto'}}
-            image={phoneBook.at(props.index).img}
+            image={imgPath}
             alt={phoneBook.at(props.index).nome}
             />          
           <CardContent sx={{color: 'white', minHeight: '10vh'}}>
