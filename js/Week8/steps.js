@@ -1,11 +1,11 @@
 const steps = [
 	{
 		label: 'Step 1',
-		description: 'Welcome! Follow the steps to face this Week! You have the first episode of the series, go to the library section and watch it.'
+		description: 'Welcome! Follow the steps to face this Week! The fourth episode is available, and you can find in the Series section.'
 	},
 	{
 		label: 'Step 2',
-		description: 'Good! Now you can go to the test section to see what you have learned!'
+		description: 'Good! Now you can go to the Test section to see what you have learned!'
 	},
 	{
 		label: 'Step 3',
