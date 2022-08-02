@@ -1,7 +1,7 @@
 const steps = [
 	{
 		label: 'Step 1',
-		description: 'Welcome! Follow the steps to face this Week! The first episode is available, and you can find in the Series section.'
+		description: 'Welcome! Follow the steps to face this Week! Call Simona for the Introduction and Scales and then The first episode will be available, and you can find in the Series section.'
 	},
 	{
 		label: 'Step 2',

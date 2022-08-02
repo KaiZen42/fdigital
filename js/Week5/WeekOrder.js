@@ -3,10 +3,11 @@ let company = "Gamindo"
 let videoBoss = "media/Weeks/Week4/Boss/boss.mp4"
 
 function InitialState(props){
-    if(props.notify != "serie")
+    if(props.notify != "rubrica")
     {
-        props.setNotify("serie");
-        props.setSerie(true);
+        props.setNotify("rubrica");
+        phoneBook.at(1).real = true;
+        // props.setSerie(true);
     }
 }
 
@@ -45,6 +46,20 @@ function FinalEpisode(props){
     main.style.borderRadius = "";
     props.deactivate.current.style.pointerEvents = '';
     props.deactivate.current.style.color = '';
+}
+
+function FinalScalesVideo(props){
+    props.setX("rubric");
+    props.setSerie(true);
+    props.setNotify("serie");
+    phoneBook.at(1).real = false
+    // indice = 1;
+    main.style.boxShadow = "";
+    main.style.transition = ""
+    main.style.borderRadius = "";
+    props.deactivate.current.style.pointerEvents = '';
+    props.deactivate.current.style.color = '';
+    ScormProcessSetValue("cmi.suspend_data", 0);
 }
 // function FinalSimpleVideo(props){
 //     console.log("ciao")
