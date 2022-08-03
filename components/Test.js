@@ -94,9 +94,9 @@ function Test2(props) {
 		if (ScormProcessGetValue("cmi.completion_status") == "not attempted")
 			ScormProcessSetValue("cmi.completion_status", "incomplete")
 		else if (ScormProcessGetValue("cmi.completion_status") == "incomplete")
-			ScormProcessSetValue("cmi.completion_status", "complete")
+			ScormProcessSetValue("cmi.completion_status", "completet")
 		
-		if (localSuccessStatus == "complete" || ScormProcessSetValue("cmi.completion_status", "complete"))
+		if (localSuccessStatus == "complete" || ScormProcessSetValue("cmi.completion_status", "completet"))
 			setIsEndButton(true);
 	}, false);
 

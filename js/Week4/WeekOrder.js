@@ -45,7 +45,7 @@ function FinalScalesVideo(props){
     props.setNotify("home");
     phoneBook.at(1).real = false
     if (isLocalSession) lacalCompletionStatus = setScoLocation(locationStatus, "step0");
-    else ScormProcessSetValue("cmi.location", setScoLocation(getScoLocation(ScormProcessGetValue("cmi.location")), "step0"));
+    else ScormProcessSetValue("cmi.location", setScoLocation(ScormProcessGetValue("cmi.location"), "step0"));
     // indice = 1;
     main.style.boxShadow = "";
     main.style.transition = ""
@@ -70,7 +70,7 @@ function FinalBranchingVideo(props){
     props.setX("rubric");
     props.setNotify("home");
     if (isLocalSession) lacalCompletionStatus = setScoLocation(locationStatus, "step2");
-    else ScormProcessSetValue("cmi.location", setScoLocation(getScoLocation(ScormProcessGetValue("cmi.location")), "step2"));
+    else ScormProcessSetValue("cmi.location", setScoLocation(ScormProcessGetValue("cmi.location"), "step2"));
     EmailText.at(0).display = true;
     phoneBook.at(4).real = false;
     ScormProcessSetValue("cmi.suspend_data", 0);
@@ -80,7 +80,7 @@ function AfterTest(props){
     props.setTestSection(false);
     if (isLocalSession) lacalCompletionStatus = setScoLocation(locationStatus, "step3");
     else{
-        ScormProcessSetValue("cmi.location", setScoLocation(getScoLocation(ScormProcessGetValue("cmi.location")), "step3"));
+        ScormProcessSetValue("cmi.location", setScoLocation(ScormProcessGetValue("cmi.location"), "step3"));
         ScormProcessSetValue("cmi.completion_status", "completed");
         ScormProcessSetValue("cmi.success_status", "passed");
       }
@@ -92,7 +92,7 @@ function Event1(props, i){
     {
        props.setNotify("home");
     if (isLocalSession) lacalCompletionStatus = setScoLocation(locationStatus, "step1");
-    else ScormProcessSetValue("cmi.location", setScoLocation(getScoLocation(ScormProcessGetValue("cmi.location")), "step1"));
+    else ScormProcessSetValue("cmi.location", setScoLocation(ScormProcessGetValue("cmi.location"), "step1"));
       //  indice = 2;
     }
 }

@@ -192,13 +192,13 @@ const App = () =>
 		locationStatus = stateDefault;
 	}
 	setCallSucceeded(true);
-	if(isLocalSession){
-		lacalCompletionStatus = ""
-		localSuccessStatus = "not attempted";
-	}
-	else if(ScormProcessGetValue("success_status") != "passed"){
-		ScormProcessSetValue("cmi.success_status", "not attempted")
-	}
+	// if(isLocalSession){
+	// 	lacalCompletionStatus = ""
+	// 	localSuccessStatus = "not attempted";
+	// }
+	// else if(ScormProcessGetValue("cmi.completion_status") != "passed"){
+	// 	ScormProcessSetValue("cmi.completion_status", "not attempted")
+	// }
 		
 	}
 	startTimeStamp = new Date();

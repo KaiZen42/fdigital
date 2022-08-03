@@ -4,7 +4,7 @@ const Email = () => {
 	  {EmailText.map((inbox, i) => (
 	  <div className="modal fade" id={"exampleModalCenter" + i} tabIndex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" key={i}>
 	  <div className="modal-dialog modal-dialog-centered" style={{justifyContent: 'space-around'}} role="document">
-		<div className="modal-content" style={{width: '70%'}}>
+		<div id="modalC" className="modal-content" style={{width: inbox.videoPath ? '100%':'70%'}}>
 		  <div className="modal-header" style={{flexDirection: 'column'}} >
 			<div style={{flexDirection: 'row', color: "#0078d4", display: 'flex', width: '100%'}}>
 				<h6 className="modal-title" id="exampleModalLongTitle" >{inbox.mittente}</h6>

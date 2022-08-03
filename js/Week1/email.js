@@ -1,7 +1,7 @@
 const EmailText = [
 {
     "mittente": "Simona",
-    "titolo": "Result of the test1",
+    "titolo": "Result of the test",
     "emailHead": "Hey there!",
 	"email": "Hey there! Thanks for coming over on such short notice.",
 	"emailFooter": "Best wishes.",
@@ -11,7 +11,7 @@ const EmailText = [
 },
 {
     "mittente": "Simona",
-    "titolo": "Result of the test2",
+    "titolo": "Result of the test",
     "emailHead": "Hey there!",
 	"email": "Hey there! Thanks for coming over on such short notice.",
 	"emailFooter": "Best wishes.",
@@ -21,7 +21,7 @@ const EmailText = [
 },
 {
     "mittente": "Simona",
-    "titolo": "Result of the test3",
+    "titolo": "Result of the test",
     "emailHead": "Hey there!",
 	"email": "Hey there! Thanks for coming over on such short notice.",
 	"emailFooter": "Best wishes.",
@@ -31,7 +31,7 @@ const EmailText = [
 },
 {
     "mittente": "Simona",
-    "titolo": "Result of the test4",
+    "titolo": "Result of the test",
     "emailHead": "Hey there!",
 	"email": "Hey there! Thanks for coming over on such short notice.",
 	"emailFooter": "Best wishes.",

@@ -37,7 +37,7 @@ function ThirdStep(props){
     if(props.notify != "test")
     {
         EmailText.at(whichVideo).display = true;
-        props.setNotify("email")
+        props.setNotify("inbox")
         props.setEmailCount(emailLen());
     }
 }
@@ -47,7 +47,7 @@ function FinalScalesVideo(props){
     props.setNotify("home");
     phoneBook.at(1).real = false
     if (isLocalSession) lacalCompletionStatus = setScoLocation(locationStatus, "step0");
-    else ScormProcessSetValue("cmi.location", setScoLocation(getScoLocation(ScormProcessGetValue("cmi.location")), "step0"));
+    else ScormProcessSetValue("cmi.location", setScoLocation(ScormProcessGetValue("cmi.location"), "step0"));
     // indice = 1;
     props.deactivate.current.style.pointerEvents = '';
     props.deactivate.current.style.color = '';
@@ -58,7 +58,7 @@ function FinalScalesVideo1(props){
     props.setNotify("home");
     phoneBook.at(1).real = false
     if (isLocalSession) lacalCompletionStatus = setScoLocation(locationStatus, "step1");
-    else ScormProcessSetValue("cmi.location", setScoLocation(getScoLocation(ScormProcessGetValue("cmi.location")), "step1"));
+    else ScormProcessSetValue("cmi.location", setScoLocation(ScormProcessGetValue("cmi.location"), "step1"));
     // indice = 1;
     main.style.boxShadow = "";
     main.style.transition = ""
@@ -69,7 +69,7 @@ function FinalScalesVideo1(props){
 }
 function FinalScalesVideo2(props){
     if (isLocalSession) lacalCompletionStatus = setScoLocation(locationStatus, "step2");
-    else ScormProcessSetValue("cmi.location", setScoLocation(getScoLocation(ScormProcessGetValue("cmi.location")), "step2"));
+    else ScormProcessSetValue("cmi.location", setScoLocation(ScormProcessGetValue("cmi.location"), "step2"));
     // indice = 1;
     main.style.boxShadow = "";
     main.style.transition = ""
@@ -88,7 +88,7 @@ function AfterVideoFinal(e){
     console.log("VIDEOFINAL")
     if (isLocalSession) lacalCompletionStatus = setScoLocation(locationStatus, "step3");
     else{
-        ScormProcessSetValue("cmi.location", setScoLocation(getScoLocation(ScormProcessGetValue("cmi.location")), "step3"));
+        ScormProcessSetValue("cmi.location", setScoLocation(ScormProcessGetValue("cmi.location"), "step3"));
         ScormProcessSetValue("cmi.completion_status", "completed");
         ScormProcessSetValue("cmi.success_status", "passed");
       }
@@ -98,7 +98,7 @@ function Finish(props){
     console.log("VIDEOFINISH")
     if (isLocalSession) lacalCompletionStatus = setScoLocation(locationStatus, "step3");
     else{
-        ScormProcessSetValue("cmi.location", setScoLocation(getScoLocation(ScormProcessGetValue("cmi.location")), "step3"));
+        ScormProcessSetValue("cmi.location", setScoLocation(ScormProcessGetValue("cmi.location"), "step3"));
         ScormProcessSetValue("cmi.completion_status", "completed");
         ScormProcessSetValue("cmi.success_status", "passed");
       }

@@ -1,6 +1,6 @@
 let numOfWeek = 5;
 let company = "Gamindo"
-let videoBoss = "media/Weeks/Week4/Boss/boss.mp4"
+let videoBoss = "media/GifAttesaDomanda.mp4"
 
 function InitialState(props){
     if(props.notify != "rubrica")
@@ -39,7 +39,7 @@ function ThirdStep(props){
 function FinalEpisode(props){
     props.setNotify("home");
     if (isLocalSession) lacalCompletionStatus = setScoLocation(locationStatus, "step0");
-    else ScormProcessSetValue("cmi.location", setScoLocation(getScoLocation(ScormProcessGetValue("cmi.location")), "step0"));
+    else ScormProcessSetValue("cmi.location", setScoLocation(ScormProcessGetValue("cmi.location"), "step0"));
     // indice = 1;
     main.style.boxShadow = "";
     main.style.transition = ""
@@ -59,7 +59,6 @@ function FinalScalesVideo(props){
     main.style.borderRadius = "";
     props.deactivate.current.style.pointerEvents = '';
     props.deactivate.current.style.color = '';
-    ScormProcessSetValue("cmi.suspend_data", 0);
 }
 // function FinalSimpleVideo(props){
 //     console.log("ciao")
@@ -86,12 +85,12 @@ function FinalScalesVideo(props){
 function afterLibrary(props){
     props.setNotify("home");
     if (isLocalSession) lacalCompletionStatus = setScoLocation(locationStatus, "step2");
-    else ScormProcessSetValue("cmi.location", setScoLocation(getScoLocation(ScormProcessGetValue("cmi.location")), "step2"));
+    else ScormProcessSetValue("cmi.location", setScoLocation(ScormProcessGetValue("cmi.location"), "step2"));
 }
 function AfterTest(props){
 
     if (isLocalSession) {lacalCompletionStatus = setScoLocation(locationStatus, "step1"); lacalCompletionStatus = setScoLocation(locationStatus, "test1");}
-    else ScormProcessSetValue("cmi.location", setScoLocation(getScoLocation(ScormProcessGetValue("cmi.location")), "step1"));
+    else {ScormProcessSetValue("cmi.location", setScoLocation(ScormProcessGetValue("cmi.location"), "step1"));ScormProcessSetValue("cmi.location", setScoLocation(ScormProcessGetValue("cmi.location"), "test1"));}
       props.setTestSection(false);
       props.setNotify("");
 }
@@ -99,7 +98,7 @@ function AfterTest(props){
 function AfterSecondTest(props){
     if (isLocalSession) lacalCompletionStatus = setScoLocation(locationStatus, "step3");
     else{ 
-        ScormProcessSetValue("cmi.location", setScoLocation(getScoLocation(ScormProcessGetValue("cmi.location")), "step3"));
+        ScormProcessSetValue("cmi.location", setScoLocation(ScormProcessGetValue("cmi.location"), "step3"));
         ScormProcessSetValue("cmi.completion_status", "completed");
         ScormProcessSetValue("cmi.success_status", "passed");
       }
@@ -112,7 +111,7 @@ function Event1(props, i){
     {
        props.setNotify("home");
     if (isLocalSession) lacalCompletionStatus = setScoLocation(locationStatus, "step1");
-    else ScormProcessSetValue("cmi.location", setScoLocation(getScoLocation(ScormProcessGetValue("cmi.location")), "step1"));
+    else ScormProcessSetValue("cmi.location", setScoLocation(ScormProcessGetValue("cmi.location"), "step1"));
       //  indice = 2;
     }
 }

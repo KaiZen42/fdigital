@@ -17,8 +17,9 @@ function checkIfImageExists(url, callback) {
 
 function getScoLocation(location, str){
 
-  let value = location.slice(location.search(str), location.search(str) + str.length)
-
+  let len = str.length ? str.length : 0;
+  let value = location.slice(location.search(str), location.search(str) + len)
+  console.log(len)
   if(value == "" || location.search(str) == -1)
     return -1;
   return value;
