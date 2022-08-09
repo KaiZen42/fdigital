@@ -11,9 +11,9 @@ const EmailText = [
 },
 {
     "mittente": "Simona",
-    "titolo": "Welcome to the Week9",
-    "emailHead": "Hello there,",
-	"email": "How are you doing? This week will be about the Flexibility value as it is reflected in consumers and firms choices;  activities will replicate the ones of last week. Please call me and engage in self-reflection with the flexible consumption scale. At the end of each item and scale, you will get a color on the screen, showing how you performed with respect to the mean of the scale. If you get a green screen, it means that you overperformed with respect to scale mean (your results are above the scale mean). If you get a yellow screen, it means that you scored exactly the scale mean. If you get a red screen, it means that you underperformed with respect to scale mean (your results are below the scale mean). Then, engage in a business game simulation about this week’s topic. Follow the instructions listed in HOME and find out more. Thank you and see you soon,",
+    "titolo": "Welcome to the Week 9",
+    "emailHead": "Hi there,",
+	"email": "Let’s start exploring the topics of this week! Please call me to get instructions and learn more about Customer journey management (CJM) and understanding customers’ retailing experiences. In this special issue we deal with the importance of social, cultural and political factors, on customers’ retailing experiences. After having completed this task and having gained some theoretical knowledge on such topics, you will be engaged in a new business game to get interesting insights from the real world and market. Thank you for your time,",
 	"emailFooter": "Simona",
     "open" : false,
     "display": true,

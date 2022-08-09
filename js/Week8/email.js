@@ -11,9 +11,9 @@ const EmailText = [
 },
 {
     "mittente": "Simona",
-    "titolo": "Welcome to the Week4",
-    "emailHead": "Hello there,",
-	"email": "How are you doing? This week will be about the Flexibility value as it is reflected in consumers and firms choices;  activities will replicate the ones of last week. Please call me and engage in self-reflection with the flexible consumption scale. At the end of each item and scale, you will get a color on the screen, showing how you performed with respect to the mean of the scale. If you get a green screen, it means that you overperformed with respect to scale mean (your results are above the scale mean). If you get a yellow screen, it means that you scored exactly the scale mean. If you get a red screen, it means that you underperformed with respect to scale mean (your results are below the scale mean). Then, engage in a business game simulation about this week’s topic. Follow the instructions listed in HOME and find out more. Thank you and see you soon,",
+    "titolo": "Welcome to the Week 8",
+    "emailHead": "Hello,",
+	"email": "This is the last week of the module dealing with consumers’ attitudes and experiences with Artificial Intelligence-enabled devices. I hope you enjoyed the previous tasks and you are ready for your last job on such topics! You already know what to do! Please watch the last episode of the mini tv series. Then test your understanding of the dynamics and experiences depicted in the episode with some Multiple Choice Questions. At the end of these tasks, please find additional video material to watch to gain more insights related to consumers’ attitudes and experiences with AI. Thank you for your time,",
 	"emailFooter": "Simona",
     "open" : false,
     "display": true,
