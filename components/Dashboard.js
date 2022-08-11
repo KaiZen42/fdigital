@@ -32,7 +32,6 @@ const Dashboard = React.memo((props) => {
 		: locationStatus.search("step3") != -1 ? 3 
 		: locationStatus.search("step4") != -1 ? 4 
 		: 42;
-		
 		console.log("status", actualStatus);
 	if(document.getElementById('main'))
 	{

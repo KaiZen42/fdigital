@@ -85,19 +85,7 @@ function Test2(props) {
 	window.addEventListener("message", function (e) {
 		//   if (e.origin !== "http://localhost:8080") return;
 		if (e.data !== "qualtrix_survey") return;
-
-		if (localSuccessStatus == "not attempted")
-			localSuccessStatus = "incomplete"
-		else if (localSuccessStatus == "incomplete")
-			localSuccessStatus = "complete"
-
-		if (ScormProcessGetValue("cmi.completion_status") == "not attempted")
-			ScormProcessSetValue("cmi.completion_status", "incomplete")
-		else if (ScormProcessGetValue("cmi.completion_status") == "incomplete")
-			ScormProcessSetValue("cmi.completion_status", "completet")
-		
-		if (localSuccessStatus == "complete" || ScormProcessSetValue("cmi.completion_status", "completet"))
-			setIsEndButton(true);
+		setIsEndButton(isEndButton || isEndButton == null ? false : true);
 	}, false);
 
 	return (
@@ -107,7 +95,7 @@ function Test2(props) {
 					<Divider>
 					</Divider>
 					{
-						<iframe style={{ height: "66vh", width: "100%", backgroundColor: "#003a7000" }} frameBorder="0" src={link.Link}></iframe>
+						<iframe style={{ height: "66vh", width: "100%", backgroundColor: "#003a7000" }} frameBorder="0" src={link.Link2}></iframe>
 					}
 					{/* <Divider> */}
 						<EndTest setTestSection={props.setTestSection} setEmailCount={props.setEmailCount} setNotify={props.setNotify} isEndButton={isEndButton} testType={props.testType}/>
