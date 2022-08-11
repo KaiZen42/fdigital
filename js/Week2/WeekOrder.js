@@ -91,7 +91,7 @@ function Event1(props, i){
     if(i == 0)
     {
        props.setNotify("home");
-if (isLocalSession) lacalCompletionStatus = setScoLocation(locationStatus, "step2");
+if (isLocalSession) lacalCompletionStatus = setScoLocation(locationStatus, "step1");
     else ScormProcessSetValue("cmi.location", setScoLocation(ScormProcessGetValue("cmi.location"), "step1"));
       //  indice = 2;
     }

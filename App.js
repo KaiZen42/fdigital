@@ -264,7 +264,7 @@ const Home = () => {
 				<Route path={`${loc}contacts`} component={() => <Begin setNotify={setNotify} setTestSection={setTestSection} setEmailCount={setEmailCount} deactivate={deactivate} openLibrary={openLibrary} setOpenLibrary={setOpenLibrary} setSerie={setSerie} serie={serie}/>} />
 				<Route path={`${loc}library`} component={() => <Library setNotify={setNotify} openLibrary={openLibrary} setOpenLibrary={setOpenLibrary}/>} setSerie={setSerie} serie={serie}/>
 				<Route path={`${loc}series`} component={() => <Series setNotify={setNotify} setTestSection={setTestSection} setEmailCount={setEmailCount} deactivate={deactivate} openLibrary={openLibrary} setOpenLibrary={setOpenLibrary}/>} />
-				<Route path={`${loc}test`} component={() => <Test setEmailCount={setEmailCount} setTestSection={setTestSection} setNotify={setNotify}/>} setSerie={setSerie} serie={serie}/>
+				<Route path={`${loc}test`} component={() => <Test setEmailCount={setEmailCount} setTestSection={setTestSection} setNotify={setNotify} deactivate={deactivate}/>} setSerie={setSerie} serie={serie}/>
 			</main>
 			</div>
 		</div>

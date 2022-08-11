@@ -11,7 +11,7 @@ const EmailText = [
 },
 {
     "mittente": "Simona",
-    "titolo": "Welcome to the Week2",
+    "titolo": "Welcome to the Week 2",
     "emailHead": "Hello,",
 	"email": "Nice to have you here again!\nAs for last week, we will ask you to rate yourself on a scale linked to this week’s topics to experience them personally. At the end of each item and scale, you will get a color on the screen, showing how you performed with respect to the mean of the scale. If you get a green screen, it means that you overperformed with respect to scale mean (your results are above the scale mean). If you get a yellow screen, it means that you scored exactly the scale mean. If you get a red screen, it means that you underperformed with respect to scale mean (your results are below the scale mean).\n \nThe second part of this asynchronous session will engage you in a business game simulation. Follow the instructions listed in HOME and find out more.\nThank you for your attention,\nEnjoy your time with us!\nSimona\n",
 	"emailFooter": "Simona",

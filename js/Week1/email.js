@@ -41,7 +41,7 @@ const EmailText = [
 },
 {
     "mittente": "Simona",
-    "titolo": "Welcome to the Week1",
+    "titolo": "Welcome to the Week 1",
     "emailHead": "Hey there!",
 	"email": "Welcome to the first asynchronous session. During this week’s activities, you will engage in self-reflection about yourself, as an individual and as a consumer. After having completed a survey on personal scales in the TEST section; you will watch some videos requiring you to rate yourself on consumption patterns. When rating yourself, please remember that results will be kept confidential and won’t be shared with anyone. At the end of each item and scale on consumption behaviors, you will get a color on the screen, showing how you performed with respect to the mean of the scale. If you get a green screen, it means that you overperformed with respect to scale mean (your results are above the scale mean). If you get a yellow screen, it means that you scored exactly the scale mean. If you get a red screen, it means that you underperformed with respect to scale mean (your results are below the scale mean). Results could be helpful to understand areas of possible improvements (if any) in the direction of wiser consumption habits. Thank you for your attention, Enjoy this week’s activities!",
 	"emailFooter": "Simona",

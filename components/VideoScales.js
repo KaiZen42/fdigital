@@ -172,7 +172,7 @@ const VideoScales = (props) => {
 					</Box>
 				</ThemeProvider> }*/}
 				
-				{iter == videoScale.length && (
+				{iter == videoScale.length && !first && (
 					<>
 					<video id="video" className="video-responsive" autoPlay>
 						<source src={videoPath} type="video/mp4"></source>
@@ -180,7 +180,8 @@ const VideoScales = (props) => {
 					<Grid container direction="column" justifyContent="center" alignItems="flex-end" sx={{ justifyContent: 'space-between', alignItems: 'center', height: '46vw'}}>
 					<ThemeProvider theme={theme}>
 						<div></div>
-						<h4 style={{position: 'relative'}} className="scritta2">Thanks! Bye</h4>
+						{numOfWeek != 9 && numOfWeek != 10  && numOfWeek != 11 &&
+						<h4 style={{position: 'relative'}} className="scritta2">Thanks! Bye</h4>}
 						<IconButton sx={{border: 3}} size="large" type="button" variant="outlined" color="error" onClick={() => fineVideo()}><i className="bi bi-telephone-fill"></i></IconButton>
 					</ThemeProvider>
 					</Grid>
