@@ -98,131 +98,131 @@ const videoQ =
                         "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
                     }]
     },
-    // { 
-    //     "terzina":[
-    //                 {
-    //                     "id": 13,
-    //                     "description":"Are you willing to produce in any location if it proves cost effective?",
-    //                     "path": "media/Weeks/Week4/Company/Terne/Terna 5/Terna 5 - 1.mp4",
-    //                     "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
-    //                 },
-    //                 {
-    //                     "id": 14,
-    //                     "description":"Are you producing only in Dubai?",
-    //                     "path": "media/Weeks/Week4/Company/Terne/Terna 5/Terna 5 - 2.mp4",
-    //                     "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
-    //                 },
-    //                 {
-    //                     "id": 15,
-    //                     "description":"Isn’t expensive to produce only in Dubai?",
-    //                     "path": "media/Weeks/Week4/Company/Terne/Terna 5/Terna 5 - 3.mp4",
-    //                     "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
-    //                 }]
-    // },
-    // { 
-    //     "terzina":[
-    //                 {
-    //                     "id": 16,
-    //                     "description":"how do you manage your waste from a collection?",
-    //                     "path": "media/Weeks/Week4/Company/Terne/Terna 6/Terna 6 - 1.mp4",
-    //                     "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
-    //                 },
-    //                 {
-    //                     "id": 17,
-    //                     "description":"what is your strategy for unsold items",
-    //                     "path": "media/Weeks/Week4/Company/Terne/Terna 6/Terna 6 - 2.mp4",
-    //                     "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
-    //                 },
-    //                 {
-    //                     "id": 18,
-    //                     "description":"how much does it cost you to maintain rented items (wash/ sanitize/ alter)",
-    //                     "path": "media/Weeks/Week4/Company/Terne/Terna 6/Terna 6 - 3.mp4",
-    //                     "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
-    //                 }]
-    // },
-    // { 
-    //     "terzina":[
-    //                 {
-    //                     "id": 19,
-    //                     "description":"Aren’t there some disadvantages in using recycled products?",
-    //                     "path": "media/Weeks/Week4/Company/Terne/Terna 7/Terna 7 - 1.mp4",
-    //                     "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
-    //                 },
-    //                 {
-    //                     "id": 20,
-    //                     "description":"Isn’t renting complicated to manage?",
-    //                     "path": "media/Weeks/Week4/Company/Terne/Terna 7/Terna 7 - 2.mp4",
-    //                     "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
-    //                 },
-    //                 {
-    //                     "id": 21,
-    //                     "description":"What is the additional cost of using very durable materials?",
-    //                     "path": "media/Weeks/Week4/Company/Terne/Terna 7/Terna 7 - 3.mp4",
-    //                     "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
-    //                 }]
-    // },
-    // { 
-    //     "terzina":[
-    //                 {
-    //                     "id": 22,
-    //                     "description":"Are you collaborating with influencers and celebrities and how?",
-    //                     "path": "media/Weeks/Week4/Company/Terne/Terna 8/Terna 8 - 1.mp4",
-    //                     "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
-    //                 },
-    //                 {
-    //                     "id": 23,
-    //                     "description":"Is collaborating across verticals possible?",
-    //                     "path": "media/Weeks/Week4/Company/Terne/Terna 8/Terna 8 - 2.mp4",
-    //                     "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
-    //                 },
-    //                 {
-    //                     "id": 24,
-    //                     "description":"Is collaboration possible in an industry known for its competitiveness?",
-    //                     "path": "media/Weeks/Week4/Company/Terne/Terna 8/Terna 8 - 3.mp4",
-    //                     "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
-    //                 }]
-    // },
-    // { 
-    //     "terzina":[
-    //                 {
-    //                     "id": 25,
-    //                     "description":"Are you slower than competitors in delivery time?",
-    //                     "path": "media/Weeks/Week4/Company/Terne/Terna 9/Terna 9 - 1.mp4",
-    //                     "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
-    //                 },
-    //                 {
-    //                     "id": 26,
-    //                     "description":"Are you really making money?",
-    //                     "path": "media/Weeks/Week4/Company/Terne/Terna 9/Terna 9 - 2.mp4",
-    //                     "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
-    //                 },
-    //                 {
-    //                     "id": 27,
-    //                     "description":"Are you really capable of delivering worldwide?",
-    //                     "path": "media/Weeks/Week4/Company/Terne/Terna 9/Terna 9 - 3.mp4",
-    //                     "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
-    //                 }]
-    // },
-    // { 
-    //     "terzina":[
-    //                 {
-    //                     "id": 28,
-    //                     "description":"This market approach is financially sustainable long term?",
-    //                     "path": "media/Weeks/Week4/Company/Terne/Terna 10/Terna 10 - 1.mp4",
-    //                     "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
-    //                 },
-    //                 {
-    //                     "id": 29,
-    //                     "description":"How much more does your product cost when compared to competitors?",
-    //                     "path": "media/Weeks/Week4/Company/Terne/Terna 10/Terna 10 - 2.mp4",
-    //                     "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
-    //                 },
-    //                 {
-    //                     "id": 30,
-    //                     "description":"Are your margins lower than competitors?",
-    //                     "path": "media/Weeks/Week4/Company/Terne/Terna 10/Terna 10 - 3.mp4",
-    //                     "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
-    //                 }]
-    // },
+    { 
+        "terzina":[
+                    {
+                        "id": 13,
+                        "description":"Are you willing to produce in any location if it proves cost effective?",
+                        "path": "media/Weeks/Week4/Company/Terne/Terna 5/Terna 5 - 1.mp4",
+                        "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
+                    },
+                    {
+                        "id": 14,
+                        "description":"Are you producing only in Dubai?",
+                        "path": "media/Weeks/Week4/Company/Terne/Terna 5/Terna 5 - 2.mp4",
+                        "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
+                    },
+                    {
+                        "id": 15,
+                        "description":"Isn’t expensive to produce only in Dubai?",
+                        "path": "media/Weeks/Week4/Company/Terne/Terna 5/Terna 5 - 3.mp4",
+                        "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
+                    }]
+    },
+    { 
+        "terzina":[
+                    {
+                        "id": 16,
+                        "description":"how do you manage your waste from a collection?",
+                        "path": "media/Weeks/Week4/Company/Terne/Terna 6/Terna 6 - 1.mp4",
+                        "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
+                    },
+                    {
+                        "id": 17,
+                        "description":"what is your strategy for unsold items",
+                        "path": "media/Weeks/Week4/Company/Terne/Terna 6/Terna 6 - 2.mp4",
+                        "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
+                    },
+                    {
+                        "id": 18,
+                        "description":"how much does it cost you to maintain rented items (wash/ sanitize/ alter)",
+                        "path": "media/Weeks/Week4/Company/Terne/Terna 6/Terna 6 - 3.mp4",
+                        "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
+                    }]
+    },
+    { 
+        "terzina":[
+                    {
+                        "id": 19,
+                        "description":"Aren’t there some disadvantages in using recycled products?",
+                        "path": "media/Weeks/Week4/Company/Terne/Terna 7/Terna 7 - 1.mp4",
+                        "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
+                    },
+                    {
+                        "id": 20,
+                        "description":"Isn’t renting complicated to manage?",
+                        "path": "media/Weeks/Week4/Company/Terne/Terna 7/Terna 7 - 2.mp4",
+                        "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
+                    },
+                    {
+                        "id": 21,
+                        "description":"What is the additional cost of using very durable materials?",
+                        "path": "media/Weeks/Week4/Company/Terne/Terna 7/Terna 7 - 3.mp4",
+                        "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
+                    }]
+    },
+    { 
+        "terzina":[
+                    {
+                        "id": 22,
+                        "description":"Are you collaborating with influencers and celebrities and how?",
+                        "path": "media/Weeks/Week4/Company/Terne/Terna 8/Terna 8 - 1.mp4",
+                        "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
+                    },
+                    {
+                        "id": 23,
+                        "description":"Is collaborating across verticals possible?",
+                        "path": "media/Weeks/Week4/Company/Terne/Terna 8/Terna 8 - 2.mp4",
+                        "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
+                    },
+                    {
+                        "id": 24,
+                        "description":"Is collaboration possible in an industry known for its competitiveness?",
+                        "path": "media/Weeks/Week4/Company/Terne/Terna 8/Terna 8 - 3.mp4",
+                        "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
+                    }]
+    },
+    { 
+        "terzina":[
+                    {
+                        "id": 25,
+                        "description":"Are you slower than competitors in delivery time?",
+                        "path": "media/Weeks/Week4/Company/Terne/Terna 9/Terna 9 - 1.mp4",
+                        "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
+                    },
+                    {
+                        "id": 26,
+                        "description":"Are you really making money?",
+                        "path": "media/Weeks/Week4/Company/Terne/Terna 9/Terna 9 - 2.mp4",
+                        "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
+                    },
+                    {
+                        "id": 27,
+                        "description":"Are you really capable of delivering worldwide?",
+                        "path": "media/Weeks/Week4/Company/Terne/Terna 9/Terna 9 - 3.mp4",
+                        "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
+                    }]
+    },
+    { 
+        "terzina":[
+                    {
+                        "id": 28,
+                        "description":"This market approach is financially sustainable long term?",
+                        "path": "media/Weeks/Week4/Company/Terne/Terna 10/Terna 10 - 1.mp4",
+                        "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
+                    },
+                    {
+                        "id": 29,
+                        "description":"How much more does your product cost when compared to competitors?",
+                        "path": "media/Weeks/Week4/Company/Terne/Terna 10/Terna 10 - 2.mp4",
+                        "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
+                    },
+                    {
+                        "id": 30,
+                        "description":"Are your margins lower than competitors?",
+                        "path": "media/Weeks/Week4/Company/Terne/Terna 10/Terna 10 - 3.mp4",
+                        "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
+                    }]
+    },
     
 ];
