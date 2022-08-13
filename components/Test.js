@@ -1,7 +1,6 @@
 const Test = React.memo((props) => {
 	const [testType, setTestType] = React.useState(isLocalSession ? 
 		localTestType : getScoLocation(ScormProcessGetValue("cmi.location"), 1));
-	console.log("gest",getScoLocation(locationStatus, "test1"))
 	if(getScoLocation(locationStatus, "test1") == "test1")
 		return <Test1 setTestSection={props.setTestSection} setEmailCount={props.setEmailCount} setNotify={props.setNotify}/>
 	else
@@ -20,7 +19,6 @@ function Test1(props) {
 		if (e.data !== "qualtrix_survey") return;
 		setIsEndButton(isEndButton || isEndButton == null ? false : true);
 	}, false);
-	console.log("TEST1")
 	
 	return (
 		<>
@@ -81,7 +79,6 @@ function Test2(props) {
 	let link = users.find(data => data["Last Name"] === name);
 	const [isEndButton, setIsEndButton] = React.useState(null);
 
-	console.log("TEST2")
 	window.addEventListener("message", function (e) {
 		//   if (e.origin !== "http://localhost:8080") return;
 		if (e.data !== "qualtrix_survey") return;

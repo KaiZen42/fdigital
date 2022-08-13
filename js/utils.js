@@ -19,7 +19,6 @@ function getScoLocation(location, str){
 
   let len = str.length ? str.length : 0;
   let value = location.slice(location.search(str), location.search(str) + len)
-  console.log(len)
   if(value == "" || location.search(str) == -1)
     return -1;
   return value;
@@ -27,7 +26,6 @@ function getScoLocation(location, str){
 
 function setScoLocation(location, str) //step
 {  
-  console.log("LOCATION INIZIALE", location, "E STR", str)
   let index;
   let tmp;
   let stato = str.search("step") != -1 ? stateStep : stateTest ;
@@ -36,14 +34,12 @@ function setScoLocation(location, str) //step
     tmp = location.slice(5, 10);
   else
     tmp = location.slice(0, 5);
-  console.log("VALORE INIZIALE",tmp, "compare", tmp.localeCompare(str))
   if(tmp.localeCompare(str) == 0)
   {
     index = stato.indexOf(str);
     location = location.replace(str, stato.at(index + 1));
   }
 
-  console.log("LOCATION FINALE", location)
   return location;
 }
 

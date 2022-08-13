@@ -110,10 +110,8 @@ const VideoScales = (props) => {
 		else
 			endCall = true;
 		setEnd(false);
-		console.log("result", result, "value", value, "iter", iter);
 		if(resultLow > valore)
 		{
-			console.log("result", resultLow)
 			setResultLow(valore);
 			whichVideo = iter;
 		}
@@ -129,7 +127,6 @@ const VideoScales = (props) => {
 
 	const main = document.getElementById('main');
 	function semaforo(){
-		console.log("semaforo")
 		let divid;
 		if(type != 2)
 			divid = result / iter;

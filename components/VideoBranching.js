@@ -47,7 +47,6 @@ const Branching = (props) => {
       if (questNun > 3) {
         questNun -= 3;
       } else {
-        console.log("IT=" + (i + 1) + " choice=" + questNun);
         setChoice(questNun - 1);
         setIt(i + 1);
         break;
@@ -110,15 +109,12 @@ const Branching = (props) => {
   if (it <= videoQ.length) {
     //&& isEnd == "incomplete")
     const handleEvent = (e) => {
-      console.log("prima" + it);
       if (it == videoQ.length) setIt(it + 1);
-      console.log("dopo" + it);
       setEnd(true);
     };
 
     const handleSnackEvent = (e, choice) => {
       ScormProcessSetValue("cmi.suspend_data", it * 3 + choice + 1);
-      console.log("CALC...", it * 3 + choice + 1);
       setChoice(choice);
       setIt(it + 1);
     };

@@ -85,7 +85,6 @@ function FinalScalesVideo2(props){
 
 
 function AfterVideoFinal(e){
-    console.log("VIDEOFINAL")
     if (isLocalSession) lacalCompletionStatus = setScoLocation(locationStatus, "step3");
     else{
         ScormProcessSetValue("cmi.location", setScoLocation(ScormProcessGetValue("cmi.location"), "step3"));
@@ -95,7 +94,6 @@ function AfterVideoFinal(e){
 }
 
 function Finish(props){
-    console.log("VIDEOFINISH")
     if (isLocalSession) lacalCompletionStatus = setScoLocation(locationStatus, "step3");
     else{
         ScormProcessSetValue("cmi.location", setScoLocation(ScormProcessGetValue("cmi.location"), "step3"));
@@ -111,6 +109,5 @@ function AfterTest(props){
 
 function FinalChange(props){
 
-    console.log("FinalChange")
     
 }

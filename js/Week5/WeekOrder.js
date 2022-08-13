@@ -60,27 +60,7 @@ function FinalScalesVideo(props){
     props.deactivate.current.style.pointerEvents = '';
     props.deactivate.current.style.color = '';
 }
-// function FinalSimpleVideo(props){
-//     console.log("ciao")
-//     props.setX("rubric");
-//     props.setNotify("inbox");
-//     EmailText.at(0).display = true;
-//     phoneBook.at(0).real = false;
-//     props.setEmailCount(emailLen()); 
-//     props.deactivate.current.style.pointerEvents = '';
-//     props.deactivate.current.style.color = '';
-// }
-// function FinalBranchingVideo(props){
-//     props.deactivate.current.style.pointerEvents = "";
-//     props.deactivate.current.style.color = "";
-//     props.setX("rubric");
-//     props.setNotify("home");
-//     if (isLocalSession) lacalCompletionStatus = "incomplete";
-//     else ScormProcessSetValue("cmi.completion_status", "incomplete");
-//     EmailText.at(0).display = true;
-//     phoneBook.at(4).real = false;
-//     ScormProcessSetValue("cmi.suspend_data", 0);
-// }
+
 
 function afterLibrary(props){
     props.setNotify("home");
@@ -120,7 +100,5 @@ function Event2(props){
 }
 
 function FinalChange(props){
-
-    console.log("FinalChange")
     
 }

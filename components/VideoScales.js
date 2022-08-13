@@ -41,8 +41,7 @@ const VideoScales = (props) => {
 	const handleEnd = (e) => {
 			setEnd(true);	
 	}
-	const handleEndFirst = (e) => {
-		console.log("AOOOOO", end)
+	const handleEndFirst = (e) => {	
 			setFirst(false);
 	}
 
@@ -64,7 +63,6 @@ const VideoScales = (props) => {
 
 	const main = document.getElementById('main');
 	function semaforo(){
-		console.log("semaforo")
 		let divid = result / iter;
 		ScormProcessSetValue("cmi.progress_measure", divid / 10)
 		ScormProcessSetValue("cmi.suspend_data", iter);

@@ -55,7 +55,6 @@ function FinalScalesVideo(props){
     ScormProcessSetValue("cmi.suspend_data", 0);
 }
 function FinalSimpleVideo(props){
-    console.log("ciao")
     props.setX("rubric");
     props.setNotify("inbox");
     EmailText.at(0).display = true;
@@ -101,7 +100,5 @@ function Event2(props){
 }
 
 function FinalChange(props){
-
-    console.log("FinalChange")
     
 }

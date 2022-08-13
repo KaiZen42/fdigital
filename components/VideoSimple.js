@@ -9,14 +9,6 @@ const VideoSimple = (props) => {
 	}
 	function fineVideo(){
 		FinalSimpleVideo(props);
-		// console.log("ciao")
-		// props.setX("rubric");
-		// props.setNotify("inbox");
-		// EmailText.at(0).display = true;
-		// phoneBook.at(0).real = false;
-		// props.setEmailCount(emailLen()); 
-		// props.deactivate.current.style.pointerEvents = '';
-		// props.deactivate.current.style.color = '';
 	}
     return(
         <>

@@ -4,7 +4,6 @@ const Begin = React.memo((props) => {
 	  const [who, setWho] = React.useState(0);
 
 		//let name = ScormProcessGetValue("cmi.learner_name");
-	  //console.log("..........", n,x)
 	  
 	  const main = document.getElementById('main');
 	if(x == "scales" || x == "video" || x == "branching")
@@ -34,9 +33,8 @@ const Begin = React.memo((props) => {
 	  
 		return(
 			<>
-			{console.log("return",x)}
-		  <ActiveState state ={x}/> 
-		  </>
+		  	<ActiveState state ={x}/> 
+		  	</>
 	  )
 	})
 	

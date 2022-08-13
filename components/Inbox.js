@@ -21,7 +21,6 @@ const Inbox = React.memo((props) => {
 			  }
 		  }
 	  }
-    console.log("INBOX", props)
    
     if(numOfWeek != 1 && numOfWeek != 5 && numOfWeek != 6 && numOfWeek != 7 && numOfWeek != 8 && EmailText.at(i).open == false)
       Event1(props, i);
