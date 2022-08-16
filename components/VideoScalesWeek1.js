@@ -27,7 +27,7 @@ const VideoScales = (props) => {
 	
 		return (
 			<>
-				{numOfWeek == 1 && props.isEndButton &&
+				{numOfWeek == 1 || numOfWeek == 12 && props.isEndButton &&
 					<ThemeProvider theme={theme}>
 						<Grid container direction="row" justifyContent="center" textAlign="center" alignItems="flex-end">
 							<Link exact onClick={handleEnd} to={`${locPath}`} className="nav-link"><i className="bi bi-house-fill"></i>Back to Home</Link>

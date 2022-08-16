@@ -2,7 +2,7 @@ const phoneBook = [
     {
         nome: "The Boss",
         img: "media/Weeks/Week5/Boss/boss.png",
-        text: "Is the boss who will call you to ask you for an important job concerning a company.",
+        text: "Is the boss who, if needed, will call you to ask you for an important job concerning a company.",
         type: "video",
         real: false
     },

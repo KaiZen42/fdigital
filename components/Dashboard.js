@@ -27,7 +27,16 @@ const Dashboard = React.memo((props) => {
 	for(let k = 0; k < numOfWeek; k++)
 		weeks.at(k).display = true;
 
+	console.log(actualStatus, "stato");
 	function changeState(){
+		if(actualStatus == 2 && numOfWeek == 12)
+		{
+			locationStatus = setScoLocation(locationStatus, "step2");
+			locationStatus = setScoLocation(locationStatus, "step3");
+			actualStatus = 4;
+			console.log(actualStatus,locationStatus, "ao1")
+			
+		}
 		if(actualStatus == 0)
 		{
 			if(locationStatus.search("step0") != -1)
@@ -56,7 +65,8 @@ const Dashboard = React.memo((props) => {
 		{
 			if(locationStatus.search("step4") != -1)
 				locationStatus = setScoLocation(locationStatus, "step4");
-			weeks.at(numOfWeek).display = true;
+			if(numOfWeek != 12)
+				weeks.at(numOfWeek).display = true;
 			if(numOfWeek == 1)
 				Finish(props);
 			props.setNotify("exit")
@@ -85,10 +95,12 @@ const Dashboard = React.memo((props) => {
 			))}
 		</Stepper>
 		{actualStatus === 4 && (
+		
 		<Paper square elevation={0} sx={{ p: 4, backgroundColor: 'transparent' }}>
 			<Typography>All steps completed - you&apos;ve finished, now you can exit with the button below</Typography>
 		</Paper>
       )}
+	  {console.log("stato", actualStatus, locationStatus.search("step4"))}
 	</Box>
 	 : 
 	 <Box sx={{width: '100%',textAlign: 'center'}}>

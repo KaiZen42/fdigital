@@ -1,14 +1,14 @@
 const phoneBook = [
     {
         nome: "The Boss",
-        img: "media/Weeks/Week11/Boss/boss.png",
+        img: "media/Weeks/Week12/Boss/boss.png",
         text: "Is the boss who, if needed, will call you to ask you for an important job concerning a company.",
         type: "video",
         real: false
     },
     {
         nome: "Simona",
-        img: "media/Weeks/Week11/Scales/simona.png",
+        img: "media/Weeks/Week12/Scales/simona.png",
         text: "A researcher who will ask you personal questions about your ways of acting on certain things",
         type: "scales",
         real: false
