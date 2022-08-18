@@ -16,8 +16,8 @@ function FirstStep(props){
     if(props.notify != "rubrica" && props.notify != "inbox")
     {
         props.setNotify("rubrica")
-        phoneBook.at(0).real = true
-        phoneBook.at(1).real = false;
+        phoneBook.at(1).real = true;
+        type = 4;
     }
 }
 
@@ -42,7 +42,8 @@ function AfterTest(props){
 }
 function FinalSimpleVideo(props){
     props.setX("rubric");
-    phoneBook.at(0).real = false;
+    phoneBook.at(1).real = false;
+    props.setNotify("home");
     props.deactivate.current.style.pointerEvents = '';
     props.deactivate.current.style.color = '';
     if (isLocalSession) {lacalCompletionStatus = setScoLocation(locationStatus, "step1");}

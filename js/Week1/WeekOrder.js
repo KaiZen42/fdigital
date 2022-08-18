@@ -34,7 +34,8 @@ function SecondStep(props){
 
 function ThirdStep(props){
 
-    if(props.notify != "test")
+    console.log("email", emailLen())
+    if(props.notify != "inbox" && emailLen() <= 1)
     {
         EmailText.at(whichVideo).display = true;
         props.setNotify("inbox")

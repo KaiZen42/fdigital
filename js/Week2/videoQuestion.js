@@ -167,19 +167,19 @@ const videoQ =
                         "id": 22,
                         "description":"Are you collaborating with influencers and celebrities and how?",
                         "path": "media/Weeks/Week2/Company/Terne/Terna 8/Terna 8 - 1.mp4",
-                        "waitGif": "media/Weeks/Week2/Company/Loop.mp4"
+                        "waitGif": "media/Weeks/Week2/Company/Loop2.mp4"
                     },
                     {
                         "id": 23,
                         "description":"Is collaborating across verticals possible?",
                         "path": "media/Weeks/Week2/Company/Terne/Terna 8/Terna 8 - 2.mp4",
-                        "waitGif": "media/Weeks/Week2/Company/Loop.mp4"
+                        "waitGif": "media/Weeks/Week2/Company/Loop2.mp4"
                     },
                     {
                         "id": 24,
                         "description":"Is collaboration possible in an industry known for its competitiveness?",
                         "path": "media/Weeks/Week2/Company/Terne/Terna 8/Terna 8 - 3.mp4",
-                        "waitGif": "media/Weeks/Week2/Company/Loop.mp4"
+                        "waitGif": "media/Weeks/Week2/Company/Loop2.mp4"
                     }]
     },
     { 
@@ -188,19 +188,19 @@ const videoQ =
                         "id": 25,
                         "description":"Are you slower than competitors in delivery time?",
                         "path": "media/Weeks/Week2/Company/Terne/Terna 9/Terna 9 - 1.mp4",
-                        "waitGif": "media/Weeks/Week2/Company/Loop.mp4"
+                        "waitGif": "media/Weeks/Week2/Company/Loop2.mp4"
                     },
                     {
                         "id": 26,
                         "description":"Are you really making money?",
                         "path": "media/Weeks/Week2/Company/Terne/Terna 9/Terna 9 - 2.mp4",
-                        "waitGif": "media/Weeks/Week2/Company/Loop.mp4"
+                        "waitGif": "media/Weeks/Week2/Company/Loop2.mp4"
                     },
                     {
                         "id": 27,
                         "description":"Are you really capable of delivering worldwide?",
                         "path": "media/Weeks/Week2/Company/Terne/Terna 9/Terna 9 - 3.mp4",
-                        "waitGif": "media/Weeks/Week2/Company/Loop.mp4"
+                        "waitGif": "media/Weeks/Week2/Company/Loop2.mp4"
                     }]
     },
     { 
@@ -209,19 +209,19 @@ const videoQ =
                         "id": 28,
                         "description":"This market approach is financially sustainable long term?",
                         "path": "media/Weeks/Week2/Company/Terne/Terna 10/Terna 10 - 1.mp4",
-                        "waitGif": "media/Weeks/Week2/Company/Loop.mp4"
+                        "waitGif": "media/Weeks/Week2/Company/Loop2.mp4"
                     },
                     {
                         "id": 29,
                         "description":"How much more does your product cost when compared to competitors?",
                         "path": "media/Weeks/Week2/Company/Terne/Terna 10/Terna 10 - 2.mp4",
-                        "waitGif": "media/Weeks/Week2/Company/Loop.mp4"
+                        "waitGif": "media/Weeks/Week2/Company/Loop2.mp4"
                     },
                     {
                         "id": 30,
                         "description":"Are your margins lower than competitors?",
                         "path": "media/Weeks/Week2/Company/Terne/Terna 10/Terna 10 - 3.mp4",
-                        "waitGif": "media/Weeks/Week2/Company/Loop.mp4"
+                        "waitGif": "media/Weeks/Week2/Company/Loop2.mp4"
                     }]
     },
     

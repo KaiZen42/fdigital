@@ -27,10 +27,12 @@ const VideoScales = (props) => {
 	
 		return (
 			<>
-				{numOfWeek == 1 || numOfWeek == 12 && props.isEndButton &&
+				{(numOfWeek == 1 || numOfWeek == 12) && props.isEndButton &&
 					<ThemeProvider theme={theme}>
 						<Grid container direction="row" justifyContent="center" textAlign="center" alignItems="flex-end">
-							<Link exact onClick={handleEnd} to={`${locPath}`} className="nav-link"><i className="bi bi-house-fill"></i>Back to Home</Link>
+							<Divider>
+								<Link exact onClick={handleEnd} to={`${locPath}`} className="nav-link"><i className="bi bi-house-fill"></i>Back to Home</Link>
+							</Divider>
 						</Grid>
 					</ThemeProvider>}
 			</>
@@ -43,6 +45,8 @@ const VideoScales = (props) => {
 			return introScales2;
 		else if(iter == 0 && first && type == 2)
 			return introScales3;
+		else if(type == 4)
+			return videoFinale;
 		if((iter == 0 && !first) || type == 0)
 			return "media/ScalesColor/IntroSfondo.mp4"
 		let divid = result / iter;
@@ -201,20 +205,6 @@ const VideoScales = (props) => {
 				</Box>
 			</ThemeProvider>
 			}
-				{/* {testFinish && (
-					<>
-					<video id="video" className="video-responsive" autoPlay>
-						<source src={videoPath} type="video/mp4"></source>
-					</video>
-					<Grid container direction="column" justifyContent="center" alignItems="flex-end" sx={{ justifyContent: 'space-between', alignItems: 'center', height: '46vw'}}>
-					<ThemeProvider theme={theme}>
-						<div></div>
-						<h4 style={{position: 'relative'}} className="scritta2">Thanks! Bye</h4>
-						<IconButton sx={{border: 3}} size="large" type="button" variant="outlined" color="error" onClick={() => FinalScalesVideo(props)}><i className="bi bi-telephone-fill"></i></IconButton>
-					</ThemeProvider>
-					</Grid>
-					</>
-				)} */}
 				
 		</Box>}
 		{/* GENERAL BEHAVIOUR */}
@@ -357,6 +347,31 @@ const VideoScales = (props) => {
 					</>
 				)}
 				<Webcam className="webcam" id="webcam" muted/>
+		</Box>}
+		{type == 4 && 
+		<Box className="container" sx={{color: 'white'}}>
+			{!end &&
+			<>
+				<video id="video" className="video-responsive" onEnded={handleEnd} muted={""} autoPlay >
+					<source src={videoPath} type="video/mp4"></source>
+				</video>
+				<Webcam className="webcam" id="webcam" muted/>
+			</>
+			}
+			{end && (
+					<>
+					<video id="video" className="video-responsive" autoPlay muted>
+						<source src={"/media/ScalesColor/IntroSfondo.mp4"} type="video/mp4"></source>
+					</video>
+					<Grid container direction="column" justifyContent="center" alignItems="flex-end" sx={{ justifyContent: 'space-between', alignItems: 'center', height: '46vw'}}>
+					<ThemeProvider theme={theme}>
+						<div></div>
+						<h4 style={{position: 'relative'}} className="scritta2">Thanks! Bye</h4>
+						<IconButton sx={{border: 3}} size="large" type="button" variant="outlined" color="error" onClick={() => FinalSimpleVideo(props)}><i className="bi bi-telephone-fill"></i></IconButton>
+					</ThemeProvider>
+					</Grid>
+					</>
+				)}
 		</Box>}
 		</>
 	)

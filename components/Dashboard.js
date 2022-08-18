@@ -34,8 +34,6 @@ const Dashboard = React.memo((props) => {
 			locationStatus = setScoLocation(locationStatus, "step2");
 			locationStatus = setScoLocation(locationStatus, "step3");
 			actualStatus = 4;
-			console.log(actualStatus,locationStatus, "ao1")
-			
 		}
 		if(actualStatus == 0)
 		{
@@ -95,6 +93,12 @@ const Dashboard = React.memo((props) => {
 			))}
 		</Stepper>
 		{actualStatus === 4 && (
+		
+		<Paper square elevation={0} sx={{ p: 4, backgroundColor: 'transparent' }}>
+			<Typography>All steps completed - you&apos;ve finished, now you can exit with the button below</Typography>
+		</Paper>
+      )}
+		{actualStatus === 2 && numOfWeek == 12 && (
 		
 		<Paper square elevation={0} sx={{ p: 4, backgroundColor: 'transparent' }}>
 			<Typography>All steps completed - you&apos;ve finished, now you can exit with the button below</Typography>
