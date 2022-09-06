@@ -18,19 +18,19 @@ const videoQ =
         "terzina":[   
                     {
                         "id": 1,
-                        "description":"Why do you think one should invest in a sustainable brand?",
+                        "description":"What is the expected growth rate of the global video game market during the next years?",
                         "path": "media/Weeks/Week4/Company/Terne/Terna 1/Terna 1 - 1.mp4",
                         "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
                     },
                     {
                         "id": 2,
-                        "description":"What does it mean to invest in the greater good?",
+                        "description":"What is the expected impact of post pandemic on the global video game industry",
                         "path": "media/Weeks/Week4/Company/Terne/Terna 1/Terna 1 - 2.mp4",
                         "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
                     },
                     {
                         "id": 3,
-                        "description":"Is sustainability widely accepted in business future?",
+                        "description":"Video games were already growing in popularity before the coronavirus pandemic. During the pandemic, they were everywhere. What are the predictions for the future",
                         "path": "media/Weeks/Week4/Company/Terne/Terna 1/Terna 1 - 3.mp4",
                         "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
                     }]
@@ -39,19 +39,19 @@ const videoQ =
         "terzina":[
                     {
                         "id": 4,
-                        "description":"Which is the connection between slow fashion and sustainability?",
+                        "description":"What are the key regions in the global gaming market?",
                         "path": "media/Weeks/Week4/Company/Terne/Terna 2/Terna 2 - 1.mp4",
                         "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
                     },
                     {
                         "id": 5,
-                        "description":"Is contemporary society aware of the sustainability concepts?",
+                        "description":"What’s the role of Italy in the global gaming market?",
                         "path": "media/Weeks/Week4/Company/Terne/Terna 2/Terna 2 - 2.mp4",
                         "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
                     },
                     {
                         "id": 6,
-                        "description":"Isn’t slow fashion a concept only for the “rich” who can afford it?",
+                        "description":"What’s the difference between East and West in the global gaming market?",
                         "path": "media/Weeks/Week4/Company/Terne/Terna 2/Terna 2 - 3.mp4",
                         "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
                     }]
@@ -60,19 +60,19 @@ const videoQ =
         "terzina":[
                     {
                         "id": 7,
-                        "description":"Some research indicates over 50% of consumers are still looking for low prize rather than a sustainable product?",
+                        "description":"Considering that contemporary consumers tend to prioritize the use of their personal resources to promote personal pleasure and joy, how does Gamindo’s offers match these needs?",
                         "path": "media/Weeks/Week4/Company/Terne/Terna 3/Terna 3 - 1.mp4",
                         "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
                     },
                     {
                         "id": 8,
-                        "description":"You think you have a large enough market to be profitable?",
+                        "description":"Growth needs are central in contemporary society, how do Gamindo’s offers match these needs?",
                         "path": "media/Weeks/Week4/Company/Terne/Terna 3/Terna 3 - 2.mp4",
                         "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
                     },
                     {
                         "id": 9,
-                        "description":"Oxford Press says 55% of people care for price more than sustainability",
+                        "description":"The “flow state” can be associated to gaming. Could you please share Gamindo’s point of view of this issue?",
                         "path": "media/Weeks/Week4/Company/Terne/Terna 3/Terna 3 - 3.mp4",
                         "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
                     }]
@@ -81,19 +81,19 @@ const videoQ =
         "terzina":[
                     {
                         "id": 10,
-                        "description":"Do you think your brand is mostly local or suitable for international market?",
+                        "description":"Aside from their use in entertainment, videogames are also used in education as so-called serious games. Does Gamindo have any experience in this area?",
                         "path": "media/Weeks/Week4/Company/Terne/Terna 4/Terna 4 - 1.mp4",
                         "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
                     },
                     {
                         "id": 11,
-                        "description":"What are your methods of researching the market demand?",
+                        "description":"Considering the important role of videogames in education, does Gamindo have any partnership with schools?",
                         "path": "media/Weeks/Week4/Company/Terne/Terna 4/Terna 4 - 2.mp4",
                         "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
                     },
                     {
                         "id": 12,
-                        "description":"Who is your target market age wise?",
+                        "description":"Considering the important role of videogames in education, how does Gamindo intend to establish itself in edutainment?",
                         "path": "media/Weeks/Week4/Company/Terne/Terna 4/Terna 4 - 3.mp4",
                         "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
                     }]
@@ -102,19 +102,19 @@ const videoQ =
         "terzina":[
                     {
                         "id": 13,
-                        "description":"Are you willing to produce in any location if it proves cost effective?",
+                        "description":"Considering the sense of purpose of contemporary consumers, how can they positively relate to others through videogaming?",
                         "path": "media/Weeks/Week4/Company/Terne/Terna 5/Terna 5 - 1.mp4",
                         "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
                     },
                     {
                         "id": 14,
-                        "description":"Are you producing only in Dubai?",
+                        "description":"Do you think that entertainment and donation could contribute to the individual sense of purpose?",
                         "path": "media/Weeks/Week4/Company/Terne/Terna 5/Terna 5 - 2.mp4",
                         "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
                     },
                     {
                         "id": 15,
-                        "description":"Isn’t expensive to produce only in Dubai?",
+                        "description":"Do you think it is possible to enable consumer wisdom through videogaming?",
                         "path": "media/Weeks/Week4/Company/Terne/Terna 5/Terna 5 - 3.mp4",
                         "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
                     }]
@@ -123,19 +123,19 @@ const videoQ =
         "terzina":[
                     {
                         "id": 16,
-                        "description":"how do you manage your waste from a collection?",
+                        "description":"Videogames are a new communication language and a new opportunity for brands through advergaming. What are the benefits for the brand?",
                         "path": "media/Weeks/Week4/Company/Terne/Terna 6/Terna 6 - 1.mp4",
                         "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
                     },
                     {
                         "id": 17,
-                        "description":"what is your strategy for unsold items",
+                        "description":"Brands start to invest in advergaming. Is it possible to invest in impact branded gaming?",
                         "path": "media/Weeks/Week4/Company/Terne/Terna 6/Terna 6 - 2.mp4",
                         "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
                     },
                     {
                         "id": 18,
-                        "description":"how much does it cost you to maintain rented items (wash/ sanitize/ alter)",
+                        "description":"Brands start to invest in advergaming. Is it possible to use a branded game per CSR?",
                         "path": "media/Weeks/Week4/Company/Terne/Terna 6/Terna 6 - 3.mp4",
                         "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
                     }]
@@ -144,19 +144,19 @@ const videoQ =
         "terzina":[
                     {
                         "id": 19,
-                        "description":"Aren’t there some disadvantages in using recycled products?",
+                        "description":"Gamindo has a “win-win-win“ business model. Could you please better articulate the specificities of the model?",
                         "path": "media/Weeks/Week4/Company/Terne/Terna 7/Terna 7 - 1.mp4",
                         "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
                     },
                     {
                         "id": 20,
-                        "description":"Isn’t renting complicated to manage?",
+                        "description":"Could you please explain the characteristic of Gamindo business model?",
                         "path": "media/Weeks/Week4/Company/Terne/Terna 7/Terna 7 - 2.mp4",
                         "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
                     },
                     {
                         "id": 21,
-                        "description":"What is the additional cost of using very durable materials?",
+                        "description":"What is your main source of revenue?",
                         "path": "media/Weeks/Week4/Company/Terne/Terna 7/Terna 7 - 3.mp4",
                         "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
                     }]
@@ -165,19 +165,19 @@ const videoQ =
         "terzina":[
                     {
                         "id": 22,
-                        "description":"Are you collaborating with influencers and celebrities and how?",
+                        "description":"China and United States - the two most important countries for the gaming market – present big differences in terms of culture. For example, based on Hofstede taxonomy China is high in collectivism placing importance to relationships and cooperation, while US is high in individualism. What could be the impact on your business model?",
                         "path": "media/Weeks/Week4/Company/Terne/Terna 8/Terna 8 - 1.mp4",
                         "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
                     },
                     {
                         "id": 23,
-                        "description":"Is collaborating across verticals possible?",
+                        "description":"China and United States - the two most important countries for the gaming market – present big differences in terms of culture. For example, based on Hofstede taxonomy China has a high power distance placing importance on hierarchy, while in the United States there is a lower power distance. What could be the impact on your business model?",
                         "path": "media/Weeks/Week4/Company/Terne/Terna 8/Terna 8 - 2.mp4",
                         "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
                     },
                     {
                         "id": 24,
-                        "description":"Is collaboration possible in an industry known for its competitiveness?",
+                        "description":"China and United States - the two most important countries for the gaming market – present big differences in terms of culture. For example, based on Hofstede taxonomy China has a long term orientation, where they are patient and adapt to changes to accomplish goals, while United States has a short term orientation. What could be the impact on your business model?",
                         "path": "media/Weeks/Week4/Company/Terne/Terna 8/Terna 8 - 3.mp4",
                         "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
                     }]
@@ -186,19 +186,19 @@ const videoQ =
         "terzina":[
                     {
                         "id": 25,
-                        "description":"Are you slower than competitors in delivery time?",
+                        "description":"Donation data shows different patterns between china and us. People are reluctant to donate in China. Do you think these donation behaviors could negatively affect your business?",
                         "path": "media/Weeks/Week4/Company/Terne/Terna 9/Terna 9 - 1.mp4",
                         "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
                     },
                     {
                         "id": 26,
-                        "description":"Are you really making money?",
+                        "description":"A recent study finds that donation can significantly increase individual happiness. Do you think that this finding could also be extended to China, a country in general very reluctant to donate?",
                         "path": "media/Weeks/Week4/Company/Terne/Terna 9/Terna 9 - 2.mp4",
                         "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
                     },
                     {
                         "id": 27,
-                        "description":"Are you really capable of delivering worldwide?",
+                        "description":"Do you think that the impact of donation behavior on donors’ subjective happiness could be an important element of your value proposition in your internationalization strategy?",
                         "path": "media/Weeks/Week4/Company/Terne/Terna 9/Terna 9 - 3.mp4",
                         "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
                     }]
@@ -207,19 +207,19 @@ const videoQ =
         "terzina":[
                     {
                         "id": 28,
-                        "description":"This market approach is financially sustainable long term?",
+                        "description":"Gamindo may have dark sides. Among these, for example, gaming addiction. What do you do to remove this weakness in your business?",
                         "path": "media/Weeks/Week4/Company/Terne/Terna 10/Terna 10 - 1.mp4",
                         "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
                     },
                     {
                         "id": 29,
-                        "description":"How much more does your product cost when compared to competitors?",
+                        "description":"Gamindo may have dark sides. Among these, for example, “social washing” by the brands involved in your games. What do you do to remove this weakness in your business?",
                         "path": "media/Weeks/Week4/Company/Terne/Terna 10/Terna 10 - 2.mp4",
                         "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
                     },
                     {
                         "id": 30,
-                        "description":"Are your margins lower than competitors?",
+                        "description":"Gamindo may have dark sides. Among these, for example, people after donating (without paying) may feel licensed to behave less morally in subsequent decisions. What do you do to remove this weakness in your business?",
                         "path": "media/Weeks/Week4/Company/Terne/Terna 10/Terna 10 - 3.mp4",
                         "waitGif": "media/Weeks/Week4/Company/Loop2.mp4"
                     }]

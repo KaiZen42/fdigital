@@ -114,7 +114,7 @@ const videoQ =
                     },
                     {
                         "id": 15,
-                        "description":"Measurement is a critical aspect of personalization. Do you have metrics to quantify the progress on hair’ quality?",
+                        "description":"Measurement is a critical aspect of personalization. Do you have metrics to quantify the progress on hair quality?",
                         "path": "media/Weeks/Week10/Company/Terne/Terna 5/Terna 5 - 3.mp4",
                         "waitGif": "media/Weeks/Week10/Company/Loop.mp4"
                     }]
@@ -213,13 +213,13 @@ const videoQ =
                     },
                     {
                         "id": 29,
-                        "description":"Do you think that the possibility of receiving a monthly box of personalized hair care products is one of the most important drivers of consumers’ decision to buy shampora? How do you think that opening to salon could affect this strength?",
+                        "description":"Do you think that the possibility of receiving a monthly box of personalized hair care products is one of the most important drivers of consumers’ decision to buy shampora? How do you think that opening the salon could affect this strength?",
                         "path": "media/Weeks/Week10/Company/Terne/Terna 10/Terna 10 - 2.mp4",
                         "waitGif": "media/Weeks/Week10/Company/Loop.mp4"
                     },
                     {
                         "id": 30,
-                        "description":"Do you believe that the subscription model will be in conflict with the opening to salons",
+                        "description":"Do you believe that the subscription model will be in conflict with the opening of the salons",
                         "path": "media/Weeks/Week10/Company/Terne/Terna 10/Terna 10 - 3.mp4",
                         "waitGif": "media/Weeks/Week10/Company/Loop.mp4"
                     }]

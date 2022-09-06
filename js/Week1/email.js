@@ -52,7 +52,7 @@ const EmailText = [
 {
 	"mittente": "Neetflix",
     "titolo": "We just added a movie you might like",
-	"email": "Piglet's Big Movie is a 2003 American animated musical comedy-drama film released by Walt Disney Pictures on March 21, 2003. The film features the characters from the Winnie-the-Pooh books written by A. A. Milne and is the third theatrically released Winnie the Pooh feature. In this film, Piglet is ashamed of being small and clumsy and wanders off into the Hundred Acre Wood, leading all of his friends to form a search party to find him. Piglet's Big Movie was produced by the Japanese office of Disneytoon Studios and the animation production was by Walt Disney Animation Japan, Inc. with additional animation provided by Gullwing Co., Ltd., additional background by Studio Fuga and digital ink and paint by T2 Studio.",
+	"email": "Interstellar is a 2014 epic science fiction film co-written, directed and produced by Christopher Nolan. It stars Matthew McConaughey, Anne Hathaway, Jessica Chastain, Bill Irwin, Ellen Burstyn, Matt Damon, and Michael Caine. Set in a dystopian future where humanity is struggling to survive, the film follows a group of astronauts who travel through a wormhole near Saturn in search of a new home for mankind.",
     "open" : true,
     "display": true,
 },
@@ -65,7 +65,7 @@ const EmailText = [
 },
 {
     "mittente": "Payments",
-    "titolo": "Last transaction, 23/05/22 alle 13:45 -",
+    "titolo": "Last transaction, 23/05/22 at 1:45 PM -",
     "email": "Hi, the transaction was successful! \ nPre-authorized amount: € 0.60 \ nActive promotion: none \ nCharge: € 0.60",
     "open" : true,
     "display": true,
@@ -79,7 +79,7 @@ const EmailText = [
 },
 {
     "mittente": "Payments",
-    "titolo": "Last transaction, 23/05/22 alle 13:45 -",
+    "titolo": "Last transaction, 23/05/22 at 1:45 PM -",
     "email": "Hi, the transaction was successful! \ nPre-authorized amount: € 0.60 \ nActive promotion: none \ nCharge: € 0.60",
     "open" : true,
     "display": true,

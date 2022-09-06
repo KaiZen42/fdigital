@@ -51,7 +51,7 @@ const videoQ =
                     },
                     {
                         "id": 6,
-                        "description":"Do you already facilitate assessment of product benefits and costs over the product’s life cycle throught  third party and customer reviews?",
+                        "description":"Do you already facilitate assessment of product benefits and costs over the product’s life cycle throught third party and customer reviews?",
                         "path": "media/Weeks/Week3/Company/Terna 2/Terna 2 - 3.mp4",
                         "waitGif": "media/Weeks/Week3/Company/amnagif.mp4"
                     }]
@@ -72,7 +72,7 @@ const videoQ =
                     },
                     {
                         "id": 9,
-                        "description":"Do you already establish incentives to motive consumers to return products?",
+                        "description":"Do you already establish incentives to motivate consumers to return products?",
                         "path": "media/Weeks/Week3/Company/Terna 3/Terna 3 - 3.mp4",
                         "waitGif": "media/Weeks/Week3/Company/saragif.mp4"
                     }]
@@ -165,7 +165,7 @@ const videoQ =
         "terzina":[
                     {
                         "id": 19,
-                        "description":"Quality issues are a cause of distrust in the service of fashion renting, how do you plan to remove this  barrier?",
+                        "description":"Quality issues are a cause of distrust in the service of fashion renting, how do you plan to remove this barrier?",
                         "path": "media/Weeks/Week3/Company/Terna 8/Terna 8 - 1.mp4",
                         "waitGif": "media/Weeks/Week3/Company/linagif.mp4"
                     },

@@ -123,19 +123,19 @@ const videoQ =
         "terzina":[
                     {
                         "id": 16,
-                        "description":"how do you manage your waste from a collection?",
+                        "description":"How do you manage your waste from a collection?",
                         "path": "media/Weeks/Week2/Company/Terne/Terna 6/Terna 6 - 1.mp4",
                         "waitGif": "media/Weeks/Week2/Company/Loop.mp4"
                     },
                     {
                         "id": 17,
-                        "description":"what is your strategy for unsold items",
+                        "description":"What is your strategy for unsold items",
                         "path": "media/Weeks/Week2/Company/Terne/Terna 6/Terna 6 - 2.mp4",
                         "waitGif": "media/Weeks/Week2/Company/Loop.mp4"
                     },
                     {
                         "id": 18,
-                        "description":"how much does it cost you to maintain rented items (wash/ sanitize/ alter)",
+                        "description":"How much does it cost you to maintain rented items (wash/ sanitize/ alter)?",
                         "path": "media/Weeks/Week2/Company/Terne/Terna 6/Terna 6 - 3.mp4",
                         "waitGif": "media/Weeks/Week2/Company/Loop.mp4"
                     }]

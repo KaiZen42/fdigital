@@ -45,7 +45,7 @@ const Library = React.memo((props) => {
             <>
             <Box sx={{width: '100%', textAlign: 'center'}}>
                 <Grid container sx={{color: 'white'}} direction="row" justifyContent="center" alignItems="flex-end">
-                <h2>Library Empty</h2>
+                <h2>The Library is empty</h2>
                 </Grid>
             </Box>
             </>
