@@ -129,7 +129,7 @@ const videoQ =
                     },
                     {
                         "id": 14,
-                        "description":"Do you think demographics can significantly inﬂuence the attitude toward fashion renting?",
+                        "description":"Do you think cultural norms may impact the attitude toward fashion renting?",
                         "path": "media/Weeks/Week3/Company/Terna 6/Terna 6 - 2.mp4",
                         "waitGif": "media/Weeks/Week3/Company/amnagif.mp4"
                     },

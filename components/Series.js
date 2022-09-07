@@ -21,10 +21,8 @@ const Series = React.memo((props) => {
 				<source src={videoBoss} type="video/mp4"></source>
 			</video>
 		}{end &&
-			<>
 			<div className="video-responsive" style={{backgroundColor: '#12293e', alignItems: 'flex-end', justifyContent: 'center'}}>
 			</div>
-			</>
 		}
 		</Grid>
 		

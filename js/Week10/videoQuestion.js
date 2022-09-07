@@ -192,13 +192,13 @@ const videoQ =
                     },
                     {
                         "id": 26,
-                        "description":"Are you considering tweaking your offerings to better suit physical retail?",
+                        "description":"What are the difficulties for Shampora to enter physical retail?",
                         "path": "media/Weeks/Week10/Company/Terne/Terna 9/Terna 9 - 2.mp4",
                         "waitGif": "media/Weeks/Week10/Company/Loop.mp4"
                     },
                     {
                         "id": 27,
-                        "description":"Are you really capable of delivering worldwide?",
+                        "description":"Are you considering tweaking your offerings to better suit physical retail?",
                         "path": "media/Weeks/Week10/Company/Terne/Terna 9/Terna 9 - 3.mp4",
                         "waitGif": "media/Weeks/Week10/Company/Loop.mp4"
                     }]

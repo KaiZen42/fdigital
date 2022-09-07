@@ -72,7 +72,7 @@ const videoQ =
                     },
                     {
                         "id": 9,
-                        "description":"Oxford Press says 55% of people care for price more than sustainability",
+                        "description":"Do people care for price more than sustainability?",
                         "path": "media/Weeks/Week2/Company/Terne/Terna 3/Terna 3 - 3.mp4",
                         "waitGif": "media/Weeks/Week2/Company/Loop.mp4"
                     }]
