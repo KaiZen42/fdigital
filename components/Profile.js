@@ -3,7 +3,7 @@ const Profile = () => {
 	let name = ScormProcessGetValue("cmi.learner_name");
 	
 	if(!name)
-		name = "Benjo Lo";
+		name = "Your Name";
 	const main = document.getElementById('main');
 	main.style.height = "auto";
 	  return(

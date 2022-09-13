@@ -18,7 +18,6 @@ const Dashboard = React.memo((props) => {
 		: locationStatus.search("step3") != -1 ? 3 
 		: locationStatus.search("step4") != -1 ? 4 
 		: 42;
-	
 	if(document.getElementById('main'))
 	{
 		const main = document.getElementById('main');
