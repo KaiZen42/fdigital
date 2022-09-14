@@ -35,10 +35,7 @@ const Branching = (props) => {
   const [screen, setScreen] = React.useState(true);
 
   let nidx = ScormProcessGetValue("cmi.suspend_data");
-  // if (ScormProcessGetValue("cmi.completion_status") == "not attempted")
-  //         ScormProcessSetValue("cmi.completion_status", "incomplete");
-  //nidx = 0;
-  // isEnd = "incomplete";
+
   nidx = !nidx ? (nidx = 0) : (nidx = parseInt(nidx));
   let questNun = nidx;
 
@@ -65,16 +62,6 @@ const Branching = (props) => {
       handleFullScreenEvent();
     }
     FinalBranchingVideo(props);
-    // props.deactivate.current.style.pointerEvents = "";
-    // props.deactivate.current.style.color = "";
-    // props.setX("rubric");
-    // props.setNotify("home");
-    // if (isLocalSession) lacalCompletionStatus = "completed";
-    // else ScormProcessSetValue("cmi.completion_status", "completed");
-
-    // EmailText.at(0).display = true;
-    // phoneBook.at(2).real = false;
-    // ScormProcessSetValue("cmi.suspend_data", 0);
   }
 
   const handleFullScreenEvent = (e) => {
@@ -107,7 +94,6 @@ const Branching = (props) => {
   }
 
   if (it <= videoQ.length) {
-    //&& isEnd == "incomplete")
     const handleEvent = (e) => {
       if (it == videoQ.length) setIt(it + 1);
       setEnd(true);

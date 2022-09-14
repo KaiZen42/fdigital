@@ -53,9 +53,9 @@ function afterLibrary(props){
     else ScormProcessSetValue("cmi.location", setScoLocation(ScormProcessGetValue("cmi.location"), "step2"));
 }
 function AfterTest(props){
-    
-    if (isLocalSession) lacalCompletionStatus = "incomplete";
-    else ScormProcessSetValue("cmi.completion_status", "incomplete");
+
+    if (isLocalSession) {lacalCompletionStatus = setScoLocation(locationStatus, "step1"); lacalCompletionStatus = setScoLocation(locationStatus, "test1");}
+    else ScormProcessSetValue("cmi.location", setScoLocation(ScormProcessGetValue("cmi.location"), "step1"));
       props.setTestSection(false);
       props.setNotify("");
 }

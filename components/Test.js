@@ -24,7 +24,7 @@ function Test1(props) {
 		<>
 			<ThemeProvider theme={theme}>
 				<Box id="box" sx={{ flexGrow: 1, color: 'white', width: 'auto' }}>
-					{<iframe style={{ height: "66vh", width: "100%", backgroundColor: "#003a7000" }} frameBorder="0" src={link.Link}></iframe>}
+					<iframe style={{ height: "66vh", width: "100%", backgroundColor: "#003a7000" }} frameBorder="0" src={link.Link}></iframe>
 					<EndTest setTestSection={props.setTestSection} setEmailCount={props.setEmailCount} setNotify={props.setNotify} isEndButton={isEndButton}/>
 				</Box>
 			</ThemeProvider>
@@ -42,21 +42,6 @@ function EndTest(props) {
 		else
 			AfterSecondTest(props);
 	}
-	//   if(isLocalSession){
-	//     lacalCompletionStatus = "completed";
-	//     localSuccessStatus = "passed";
-	//   }
-	//   else{
-	//     ScormProcessSetValue("cmi.completion_status", "completed");
-	//     ScormProcessSetValue("cmi.success_status", "passed");
-	//   }
-	//   props.setTestSection(false); 
-	//   // props.setEmailCount(emailLen()); fare tasto exit
-	//   props.setNotify("");
-	// }
-	//   ScormProcessSetValue("cmi.completion_status", "completed");
-
-	//ScormProcessSetValue("")
 
 	return (
 		<>
@@ -89,14 +74,8 @@ function Test2(props) {
 		<>
 			<ThemeProvider theme={theme}>
 				<Box id="box" sx={{ flexGrow: 1, color: 'white', width: 'auto' }}>
-					<Divider>
-					</Divider>
-					{
-						<iframe style={{ height: "66vh", width: "100%", backgroundColor: "#003a7000" }} frameBorder="0" src={link.Link2}></iframe>
-					}
-					{/* <Divider> */}
-						<EndTest setTestSection={props.setTestSection} setEmailCount={props.setEmailCount} setNotify={props.setNotify} isEndButton={isEndButton} testType={props.testType}/>
-					{/* </Divider> */}
+					<iframe style={{ height: "66vh", width: "100%", backgroundColor: "#003a7000" }} frameBorder="0" src={link.Link2}></iframe>
+					<EndTest setTestSection={props.setTestSection} setEmailCount={props.setEmailCount} setNotify={props.setNotify} isEndButton={isEndButton} testType={props.testType}/>
 				</Box>
 			</ThemeProvider>
 		</>

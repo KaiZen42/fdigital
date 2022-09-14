@@ -5,7 +5,7 @@ const steps = [
 	},
 	{
 		label: 'Step 2',
-		description: 'There is the boss who wants you for a project, after talking to him, check the email to get the recap of what he told you'
+		description: 'There is the boss who wants you for a project, after talking to her, check the email to get the recap of what she told you'
 	},
 	{
 		label: 'Step 3',

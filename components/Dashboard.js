@@ -67,53 +67,48 @@ const Dashboard = React.memo((props) => {
 				weeks.at(numOfWeek).display = true;
 			if(numOfWeek == 1)
 				Finish(props);
-			props.setNotify("exit")
-				
+			props.setNotify("exit")	
 		}
 	}
 
   return (
     <>
 	{!summary ? 
-	
 	<Box ref={changeState} sx={{ width: '100%', textAlign: 'center'}}>
 		<ThemeProvider theme={theme}>
 			<Button type="button" variant="outlined" sx={{margin: 1}} onClick={(e) => setSummary(true)}>Summary of the Weeks</Button>
 		</ThemeProvider>
 		<Stepper activeStep={actualStatus} orientation="vertical">
 			{steps.map((steps) => (
-			<Step key={steps.label} >
-				<StepLabel id="step">
-					<p style={{color: "white"}}>{steps.label}</p>
-				</StepLabel>
-				<StepContent>
-					<Typography color="white">{steps.description}</Typography>
-				</StepContent>
-			</Step>
+				<Step key={steps.label} >
+					<StepLabel id="step">
+						<p style={{color: "white"}}>{steps.label}</p>
+					</StepLabel>
+					<StepContent>
+						<Typography color="white">{steps.description}</Typography>
+					</StepContent>
+				</Step>
 			))}
 		</Stepper>
 		{actualStatus === 4 && (
-		
-		<Paper square elevation={0} sx={{ p: 4, backgroundColor: 'transparent' }}>
-			<Typography>All steps completed - you&apos;ve finished, now you can exit with the button below</Typography>
-		</Paper>
-      )}
-		{actualStatus === 2 && numOfWeek == 12 && (
-		
-		<Paper square elevation={0} sx={{ p: 4, backgroundColor: 'transparent' }}>
-			<Typography>All steps completed - you&apos;ve finished, now you can exit with the button below</Typography>
-		</Paper>
-      )}
-	  {console.log("stato", actualStatus, locationStatus.search("step4"))}
+			<Paper square elevation={0} sx={{ p: 4, backgroundColor: 'transparent' }}>
+				<Typography>All steps completed - you&apos;ve finished, now you can exit with the button below</Typography>
+			</Paper>
+      	)}
+		{actualStatus === 2 && numOfWeek == 12 && (		
+			<Paper square elevation={0} sx={{ p: 4, backgroundColor: 'transparent' }}>
+				<Typography>All steps completed - you&apos;ve finished, now you can exit with the button below</Typography>
+			</Paper>
+      	)}
 	</Box>
 	 : 
-	 <Box sx={{width: '100%',textAlign: 'center'}}>
+	<Box sx={{width: '100%',textAlign: 'center'}}>
 		<ThemeProvider theme={theme}>
 			<Button type="button" variant="outlined" sx={{margin: 1}} onClick={(e) => setSummary(false)}>Steps of the week</Button>
 		</ThemeProvider>
 		<Chart/>
-	 </Box>
-	 }
+	</Box>
+	}
   </>
   )
 })

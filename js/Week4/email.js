@@ -13,7 +13,7 @@ const EmailText = [
     "mittente": "Simona",
     "titolo": "Welcome to the Week 4",
     "emailHead": "Hello there,",
-	"email": "How are you doing? This week will be about the Flexibility value as it is reflected in consumers and firms choices;  activities will replicate the ones of last week. Please call me and engage in self-reflection with the flexible consumption scale. At the end of each item and scale, you will get a color on the screen, showing how you performed with respect to the mean of the scale. If you get a green screen, it means that you overperformed with respect to scale mean (your results are above the scale mean). If you get a yellow screen, it means that you scored exactly the scale mean. If you get a red screen, it means that you underperformed with respect to scale mean (your results are below the scale mean). Then, engage in a business game simulation about this week’s topic. Follow the instructions listed in HOME and find out more. Thank you and see you soon,",
+	"email": "Hope you are doing fine so far! Let’s dive into the value of this week: PURPOSE. Please call me and complete a scale to understand how much you consume purposefully. At the end of each item and scale, you will get a color on the screen, showing how you performed with respect to the mean of the scale. Results could be helpful to self-reflect on your values and habits, highlighting possible areas of self-improvements (if any) in the direction of a strong sense of purpose. After that, you will be engaged in a new business game to gain interesting insights from the real world and market.",
 	"emailFooter": "Simona",
     "open" : false,
     "display": true,

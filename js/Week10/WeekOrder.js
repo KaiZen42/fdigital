@@ -1,6 +1,6 @@
 let numOfWeek = 10;
 let company = "Shampora"
-let videoBoss = "media/Weeks/Week4/Boss/boss.mp4"
+let videoBoss = "media/Weeks/Week10/Boss/boss.mp4"
 
 function InitialState(props){
     if(props.notify != "rubrica")

@@ -155,21 +155,10 @@ const VideoScales = (props) => {
 					sx={{width: "40%", minWidth: "30vh", height: "7px"}}/>
 					<Button type="button" variant="outlined" sx={{margin: 1}} onClick={(e) => newQuest(e)}>NEXT</Button>
 				</Grid>
-				{/* <Grid container direction="row" justifyContent="center" alignItems="flex-end" sx={{color: 'white'}}>
-					<Button type="button" variant="outlined" sx={{margin: 1}} onClick={() => setEnd(false)}>PREV</Button> 
-				</Grid>*/}
 				</Grid>
 				</ThemeProvider>
 				</>
 				)}
-				{/* {!first && <ThemeProvider theme={theme}>
-					<Box sx={{flexGrow: 1, position: 'relative'}}>
-						<Grid height="0%" container direction="row" justifyContent="center" textAlign="center" alignItems="flex-end" sx={{color: 'white'}}>
-							<h4>{videoScale.at(iter).description}</h4>
-						</Grid>
-					</Box>
-				</ThemeProvider> }*/}
-				
 				{iter == videoScale.length && !first && (
 					<>
 					<video id="video" className="video-responsive" autoPlay>

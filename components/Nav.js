@@ -10,12 +10,12 @@ const Nav = React.memo((props) => {
 			props.setNotify("");
 	}
   return(
-  <>
-  {props.notify == "inbox" && <Notify/>}
-  <nav ref={props.deactivate} style={{pointerEvents: '', color: ''}}  id="sidebar" className={window.screen.width.valueOf() <= 390 ? "" : "active"} >
+  	<>
+  		{props.notify == "inbox" && <Notify/>}
+  		<nav ref={props.deactivate} style={{pointerEvents: '', color: ''}}  id="sidebar" className={window.screen.width.valueOf() <= 390 ? "" : "active"} >
 			<div className="sidebar-header">
-			<h3>LuissWeb</h3>
-			<img src="media/colonna.png"></img>
+				<h3>LuissWeb</h3>
+				<img src="media/colonna.png"></img>
 			</div>
 			<ul className="list-unstyled components" data-toggle="tooltip" data-placement="right" title={props.deactivate ? "Not available, finish the call" : ""}>
 				<li className={props.notify == "home" ? "notify" : ""} onClick={(e) => handleNotify(e, "home")}>
@@ -47,4 +47,5 @@ const Nav = React.memo((props) => {
 			</ul>
 			<Button className={props.notify == "exit" ? "notify" : ""} style={{display: props.notify == "exit" ? "" : "none"}} sx={{color: 'white'}} onClick={() => doExit()}><a className="nav-link"><i className="bi bi-box-arrow-left"></i>Exit</a></Button>
 		</nav>
-</>)})
+	</>
+)})

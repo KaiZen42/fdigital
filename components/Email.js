@@ -26,12 +26,7 @@ const Email = () => {
 				</video>
 				</>
 			:
-			<>
-				<br/>
-				{inbox.email}
-				<br/>
-				<br/>
-			</>
+			<><br/>{inbox.email}<br/><br/></>
 			}
 			<h6>{inbox.emailFooter}</h6>
 		  </div>

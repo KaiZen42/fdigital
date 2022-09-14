@@ -81,19 +81,19 @@ const videoQ =
         "terzina":[
                     {
                         "id": 10,
-                        "description":"Personalized haircare considers your specific hair type to achieve your personal hair goals. How does Shampora operate?",
+                        "description":"Does Shampora personalize the treatment plan of each consumer as well as it does for the product it provides?",
                         "path": "media/Weeks/Week10/Company/Terne/Terna 4/Terna 4 - 1.mp4",
                         "waitGif": "media/Weeks/Week10/Company/Loop.mp4"
                     },
                     {
                         "id": 11,
-                        "description":"Personalization is shaking up the beauty industry and driving innovations in beauty tech. Consumers want products that are completely personalized to them since the product development phase. Could you explain Shampora’s approach to personalization?",
+                        "description":"Is there a way to receive feedback from your customers and build on that to improve and update the products’ formula in line with her needs and try to retain that customer after the first order?",
                         "path": "media/Weeks/Week10/Company/Terne/Terna 4/Terna 4 - 2.mp4",
                         "waitGif": "media/Weeks/Week10/Company/Loop.mp4"
                     },
                     {
                         "id": 12,  
-                        "description":"What does it take to formulate a product assortment that accommodates each customer’s specific needs?",
+                        "description":"Measurement is a critical aspect of personalization. Do you have metrics to quantify the progress on hair quality?",
                         "path": "media/Weeks/Week10/Company/Terne/Terna 4/Terna 4 - 3.mp4",
                         "waitGif": "media/Weeks/Week10/Company/Loop.mp4"
                     }]
@@ -102,19 +102,19 @@ const videoQ =
         "terzina":[
                     {
                         "id": 13,
-                        "description":"Does Shampora personalize the treatment plan of each consumer as well as it does for the product it provides?",
+                        "description":"Personalized haircare considers your specific hair type to achieve your personal hair goals. How does Shampora operate?",
                         "path": "media/Weeks/Week10/Company/Terne/Terna 5/Terna 5 - 1.mp4",
                         "waitGif": "media/Weeks/Week10/Company/Loop.mp4"
                     },
                     {
                         "id": 14,
-                        "description":"Is there a way to receive feedback from your customers and build on that to improve and update the products’ formula in line with her needs and try to retain that customer after the first order?",
+                        "description":"Personalization is shaking up the beauty industry and driving innovations in beauty tech. Consumers want products that are completely personalized to them since the product development phase. Could you explain Shampora’s approach to personalization?",
                         "path": "media/Weeks/Week10/Company/Terne/Terna 5/Terna 5 - 2.mp4",
                         "waitGif": "media/Weeks/Week10/Company/Loop.mp4"
                     },
                     {
                         "id": 15,
-                        "description":"Measurement is a critical aspect of personalization. Do you have metrics to quantify the progress on hair quality?",
+                        "description":"What does it take to formulate a product assortment that accommodates each customer’s specific needs?",
                         "path": "media/Weeks/Week10/Company/Terne/Terna 5/Terna 5 - 3.mp4",
                         "waitGif": "media/Weeks/Week10/Company/Loop.mp4"
                     }]

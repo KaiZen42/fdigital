@@ -1,6 +1,4 @@
 function handleClose(e, isEnd){
-	
-	
 	if(isEnd == "incomplete"){
 	
 		ScormProcessSetValue("cmi.completion_status", "completed");
@@ -30,23 +28,6 @@ const End = (props) => {
 	  </div>
 	  <Webcam className="webcam" id="webcam" muted/>
 	  </>
-		// <div className="question-container containerMax">
-		// 		  <Divider className="divider">
-		// 			<img src="media/logo-luiss-white.png"></img>
-		// 		  </Divider>
-		// 		  <ThemeProvider theme={theme}>
-		// 			<Divider className="divider">
-		// 			  <Button variant="outlined" color="primary" onClick={ () =>{
-		// 				  if(props.isEnd == "incomplete"){
-		// 					  ScormProcessSetValue("cmi.completion_status", "completed");
-		// 					  ScormProcessSetValue("cmi.success_status", "passed");
-		// 					}
-		// 				doExit()
-		// 				}}>Close
-		// 			  </Button>
-		// 			</Divider>
-		// 		</ThemeProvider>
-		// </div>
 	)
 }
   

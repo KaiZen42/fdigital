@@ -3,11 +3,8 @@ const Series = React.memo((props) => {
 	history.pushState(null, null, location.href);
 	window.onpopstate = () => {history.go(1);};
 	// ================================================================= 
-	const [end, setEnd] = React.useState(true);
     const Link = ReactRouterDOM.NavLink;
-	const handleEnd = (e) => {
-		setEnd(true);
-	}
+
     props.deactivate.current.style.pointerEvents = 'none';
     props.deactivate.current.style.color = 'darkGrey';
 
@@ -17,7 +14,7 @@ const Series = React.memo((props) => {
         {closeToggle()}
 		<Box className="container">
 			<Grid container direction="row" sx={{alignItems: 'flex-end', justifyContent: 'space-between'}}>
-				<h6 className="whiteText">Watch the entire episode of the series before</h6>
+				<h6 className="whiteText">Watch the entire episode of the series before clicking the button "back to home"</h6>
 				<Link exact onClick={() => FinalEpisode(props)} to={`${locPath}`} className="nav-link" style={{zIndex: '100000', color: 'white'}}><i className="bi bi-house-fill"></i>Back to Home</Link>
 			</Grid>
 			<Grid container direction="row" justifyContent="center" alignItems="flex-end" className="iframe-wrapper">
