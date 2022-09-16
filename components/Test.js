@@ -9,9 +9,33 @@ const Test = React.memo((props) => {
 
 
 function Test1(props) {
-
-	let name = "vala";
+	const Link = ReactRouterDOM.NavLink;
+	let name = ScormProcessGetValue("cmi.learner_name");
+	console.log("name=", name);
+	if(!name)
+		name = "Valariano, Beniamino";
+	name = name.split(", ")[0];
+	name = name.toUpperCase();
 	let link = users.find(data => data["Last Name"] === name);
+	console.log("link=",link);
+	function handleEndNoTest(e, props){
+			AfterTest(props);
+		
+	}
+	if(!users.find(data => data["Last Name"] === name))
+	{
+		return(
+			<Grid container direction="column" sx={{color: 'white'}}>
+				<Divider>
+					Test non disponibile
+				</Divider>
+				<Divider>
+					{/* <EndTest setTestSection={props.setTestSection} setEmailCount={props.setEmailCount} setNotify={props.setNotify} isEndButton={testFinish} setX={props.setX} deactivate={props.deactivate}></EndTest> */}
+					<Link onClick={(e) => handleEndNoTest(e, props)} exact to={`${locPath}`} className="nav-link"><i className="bi bi-house-fill"></i>Back to Home</Link>
+				</Divider>
+			</Grid>
+		);
+	}
 	const [isEndButton, setIsEndButton] = React.useState(null);
 
 	window.addEventListener("message", function (e) {
@@ -60,8 +84,36 @@ function EndTest(props) {
 }
 
 function Test2(props) {
-	let name = "vala";
+	const Link = ReactRouterDOM.NavLink;
+	let name = ScormProcessGetValue("cmi.learner_name");
+	console.log("name=", name);
+	if(!name)
+		name = "Valariano, Beniamino";
+	name = name.split(", ")[0];
+	name = name.toUpperCase();
+	// if(!name) 
+	// 	name = "VALARIANO";
 	let link = users.find(data => data["Last Name"] === name);
+
+	
+	function handleEndNoTest(e, props){
+			AfterSecondTest(props);
+	}
+	if(!users.find(data => data["Last Name"] === name))
+	{
+		return(
+			<Grid container direction="column" sx={{color: 'white'}}>
+				<Divider>
+					Test non disponibile
+				</Divider>
+				<Divider>
+					{/* <EndTest setTestSection={props.setTestSection} setEmailCount={props.setEmailCount} setNotify={props.setNotify} isEndButton={testFinish} setX={props.setX} deactivate={props.deactivate}></EndTest> */}
+					<Link onClick={(e) => handleEndNoTest(e, props)} exact to={`${locPath}`} className="nav-link"><i className="bi bi-house-fill"></i>Back to Home</Link>
+				</Divider>
+			</Grid>
+		);
+	}
+	console.log("link=",link);
 	const [isEndButton, setIsEndButton] = React.useState(null);
 
 	window.addEventListener("message", function (e) {

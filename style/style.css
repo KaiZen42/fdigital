@@ -151,7 +151,7 @@ body {
 }
 
 #video {
-  /* pointer-events: none; per levare completamente i controlli */
+  pointer-events: none; 
 }
 .buttonRepeat {
   position: relative !important;

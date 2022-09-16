@@ -175,9 +175,44 @@ const VideoScales = (props) => {
 		}
 	}
 
-	let name = "vala";
+	function handleEndNoTest(e, props){
+		props.setX("rubric");
+		props.setNotify("home");
+		phoneBook.at(1).real = false
+		if (isLocalSession) lacalCompletionStatus = setScoLocation(locationStatus, "step0");
+		else ScormProcessSetValue("cmi.location", setScoLocation(ScormProcessGetValue("cmi.location"), "step0"));
+		// indice = 1;
+		props.deactivate.current.style.pointerEvents = '';
+		props.deactivate.current.style.color = '';
+		ScormProcessSetValue("cmi.suspend_data", 0);
+	}
+	let name = ScormProcessGetValue("cmi.learner_name");
+	const Link = ReactRouterDOM.NavLink;
+	// let name = "Valariano, Beniamino"
+	console.log("name=", name);
+	if(!name)
+		name = "Valariano, Beniamino";
+	console.log("name=", name);
+	name = name.split(", ")[0];
+	name = name.toUpperCase();
+	console.log("name=", name);
 	let link = users.find(data => data["Last Name"] === name);
-
+	console.log("AO",users.find(data => data["Last Name"] === name))
+	if(!users.find(data => data["Last Name"] === name))
+	{
+		return(
+			<Grid container direction="column" sx={{color: 'white'}}>
+				<Divider>
+					Test non disponibile
+				</Divider>
+				<Divider>
+					{/* <EndTest setTestSection={props.setTestSection} setEmailCount={props.setEmailCount} setNotify={props.setNotify} isEndButton={testFinish} setX={props.setX} deactivate={props.deactivate}></EndTest> */}
+					<Link onClick={(e) => handleEndNoTest(e, props)} exact to={`${locPath}`} className="nav-link"><i className="bi bi-house-fill"></i>Back to Home</Link>
+				</Divider>
+			</Grid>
+		);
+	}
+	// console.log("link=",link);
 	window.addEventListener("message", function (e) {
 		//   if (e.origin !== "http://localhost:8080") return;
 		if (e.data !== "qualtrix_survey") return;
