@@ -1,16 +1,23 @@
+const testSicuro = "https://impresaluiss.qualtrics.com/jfe/form/SV_6nuBdzuOpml8n5k";
 const users = [
     {
       "Response Id": "",
-      "Contact Id": "CID_eG6IoVl39wnwWcS",
-      "Link": "https://impresaluiss.qualtrics.com/jfe/form/SV_8w6gN6AboHfaaSG?Q_CHL=gl&Q_DL=J7OAVQjlwbu8Gfb_8w6gN6AboHfaaSG_CGC_qtVU537btWqbwaY",
-      "Exceeded Contact Frequency": false,
-      "Link Expiration": "2022-12-14T16:54:35.108Z",
-      "Status": "Email Not Sent",
-      "Last Name": "MANCINO",
-      "First Name": "ANTONIO",
+      "Last Name": "MUSELLA",
+      "First Name": "SALVATORE",
+      "Contact Id": "CID_8qceJtg5EmiwAZ0",
+      "Lookup Id": "CGC_Q8WjxTmS66bYNcc",
+      "Transaction Id": "",
       "External Data Reference": "",
-      "Email": "antonio.mancino0107@studenti.luiss.it",
-      "Unsubscribed": false
+      "Email Address": "salvatore.musella@studenti.luiss.it",
+      "Channel": "Email",
+      "Status": "Email Not Sent",
+      "Bounce Reason": "",
+      "Sent to": "salvatore.musella@studenti.luiss.it",
+      "Contact Frequency Rule Id": "",
+      "Exceeded Contact Frequency": false,
+      "End Date": "",
+      "Link": "https://impresaluiss.qualtrics.com/jfe/form/SV_8w6gN6AboHfaaSG?Q_CHL=gl&Q_DL=EMD_M8khiFTck90KqDr_8w6gN6AboHfaaSG_CGC_Q8WjxTmS66bYNcc&_g_=g",
+      "Link Expiration": "2022-12-15T14:06:08.435Z"
     },
     {
       "Response Id": "",

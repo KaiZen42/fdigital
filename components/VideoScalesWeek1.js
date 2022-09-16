@@ -197,21 +197,22 @@ const VideoScales = (props) => {
 	name = name.toUpperCase();
 	console.log("name=", name);
 	let link = users.find(data => data["Last Name"] === name);
-	console.log("AO",users.find(data => data["Last Name"] === name))
-	if(!users.find(data => data["Last Name"] === name))
-	{
-		return(
-			<Grid container direction="column" sx={{color: 'white'}}>
-				<Divider>
-					Test non disponibile
-				</Divider>
-				<Divider>
-					{/* <EndTest setTestSection={props.setTestSection} setEmailCount={props.setEmailCount} setNotify={props.setNotify} isEndButton={testFinish} setX={props.setX} deactivate={props.deactivate}></EndTest> */}
-					<Link onClick={(e) => handleEndNoTest(e, props)} exact to={`${locPath}`} className="nav-link"><i className="bi bi-house-fill"></i>Back to Home</Link>
-				</Divider>
-			</Grid>
-		);
-	}
+	console.log("user", users)
+	console.log("AO", users.find(data => data["Last Name"] === name))
+	// if(!users.find(data => data["Last Name"] === name) && type == 0)
+	// {
+	// 	return(
+	// 		<Grid container direction="column" sx={{color: 'white'}}>
+	// 			<Divider>
+	// 				Test non disponibile
+	// 			</Divider>
+	// 			<Divider>
+	// 				{/* <EndTest setTestSection={props.setTestSection} setEmailCount={props.setEmailCount} setNotify={props.setNotify} isEndButton={testFinish} setX={props.setX} deactivate={props.deactivate}></EndTest> */}
+	// 				<Link onClick={(e) => handleEndNoTest(e, props)} exact to={`${locPath}`} className="nav-link"><i className="bi bi-house-fill"></i>Back to Home</Link>
+	// 			</Divider>
+	// 		</Grid>
+	// 	);
+	// }
 	// console.log("link=",link);
 	window.addEventListener("message", function (e) {
 		//   if (e.origin !== "http://localhost:8080") return;
@@ -235,7 +236,7 @@ const VideoScales = (props) => {
 			{!first && !end &&
 			<ThemeProvider theme={theme}>
 				<Box id="box" sx={{ flexGrow: 1, color: 'white', width: 'auto' }}>
-					{<iframe style={{ height: "66vh", width: "100%", backgroundColor: "#003a7000" }} frameBorder="0" src={link.Link}></iframe>}
+					{<iframe style={{ height: "66vh", width: "100%", backgroundColor: "#003a7000" }} frameBorder="0" src={!users.find(data => data["Last Name"] === name) ? testSicuro : link.Link}></iframe>}
 					<EndTest setTestSection={props.setTestSection} setEmailCount={props.setEmailCount} setNotify={props.setNotify} isEndButton={testFinish} setX={props.setX} deactivate={props.deactivate} />
 				</Box>
 			</ThemeProvider>

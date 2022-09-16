@@ -1,4 +1,24 @@
+const testSicuro = "https://impresaluiss.qualtrics.com/jfe/form/SV_bwrYwE7qrQbVKdM";
 const users = [
+    {
+      "Response Id": "",
+      "Last Name": "MUSELLA",
+      "First Name": "SALVATORE",
+      "Contact Id": "CID_8qceJtg5EmiwAZ0",
+      "Lookup Id": "CGC_Q8WjxTmS66bYNcc",
+      "Transaction Id": "",
+      "External Data Reference": "",
+      "Email Address": "salvatore.musella@studenti.luiss.it",
+      "Channel": "Email",
+      "Status": "Email Not Sent",
+      "Bounce Reason": "",
+      "Sent to": "salvatore.musella@studenti.luiss.it",
+      "Contact Frequency Rule Id": "",
+      "Exceeded Contact Frequency": false,
+      "End Date": "",
+      "Link": "https://impresaluiss.qualtrics.com/jfe/form/SV_5cJp5tVTNlqPTSe?Q_CHL=gl&Q_DL=EMD_7gJWqpJW0XiDZfq_5cJp5tVTNlqPTSe_CGC_Q8WjxTmS66bYNcc&_g_=g",
+      "Link Expiration": "2022-11-15T14:04:26.766Z"
+    },
     {
       "Response Id": "",
       "Contact Id": "CID_eG6IoVl39wnwWcS",
