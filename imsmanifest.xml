@@ -32,9 +32,9 @@ these should remain static. Other schema prefixes are allowed, but can limit int
   <!-- There is just one organization. The organization contains just one item.-->
 	<organizations default="aba2020">
 		<organization identifier="aba2020">
-			<title>WeekOne</title>
+			<title>WeekFour</title>
 			<item identifier="item_1" identifierref="resource_2">
-				<title>WeekOne</title>
+				<title>WeekFour</title>
 			</item>
 		</organization>
 	</organizations>

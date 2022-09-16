@@ -93,7 +93,7 @@ function Test2(props) {
 	name = name.toUpperCase();
 	// if(!name) 
 	// 	name = "VALARIANO";
-	let link = users.find(data => data["Last Name"] === name);
+	let link = users2.find(data => data["Last Name"] === name);
 
 	
 	function handleEndNoTest(e, props){
@@ -126,7 +126,7 @@ function Test2(props) {
 		<>
 			<ThemeProvider theme={theme}>
 				<Box id="box" sx={{ flexGrow: 1, color: 'white', width: 'auto' }}>
-					<iframe style={{ height: "66vh", width: "100%", backgroundColor: "#003a7000" }} frameBorder="0" src={!users.find(data => data["Last Name"] === name) ? testSicuro2 : link.Link2}></iframe>
+					<iframe style={{ height: "66vh", width: "100%", backgroundColor: "#003a7000" }} frameBorder="0" src={!users.find(data => data["Last Name"] === name) ? testSicuro2 : link.Link}></iframe>
 					<EndTest setTestSection={props.setTestSection} setEmailCount={props.setEmailCount} setNotify={props.setNotify} isEndButton={isEndButton} testType={props.testType}/>
 				</Box>
 			</ThemeProvider>
