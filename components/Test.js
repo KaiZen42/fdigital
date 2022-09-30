@@ -17,7 +17,6 @@ function Test1(props) {
 	name = name.split(", ")[0];
 	name = name.toUpperCase();
 	let link = users.find(data => data["Last Name"] === name);
-	console.log("link=",link);
 	function handleEndNoTest(e, props){
 			AfterTest(props);
 		
@@ -66,6 +65,21 @@ function EndTest(props) {
 		else
 			AfterSecondTest(props);
 	}
+	if((getScoLocation(locationStatus, "test1") && (numOfWeek == 2 || numOfWeek == 3 || numOfWeek == 4 || numOfWeek == 9 || numOfWeek == 10 || numOfWeek == 11)) || (getScoLocation(locationStatus, "test2") && (numOfWeek == 5 || numOfWeek == 6 || numOfWeek == 7 || numOfWeek == 8)))
+	{
+		if (isLocalSession) lacalCompletionStatus = setScoLocation(locationStatus, "step3");
+		else{
+			ScormProcessSetValue("cmi.location", setScoLocation(ScormProcessGetValue("cmi.location"), "step3"));
+			ScormProcessSetValue("cmi.completion_status", "completed");
+			ScormProcessSetValue("cmi.success_status", "passed");
+		  }
+	}
+	else if(getScoLocation(locationStatus, "test1") && (numOfWeek == 5 || numOfWeek == 6 || numOfWeek == 7 || numOfWeek == 8))
+	{
+		if (isLocalSession) {lacalCompletionStatus = setScoLocation(locationStatus, "step1"); lacalCompletionStatus = setScoLocation(locationStatus, "test1");}
+		else {ScormProcessSetValue("cmi.location", setScoLocation(ScormProcessGetValue("cmi.location"), "step1"));ScormProcessSetValue("cmi.location", setScoLocation(ScormProcessGetValue("cmi.location"), "test1"));}
+	}
+
 
 	return (
 		<>
@@ -113,7 +127,6 @@ function Test2(props) {
 	// 		</Grid>
 	// 	);
 	// }
-	console.log("link=",link);
 	const [isEndButton, setIsEndButton] = React.useState(null);
 
 	window.addEventListener("message", function (e) {

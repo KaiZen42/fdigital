@@ -251,6 +251,9 @@ const Branching = (props) => {
           alignItems="flex-end"
           sx={{ minHeight: "40vh", height: "88%" }}
         >
+          <Grid container sx={{color: 'white', zIndex: 1000}} direction="row" justifyContent="center" alignItems="flex-end" >
+            <h2 onClick={() => fineVideo()}>End the call</h2>
+          </Grid>
           <ThemeProvider theme={theme}>
             <IconButton
               sx={{ border: 3 }}

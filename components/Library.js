@@ -35,7 +35,6 @@ const Library = React.memo((props) => {
                     <Grid container height="7vh" direction="row" justifyContent="center" alignItems="flex-end">
                         <ThemeProvider theme={theme}>
                             <Button sx={{border: 3, margin: 3, '&:hover': { backgroundColor: '#ffffffa5', border: 3, borderColor: '#CC0000', color: '#CC0000'}}} size="small" type="button" variant="outlined" target="_blank" href={libreria.find(element => element.type == "youtube").linkTo}>Move To Canvas Studio</Button>
-                            <Button sx={{border: 3, margin: 3, '&:hover': { backgroundColor: '#ffffffa5', border: 3, borderColor: '#0247b7', color: '#0247b7'}}} size="small" type="button" variant="outlined" href={libreria.find(element => element.type == "youtube").videoDownload}>Download the Video</Button>
                         </ThemeProvider>
                     </Grid>
                 </>}

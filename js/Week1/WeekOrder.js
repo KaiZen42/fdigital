@@ -10,7 +10,6 @@ function InitialState(props){
         props.setNotify("rubrica");
         EmailText.at(0).display = false;
         phoneBook.at(1).real = true;
-        type = 0;
     }
 }
 

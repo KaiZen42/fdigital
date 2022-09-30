@@ -168,15 +168,15 @@ const App = () =>
 {
 	let browserVersion = navigator.userAgent;
 	let version = parseFloat(browserVersion.slice(browserVersion.search("Version") + 8, browserVersion.search("Version") + 12));
-	// if(version < 15.4)
-	// {
-	// 	return(
-	// 		<>
-	// 		<h1>Version not supported</h1>
-	// 		<img src="media/BrowserVersion.png" className="versionWrong"></img>
-	// 		</>
-	// 	)
-	// }
+	if(version < 15.4)
+	{
+		return(
+			<>
+			<h1 style={{color:'white'}}>Version not supported</h1>
+			<img src="media/BrowserVersion.png" className="versionWrong"></img>
+			</>
+		)
+	}
 	const [callSucceeded, setCallSucceeded] = React.useState(false);
 	const isLocalhost = location.hostname == "127.0.0.1" || location.hostname == "localhost" ? true : false;
 	if (!callSucceeded)
@@ -231,6 +231,7 @@ const Home = () => {
 	const [notify, setNotify] = React.useState("");
 	const [openLibrary, setOpenLibrary] = React.useState(false);
 	const [serie, setSerie] = React.useState(false);
+	const [log, setLog]	= React.useState(false);
 
 	const handleClick = () => {
 	  const side = document.getElementById('sidebar');
@@ -241,8 +242,6 @@ const Home = () => {
 	  else
       	side.setAttribute("class", " ");
 	};
-
-
 
 	const deactivate = React.useRef();
 	return(
@@ -258,7 +257,7 @@ const Home = () => {
 				<Clock/>
 			</Grid>
 			<main id="main" className="main container col-md-9 ml-sm-auto col-lg-10 px-4 d-flex justify-content-between flex-wrap flex-nowrap align-items-center pt-3 pb-2 mb-3">
-				<Route path={`${locPath}`} exact component={() => <Dashboard setNotify={setNotify} notify={notify} setTestSection={setTestSection} setEmailCount={setEmailCount} openLibrary={openLibrary} setOpenLibrary={setOpenLibrary} setSerie={setSerie} serie={serie}/>}/>
+				<Route path={`${locPath}`} exact component={() => <Dashboard setNotify={setNotify} notify={notify} setTestSection={setTestSection} setEmailCount={setEmailCount} openLibrary={openLibrary} setOpenLibrary={setOpenLibrary} setSerie={setSerie} serie={serie} setLog={setLog} log={log}/>}/>
 				<Route path={`${loc}profile`} component={Profile} />
 				<Route path={`${loc}inbox`} component={() => <Inbox setEmailCount={setEmailCount} setTestSection={setTestSection} setNotify={setNotify}/>} setSerie={setSerie} serie={serie}/>
 				<Route path={`${loc}contacts`} component={() => <Begin setNotify={setNotify} setTestSection={setTestSection} setEmailCount={setEmailCount} deactivate={deactivate} openLibrary={openLibrary} setOpenLibrary={setOpenLibrary} setSerie={setSerie} serie={serie}/>} />

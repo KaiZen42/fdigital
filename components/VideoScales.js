@@ -168,7 +168,7 @@ const VideoScales = (props) => {
 					<ThemeProvider theme={theme}>
 						<div></div>
 						{numOfWeek != 9 && numOfWeek != 10  && numOfWeek != 11 &&
-						<h4 style={{position: 'relative'}} className="scritta2">Thanks! Bye</h4>}
+						<h4 style={{position: 'relative'}} className="scritta2" onClick={() => fineVideo()}>Thanks! Bye</h4>}
 						<IconButton sx={{border: 3}} size="large" type="button" variant="outlined" color="error" onClick={() => fineVideo()}><i className="bi bi-telephone-fill"></i></IconButton>
 					</ThemeProvider>
 					</Grid>

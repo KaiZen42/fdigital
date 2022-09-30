@@ -5,6 +5,7 @@ const Dashboard = React.memo((props) => {
   	window.onpopstate = () => {history.go(1);};
 	// ================================================================= 
 	
+	
 	const [summary, setSummary] = React.useState(false);
 	locationStatus = isLocalSession ? 
 		lacalCompletionStatus : ScormProcessGetValue("cmi.location");
@@ -18,6 +19,7 @@ const Dashboard = React.memo((props) => {
 		: locationStatus.search("step3") != -1 ? 3 
 		: locationStatus.search("step4") != -1 ? 4 
 		: 42;
+
 	if(document.getElementById('main'))
 	{
 		const main = document.getElementById('main');
@@ -29,6 +31,23 @@ const Dashboard = React.memo((props) => {
 
 	console.log(actualStatus, "stato");
 	function changeState(){
+		
+		// if(numOfWeek == 1)
+		// {
+		// 	let name = ScormProcessGetValue("cmi.learner_name");
+		// 	if(!name)
+		// 		name = "Barbaro, Beniamino";
+		// 	name = name.split(", ")[0];
+		// 	name = name.toUpperCase();
+		// 	if(fix.find(data => data["name"] === name) && props.log === false)
+		// 	{
+		// 		type = 1;
+		// 		console.log("CIAO")
+		// 		props.setLog(true);
+		// 		if (isLocalSession) lacalCompletionStatus = setScoLocation(locationStatus, "step0");
+		// 		else ScormProcessSetValue("cmi.location", setScoLocation(ScormProcessGetValue("cmi.location"), "step0"));
+		// }
+		// }
 		if(actualStatus == 2 && numOfWeek == 12)
 		{
 			locationStatus = setScoLocation(locationStatus, "step2");
@@ -67,6 +86,7 @@ const Dashboard = React.memo((props) => {
 				weeks.at(numOfWeek).display = true;
 			if(numOfWeek == 1)
 				Finish(props);
+			props.setTestSection(false);
 			props.setNotify("exit")	
 		}
 	}
