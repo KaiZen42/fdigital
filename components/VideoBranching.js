@@ -92,6 +92,10 @@ const Branching = (props) => {
   function TransitionRight(props) {
     return <Slide {...props} direction="left" />;
   }
+  function TransitionUp(props) {
+    return <Slide {...props} direction="up" />;
+  }
+
 
   if (it <= videoQ.length) {
     const handleEvent = (e) => {
@@ -106,8 +110,22 @@ const Branching = (props) => {
     };
     return (
       <>
+          {it != 0 && !end && 
+          // <Alert severity="info" sx={{ width: '100%', position: 'relative', zIndex: 1, pointerEvents: 'none'}}>
+          //   {videoQ.at(it - 1)?.terzina.at(choice).description}
+          // </Alert>
+          <Snackbar
+                className="snack col-12"
+                style={{color: 'white', position: 'relative', zIndex: 1, pointerEvents: 'none', top: '17vh'}}
+                open={!end}
+                message={videoQ.at(it - 1)?.terzina.at(choice).description}
+                TransitionComponent={TransitionUp}
+                transitionDuration={1000}
+              />
+              }
         <div className="sfondo" id="sfondo">
           <div className="fullScreen">
+          
             <Button onClick={handleFullScreenEvent} sx={{ color: "white"}}>
               <i className="bi bi-arrows-fullscreen"></i>
             </Button>
@@ -135,6 +153,7 @@ const Branching = (props) => {
           )}
           {end && it < videoQ.length && (
             <>
+              
               <video
                 className={
                   !screen
@@ -192,6 +211,7 @@ const Branching = (props) => {
                 </div>
               </div>
               <div className="repeat">
+                
                 <Button
                   className="buttonRepeat"
                   sx={{color: "white"}}

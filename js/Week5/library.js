@@ -9,8 +9,8 @@ const libreria=
     },
     {
         type: "series",
-        path: "https://www.youtube.com/embed/JO43-oJtpp4",
-        linkTo: "https://www.youtube.com/embed/JO43-oJtpp4",
+        path: "https://www.youtube.com/embed/OycJzGiogbQ?rel=0",
+        linkTo: "https://youtu.be/OycJzGiogbQ",
         videoDownload: "https://eu.nv.instructuremedia.com/fetch/QkFoYkIxc0hhUU4waHVscEExdVZobXdyQjJORjZXST0tLTZjMTExZTFlZTE0OTRiZDEwYzg3MzdjNDg0NTZjMDRhZmQwMGRlZWI.mp4?disposition=download&filename=Week%205%20-%20Video%20Library",
         description: ""
     }

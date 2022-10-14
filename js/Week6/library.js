@@ -10,8 +10,8 @@ const libreria=
     },
     {
         type: "series",
-        path: "https://www.youtube.com/embed/9wfefEqLINU",
-        linkTo: "https://www.youtube.com/embed/9wfefEqLINU",
+        path: "https://www.youtube.com/embed/jwpxhSe9b7c?rel=0",
+        linkTo: "https://youtu.be/jwpxhSe9b7c",
         videoDownload: "https://eu.nv.instructuremedia.com/fetch/QkFoYkIxc0hhUU4waHVscEExdVZobXdyQjJORjZXST0tLTZjMTExZTFlZTE0OTRiZDEwYzg3MzdjNDg0NTZjMDRhZmQwMGRlZWI.mp4?disposition=download&filename=Week%205%20-%20Video%20Library",
         description: ""
     }]
